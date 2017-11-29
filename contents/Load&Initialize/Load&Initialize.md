@@ -66,9 +66,9 @@
 
 ![image.png](http://upload-images.jianshu.io/upload_images/588630-ec529c4bedd7e4ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-从源码中可以看出，通过 `_getObjc2NonlazyClassList` 获取所有的类的列表之后，会通过 `remapClass` 获取类对应的指针，然后调用` schedule_class_load` 递归把当前类和没有调用 `+ load` 父类添加到列表中。
-
-执行 `add_class_to_loadable_list(cls)` 将当前类添加加载列表之前，会先把父类加入待加载的列表，保证父类在子类前调用 `+load` 方法。
+从源码中可以看出，
+* 通过 `_getObjc2NonlazyClassList` 获取所有的类的列表之后，会通过 `remapClass` 获取类对应的指针，然后调用 `schedule_class_load` 递归把当前类和没有调用 `+ load` 方法的父类，通过 `add_class_to_loadable_list(cls)` 方法添加到 `loadable_classes` 列表中，**保证父类在子类前调用 `+load` 方法**。
+* 通过 `_getObjc2NonlazyCategoryList` 获取所有的分类的列表之后，会通过 `remapClass` 获取分类对应的指针，然后调用` add_category_to_loadable_list` 把当前分类添加到 `loadable_categories` 列表中。
 
 在将镜像加载到运行时、对 `+load` 方法的准备就绪之后，执行 `call_load_methods`，开始调用 `+load` 方法：
 
@@ -77,5 +77,12 @@
 * 不停调用类的 `+load` 方法，直到 `loadable_classes` 为空。
 * 然后调用一次 `call_category_loads` 加载分类。
 * 如果有 `loadable_classes` 或者更多的分类，继续调用 `+load` 方法。
+* **类先于分类调用**。
 
+![image.png](http://upload-images.jianshu.io/upload_images/588630-5c3408d006682624.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+其中 `call_class_loads` 会从一个待加载的类列表 `loadable_classes` 中寻找对应的类，然后通过对应的 `SEL` ，找到 `IMP` 的实现并执行。
+
+#### load 方法的应用
+
+由于调用 `+load` 方法运行时间过早，环境很不安全，我们应该尽量减少 `+load` 方法的逻辑。另一个原因是load方法是线程安全的，它内部使用了锁，所以我们应该避免线程阻塞在 `+load` 方法中。不过在这个时间点，所有的 `framework` 都已经加载到了运行时中，所以调用 `framework` 中的方法都是安全的。
