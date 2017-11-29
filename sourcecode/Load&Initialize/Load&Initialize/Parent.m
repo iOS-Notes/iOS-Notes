@@ -10,12 +10,12 @@
 
 @implementation Parent
 
-+ (void)load {
-    NSLog(@"%@ , %s", [self class], __FUNCTION__);
-}
-
-//+ (void)initialize {
+//+ (void)load {
 //    NSLog(@"%@ , %s", [self class], __FUNCTION__);
 //}
+
++ (void)initialize {
+    NSLog(@"Initialize Parent, %@ , %s", [self class], __FUNCTION__);
+}
 
 @end

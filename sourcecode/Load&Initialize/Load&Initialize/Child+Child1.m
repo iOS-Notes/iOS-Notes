@@ -10,9 +10,12 @@
 
 @implementation Child (Child1)
 
-+ (void)load {
-    NSLog(@"%@ , %s", [self class], __FUNCTION__);
-}
+//+ (void)load {
+//    NSLog(@"%@ , %s", [self class], __FUNCTION__);
+//}
 
+//+ (void)initialize {
+//    NSLog(@"%@ , %s", [self class], __FUNCTION__);
+//}
 
 @end

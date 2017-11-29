@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "Child.h"
+#import "Parent.h"
+#import "Other.h"
 
 @interface ViewController ()
 
@@ -16,9 +19,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    __unused Child *child = [[Child alloc] init];
+    __unused Parent *parent = [[Parent alloc] init];
+    __unused Other *other = [[Other alloc] init];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -303,13 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A178271FCDAD580027C9B5 /* Child.m in Sources */,
+				32A1782A1FCDAD580027C9B5 /* Parent.m in Sources */,
+				32A178291FCDAD580027C9B5 /* Other.m in Sources */,
 				32A178281FCDAD580027C9B5 /* Child+Load.m in Sources */,
 				32A1782E1FCDBBDE0027C9B5 /* Child+Child1.m in Sources */,
-				32A178271FCDAD580027C9B5 /* Child.m in Sources */,
 				32A177EC1FCDAD3D0027C9B5 /* main.m in Sources */,
-				32A1782A1FCDAD580027C9B5 /* Parent.m in Sources */,
 				32A177EF1FCDAD3D0027C9B5 /* AppDelegate.m in Sources */,
-				32A178291FCDAD580027C9B5 /* Other.m in Sources */,
 				32A177F21FCDAD3D0027C9B5 /* ViewController.m in Sources */,
 				32A1782B1FCDAD580027C9B5 /* Parent+Load.m in Sources */,
 			);
@@ -545,6 +545,7 @@
 				32A178161FCDAD3D0027C9B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A178171FCDAD3D0027C9B5 /* Build configuration list for PBXNativeTarget "Load&InitializeTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +554,7 @@
 				32A178191FCDAD3D0027C9B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A1781A1FCDAD3D0027C9B5 /* Build configuration list for PBXNativeTarget "Load&InitializeUITests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +563,7 @@
 				32A1781C1FCDAD3D0027C9B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
