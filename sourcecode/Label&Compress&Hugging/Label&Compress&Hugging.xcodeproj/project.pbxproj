@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		327A430A1FCEE1F400541508 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A43091FCEE1F400541508 /* AppDelegate.m */; };
+		327A430D1FCEE1F400541508 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A430C1FCEE1F400541508 /* ViewController.m */; };
+		327A43101FCEE1F400541508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A430E1FCEE1F400541508 /* Main.storyboard */; };
+		327A43121FCEE1F400541508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327A43111FCEE1F400541508 /* Assets.xcassets */; };
+		327A43151FCEE1F400541508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327A43131FCEE1F400541508 /* LaunchScreen.storyboard */; };
+		327A43181FCEE1F400541508 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A43171FCEE1F400541508 /* main.m */; };
+		327A43221FCEE1F400541508 /* Label_Compress_HuggingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A43211FCEE1F400541508 /* Label_Compress_HuggingTests.m */; };
+		327A432D1FCEE1F400541508 /* Label_Compress_HuggingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A432C1FCEE1F400541508 /* Label_Compress_HuggingUITests.m */; };
+		B2B5102CC084EA91F9751023 /* libPods-Label&Compress&Hugging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B5510A70AC367E529D5904 /* libPods-Label&Compress&Hugging.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		327A431E1FCEE1F400541508 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327A42FD1FCEE1F400541508 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327A43041FCEE1F400541508;
+			remoteInfo = "Label&Compress&Hugging";
+		};
+		327A43291FCEE1F400541508 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327A42FD1FCEE1F400541508 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327A43041FCEE1F400541508;
+			remoteInfo = "Label&Compress&Hugging";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		327A43051FCEE1F400541508 /* Label&Compress&Hugging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Label&Compress&Hugging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		327A43081FCEE1F400541508 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		327A43091FCEE1F400541508 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		327A430B1FCEE1F400541508 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		327A430C1FCEE1F400541508 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		327A430F1FCEE1F400541508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		327A43111FCEE1F400541508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		327A43141FCEE1F400541508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		327A43161FCEE1F400541508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327A43171FCEE1F400541508 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		327A431D1FCEE1F400541508 /* Label&Compress&HuggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Label&Compress&HuggingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		327A43211FCEE1F400541508 /* Label_Compress_HuggingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Label_Compress_HuggingTests.m; sourceTree = "<group>"; };
+		327A43231FCEE1F400541508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327A43281FCEE1F400541508 /* Label&Compress&HuggingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Label&Compress&HuggingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		327A432C1FCEE1F400541508 /* Label_Compress_HuggingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Label_Compress_HuggingUITests.m; sourceTree = "<group>"; };
+		327A432E1FCEE1F400541508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B5510A70AC367E529D5904 /* libPods-Label&Compress&Hugging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Label&Compress&Hugging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7174435BEF7895AB1D5F7E25 /* Pods-Label&Compress&Hugging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Label&Compress&Hugging.release.xcconfig"; path = "Pods/Target Support Files/Pods-Label&Compress&Hugging/Pods-Label&Compress&Hugging.release.xcconfig"; sourceTree = "<group>"; };
+		EEE885C38E1F4508933654CF /* Pods-Label&Compress&Hugging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Label&Compress&Hugging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Label&Compress&Hugging/Pods-Label&Compress&Hugging.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		327A43021FCEE1F400541508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B5102CC084EA91F9751023 /* libPods-Label&Compress&Hugging.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327A431A1FCEE1F400541508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327A43251FCEE1F400541508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		327A42FC1FCEE1F400541508 = {
+			isa = PBXGroup;
+			children = (
+				327A43071FCEE1F400541508 /* Label&Compress&Hugging */,
+				327A43201FCEE1F400541508 /* Label&Compress&HuggingTests */,
+				327A432B1FCEE1F400541508 /* Label&Compress&HuggingUITests */,
+				327A43061FCEE1F400541508 /* Products */,
+				5C6B9E335FE0C7C81020D592 /* Pods */,
+				67E1A36A7E49D67B637618FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		327A43061FCEE1F400541508 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				327A43051FCEE1F400541508 /* Label&Compress&Hugging.app */,
+				327A431D1FCEE1F400541508 /* Label&Compress&HuggingTests.xctest */,
+				327A43281FCEE1F400541508 /* Label&Compress&HuggingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		327A43071FCEE1F400541508 /* Label&Compress&Hugging */ = {
+			isa = PBXGroup;
+			children = (
+				327A43081FCEE1F400541508 /* AppDelegate.h */,
+				327A43091FCEE1F400541508 /* AppDelegate.m */,
+				327A430B1FCEE1F400541508 /* ViewController.h */,
+				327A430C1FCEE1F400541508 /* ViewController.m */,
+				327A430E1FCEE1F400541508 /* Main.storyboard */,
+				327A43111FCEE1F400541508 /* Assets.xcassets */,
+				327A43131FCEE1F400541508 /* LaunchScreen.storyboard */,
+				327A43161FCEE1F400541508 /* Info.plist */,
+				327A43171FCEE1F400541508 /* main.m */,
+			);
+			path = "Label&Compress&Hugging";
+			sourceTree = "<group>";
+		};
+		327A43201FCEE1F400541508 /* Label&Compress&HuggingTests */ = {
+			isa = PBXGroup;
+			children = (
+				327A43211FCEE1F400541508 /* Label_Compress_HuggingTests.m */,
+				327A43231FCEE1F400541508 /* Info.plist */,
+			);
+			path = "Label&Compress&HuggingTests";
+			sourceTree = "<group>";
+		};
+		327A432B1FCEE1F400541508 /* Label&Compress&HuggingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				327A432C1FCEE1F400541508 /* Label_Compress_HuggingUITests.m */,
+				327A432E1FCEE1F400541508 /* Info.plist */,
+			);
+			path = "Label&Compress&HuggingUITests";
+			sourceTree = "<group>";
+		};
+		5C6B9E335FE0C7C81020D592 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEE885C38E1F4508933654CF /* Pods-Label&Compress&Hugging.debug.xcconfig */,
+				7174435BEF7895AB1D5F7E25 /* Pods-Label&Compress&Hugging.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67E1A36A7E49D67B637618FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51B5510A70AC367E529D5904 /* libPods-Label&Compress&Hugging.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		327A43041FCEE1F400541508 /* Label&Compress&Hugging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327A43311FCEE1F400541508 /* Build configuration list for PBXNativeTarget "Label&Compress&Hugging" */;
+			buildPhases = (
+				11FAC987FC02CC2FA37FF2D4 /* [CP] Check Pods Manifest.lock */,
+				327A43011FCEE1F400541508 /* Sources */,
+				327A43021FCEE1F400541508 /* Frameworks */,
+				327A43031FCEE1F400541508 /* Resources */,
+				CDF7EBBA80B9F5EDA55D7800 /* [CP] Embed Pods Frameworks */,
+				558B47B057DDF0AC4DE09FDA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Label&Compress&Hugging";
+			productName = "Label&Compress&Hugging";
+			productReference = 327A43051FCEE1F400541508 /* Label&Compress&Hugging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		327A431C1FCEE1F400541508 /* Label&Compress&HuggingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327A43341FCEE1F400541508 /* Build configuration list for PBXNativeTarget "Label&Compress&HuggingTests" */;
+			buildPhases = (
+				327A43191FCEE1F400541508 /* Sources */,
+				327A431A1FCEE1F400541508 /* Frameworks */,
+				327A431B1FCEE1F400541508 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327A431F1FCEE1F400541508 /* PBXTargetDependency */,
+			);
+			name = "Label&Compress&HuggingTests";
+			productName = "Label&Compress&HuggingTests";
+			productReference = 327A431D1FCEE1F400541508 /* Label&Compress&HuggingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		327A43271FCEE1F400541508 /* Label&Compress&HuggingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327A43371FCEE1F400541508 /* Build configuration list for PBXNativeTarget "Label&Compress&HuggingUITests" */;
+			buildPhases = (
+				327A43241FCEE1F400541508 /* Sources */,
+				327A43251FCEE1F400541508 /* Frameworks */,
+				327A43261FCEE1F400541508 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327A432A1FCEE1F400541508 /* PBXTargetDependency */,
+			);
+			name = "Label&Compress&HuggingUITests";
+			productName = "Label&Compress&HuggingUITests";
+			productReference = 327A43281FCEE1F400541508 /* Label&Compress&HuggingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		327A42FD1FCEE1F400541508 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = MYSampleCode;
+				TargetAttributes = {
+					327A43041FCEE1F400541508 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					327A431C1FCEE1F400541508 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 327A43041FCEE1F400541508;
+					};
+					327A43271FCEE1F400541508 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 327A43041FCEE1F400541508;
+					};
+				};
+			};
+			buildConfigurationList = 327A43001FCEE1F400541508 /* Build configuration list for PBXProject "Label&Compress&Hugging" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 327A42FC1FCEE1F400541508;
+			productRefGroup = 327A43061FCEE1F400541508 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				327A43041FCEE1F400541508 /* Label&Compress&Hugging */,
+				327A431C1FCEE1F400541508 /* Label&Compress&HuggingTests */,
+				327A43271FCEE1F400541508 /* Label&Compress&HuggingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		327A43031FCEE1F400541508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327A43151FCEE1F400541508 /* LaunchScreen.storyboard in Resources */,
+				327A43121FCEE1F400541508 /* Assets.xcassets in Resources */,
+				327A43101FCEE1F400541508 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327A431B1FCEE1F400541508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327A43261FCEE1F400541508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11FAC987FC02CC2FA37FF2D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Label&Compress&Hugging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		558B47B057DDF0AC4DE09FDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Label&Compress&Hugging/Pods-Label&Compress&Hugging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDF7EBBA80B9F5EDA55D7800 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Label&Compress&Hugging/Pods-Label&Compress&Hugging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		327A43011FCEE1F400541508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327A430D1FCEE1F400541508 /* ViewController.m in Sources */,
+				327A43181FCEE1F400541508 /* main.m in Sources */,
+				327A430A1FCEE1F400541508 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327A43191FCEE1F400541508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327A43221FCEE1F400541508 /* Label_Compress_HuggingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327A43241FCEE1F400541508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327A432D1FCEE1F400541508 /* Label_Compress_HuggingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		327A431F1FCEE1F400541508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327A43041FCEE1F400541508 /* Label&Compress&Hugging */;
+			targetProxy = 327A431E1FCEE1F400541508 /* PBXContainerItemProxy */;
+		};
+		327A432A1FCEE1F400541508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327A43041FCEE1F400541508 /* Label&Compress&Hugging */;
+			targetProxy = 327A43291FCEE1F400541508 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		327A430E1FCEE1F400541508 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327A430F1FCEE1F400541508 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		327A43131FCEE1F400541508 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327A43141FCEE1F400541508 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		327A432F1FCEE1F400541508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		327A43301FCEE1F400541508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		327A43321FCEE1F400541508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE885C38E1F4508933654CF /* Pods-Label&Compress&Hugging.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Label&Compress&Hugging/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangxiu.Label-Compress-Hugging";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		327A43331FCEE1F400541508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7174435BEF7895AB1D5F7E25 /* Pods-Label&Compress&Hugging.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Label&Compress&Hugging/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangxiu.Label-Compress-Hugging";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		327A43351FCEE1F400541508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Label&Compress&HuggingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangxiu.Label-Compress-HuggingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Label&Compress&Hugging.app/Label&Compress&Hugging";
+			};
+			name = Debug;
+		};
+		327A43361FCEE1F400541508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Label&Compress&HuggingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangxiu.Label-Compress-HuggingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Label&Compress&Hugging.app/Label&Compress&Hugging";
+			};
+			name = Release;
+		};
+		327A43381FCEE1F400541508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Label&Compress&HuggingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangxiu.Label-Compress-HuggingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Label&Compress&Hugging";
+			};
+			name = Debug;
+		};
+		327A43391FCEE1F400541508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Label&Compress&HuggingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangxiu.Label-Compress-HuggingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Label&Compress&Hugging";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		327A43001FCEE1F400541508 /* Build configuration list for PBXProject "Label&Compress&Hugging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327A432F1FCEE1F400541508 /* Debug */,
+				327A43301FCEE1F400541508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327A43311FCEE1F400541508 /* Build configuration list for PBXNativeTarget "Label&Compress&Hugging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327A43321FCEE1F400541508 /* Debug */,
+				327A43331FCEE1F400541508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327A43341FCEE1F400541508 /* Build configuration list for PBXNativeTarget "Label&Compress&HuggingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327A43351FCEE1F400541508 /* Debug */,
+				327A43361FCEE1F400541508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327A43371FCEE1F400541508 /* Build configuration list for PBXNativeTarget "Label&Compress&HuggingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327A43381FCEE1F400541508 /* Debug */,
+				327A43391FCEE1F400541508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 327A42FD1FCEE1F400541508 /* Project object */;
+}
