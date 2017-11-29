@@ -20,9 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    __unused Child *child = [[Child alloc] init];
-    __unused Parent *parent = [[Parent alloc] init];
-    __unused Other *other = [[Other alloc] init];
+    Child *child = [[Child alloc] init];
+    
+//    __unused Parent *parent = [[Parent alloc] init];
+//    __unused Other *other = [[Other alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {

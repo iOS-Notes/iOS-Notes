@@ -126,6 +126,8 @@
 
 加上判断后，就不会因为子类而调用到自己的 `initialize` 方法了。
 
+** 如果在分类中也实现了 `initialize`  方法，则会出现方法"覆盖"**。
+
 在 `initialize` 方法中打一个断点，来查看这个方法的调用栈：
 
 ![image.png](http://upload-images.jianshu.io/upload_images/588630-4b45dbbbeceffd7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

@@ -14,8 +14,10 @@
 //    NSLog(@"%@ , %s", [self class], __FUNCTION__);
 //}
 
-//+ (void)initialize {
-//    NSLog(@"%@ , %s", [self class], __FUNCTION__);
-//}
++ (void)initialize {
+    if (self == [Parent class]) {
+        NSLog(@"Initialize %@ , %s", [self class], __FUNCTION__);
+    }
+}
 
 @end

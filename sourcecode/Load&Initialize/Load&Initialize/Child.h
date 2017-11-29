@@ -11,4 +11,6 @@
 
 @interface Child : Parent
 
+//- (void)initialize1;
+
 @end
