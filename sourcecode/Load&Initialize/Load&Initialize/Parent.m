@@ -15,7 +15,9 @@
 //}
 
 + (void)initialize {
-    NSLog(@"Initialize Parent, %@ , %s", [self class], __FUNCTION__);
+    if (self == [Parent class]) {
+        NSLog(@"Initialize Parent, caller Class %@", [self class]);
+    }
 }
 
 @end
