@@ -7,7 +7,10 @@
 
 #### NSNotificationCenter
 
-`NSNotificationCenter` 就相当于一个广播站，使用 `[NSNotificationCenter defaultCenter]` 来获取，`NSNotificationCenter` 实际上是 `iOS` 程序内部之间的一种消息广播机制，主要为了解决应用程序内部不同对象之间解耦而设计。它是基于观察者模式设计的，不能跨应用程序进程通信，当通知中心接收到消息之后会根据内部的消息转发表，将消息发送给订阅者；它可以向应用任何地方发送和接收通知。在通知中心注册观察者，发送者使用通知中心广播时，以 `NSNotification` 的 `name` 和 `object` 来确定需要发送给哪个观察者。为保证观察者能接收到通知，所以应先向通知中心注册观察者，接着再发送通知这样才能在通知中心调度表中查找到相应观察者进行通知。
+`NSNotificationCenter` 就相当于一个广播站，使用 `[NSNotificationCenter defaultCenter]` 来获取，`NSNotificationCenter` 实际上是 `iOS` 程序内部之间的一种消息广播机制，主要为了解决应用程序内部不同对象之间解耦而设计。
+`NSNotificationCenter` 是整个通知机制的关键所在，它管理着监听者的注册和注销，通知的发送和接收。`NSNotificationCenter` 维护着一个通知的分发表，把所有通知发送者发送的通知，转发给对应的监听者们。每一个 `iOS` 程序都有一个唯一的通知中心，不必自己去创建一个，它是一个单例，通过 `[NSNotificationCenter defaultCenter]` 方法获取。
+`NSNotificationCenter` 是基于观察者模式设计的，不能跨应用程序进程通信，当 `NSNotificationCenter` 接收到消息之后会根据内部的消息转发表，将消息发送给订阅者；它可以向应用任何地方发送和接收通知。
+在 `NSNotificationCenter` 注册观察者，发送者使用通知中心广播时，以 `NSNotification` 的 `name` 和 `object` 来确定需要发送给哪个观察者。为保证观察者能接收到通知，所以应先向通知中心注册观察者，接着再发送通知这样才能在通知中心调度表中查找到相应观察者进行通知。
 
 #### NSNotification
 
@@ -40,7 +43,9 @@
 ```
 
 注意：
-如果 `NSNotification` 对象中的 `notificationName` 为 `nil`，则会接收所有的通知。通知中心是以 `NSNotification` 的 `name` 和 `objec` t来确定需要发送给哪个观察者。监听同一条通知的多个观察者，在通知到达时，它们执行回调的顺序是不确定的，所以我们不能去假设操作的执行会按照添加观察者的顺序来执行。
+如果 `NSNotification` 对象中的 `notificationName` 为 `nil`，则会接收所有的通知。通知中心是以 `NSNotification` 的 `name` 和 `object` 来确定需要发送给哪个观察者。监听同一条通知的多个观察者，在通知到达时，它们执行回调的顺序是不确定的，所以我们不能去假设操作的执行会按照添加观察者的顺序来执行。
+
+通知中心默认是以同步的方式发送通知的，也就是说，当一个对象发送了一个通知，**只有当该通知的所有接受者都接受到了通知中心分发的通知消息并且处理完成后，发送通知的对象才能继续执行接下来的方法。**
 
 #### NSNotification在多线程中使用
 
@@ -93,6 +98,9 @@ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 ```
 
 ![image.png](http://upload-images.jianshu.io/upload_images/588630-dee057a3614a9d88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+注意：
+在一个多线程的程序中，发送方发送通知的线程通常就是监听者接受通知的线程，这可能和监听者注册时的线程不一样。
 
 #### 通知的原理：
 
