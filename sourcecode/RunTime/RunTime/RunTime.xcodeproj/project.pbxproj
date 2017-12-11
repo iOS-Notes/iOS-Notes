@@ -21,6 +21,16 @@
 		321E8FAB1FCFB43F00E523B7 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E8FA51FCFB43E00E523B7 /* TestClass.m */; };
 		321E8FAC1FCFB43F00E523B7 /* TestClass+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E8FA61FCFB43F00E523B7 /* TestClass+AssociatedObject.m */; };
 		321E8FAD1FCFB43F00E523B7 /* TestClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E8FA71FCFB43F00E523B7 /* TestClass+Category.m */; };
+		325BADA31FDE93530070BCD2 /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADA21FDE93530070BCD2 /* NSObject+Model.m */; };
+		325BADA81FDE96E90070BCD2 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADA71FDE96E90070BCD2 /* TestModel.m */; };
+		325BADB51FDEA15E0070BCD2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADAF1FDEA15C0070BCD2 /* Person.m */; };
+		325BADB61FDEA15E0070BCD2 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADB01FDEA15C0070BCD2 /* Teacher.m */; };
+		325BADB71FDEA15E0070BCD2 /* Classes.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADB41FDEA15E0070BCD2 /* Classes.m */; };
+		325BADBB1FDEA6B00070BCD2 /* status1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 325BADB81FDEA6AF0070BCD2 /* status1.plist */; };
+		325BADBC1FDEA6B00070BCD2 /* status2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 325BADB91FDEA6AF0070BCD2 /* status2.plist */; };
+		325BADBD1FDEA6B00070BCD2 /* status3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 325BADBA1FDEA6AF0070BCD2 /* status3.plist */; };
+		325BADC01FDEA6C20070BCD2 /* StatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADBF1FDEA6C20070BCD2 /* StatusModel.m */; };
+		325BADC31FDEA6D80070BCD2 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADC21FDEA6D80070BCD2 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +79,23 @@
 		321E8FA51FCFB43E00E523B7 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		321E8FA61FCFB43F00E523B7 /* TestClass+AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestClass+AssociatedObject.m"; sourceTree = "<group>"; };
 		321E8FA71FCFB43F00E523B7 /* TestClass+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestClass+Category.m"; sourceTree = "<group>"; };
+		325BADA11FDE93530070BCD2 /* NSObject+Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
+		325BADA21FDE93530070BCD2 /* NSObject+Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
+		325BADA61FDE96E90070BCD2 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		325BADA71FDE96E90070BCD2 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		325BADAF1FDEA15C0070BCD2 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		325BADB01FDEA15C0070BCD2 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		325BADB11FDEA15C0070BCD2 /* Classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classes.h; sourceTree = "<group>"; };
+		325BADB21FDEA15D0070BCD2 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		325BADB31FDEA15D0070BCD2 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		325BADB41FDEA15E0070BCD2 /* Classes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classes.m; sourceTree = "<group>"; };
+		325BADB81FDEA6AF0070BCD2 /* status1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = status1.plist; sourceTree = "<group>"; };
+		325BADB91FDEA6AF0070BCD2 /* status2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = status2.plist; sourceTree = "<group>"; };
+		325BADBA1FDEA6AF0070BCD2 /* status3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = status3.plist; sourceTree = "<group>"; };
+		325BADBE1FDEA6C20070BCD2 /* StatusModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusModel.h; sourceTree = "<group>"; };
+		325BADBF1FDEA6C20070BCD2 /* StatusModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusModel.m; sourceTree = "<group>"; };
+		325BADC11FDEA6D80070BCD2 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		325BADC21FDEA6D80070BCD2 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +158,20 @@
 				321E8FA71FCFB43F00E523B7 /* TestClass+Category.m */,
 				321E8F9C1FCFB43D00E523B7 /* TestClass+Exchange.h */,
 				321E8FA11FCFB43E00E523B7 /* TestClass+Exchange.m */,
+				325BADA11FDE93530070BCD2 /* NSObject+Model.h */,
+				325BADA21FDE93530070BCD2 /* NSObject+Model.m */,
+				325BADA61FDE96E90070BCD2 /* TestModel.h */,
+				325BADA71FDE96E90070BCD2 /* TestModel.m */,
+				325BADBE1FDEA6C20070BCD2 /* StatusModel.h */,
+				325BADBF1FDEA6C20070BCD2 /* StatusModel.m */,
+				325BADC11FDEA6D80070BCD2 /* User.h */,
+				325BADC21FDEA6D80070BCD2 /* User.m */,
+				325BADB11FDEA15C0070BCD2 /* Classes.h */,
+				325BADB41FDEA15E0070BCD2 /* Classes.m */,
+				325BADB31FDEA15D0070BCD2 /* Person.h */,
+				325BADAF1FDEA15C0070BCD2 /* Person.m */,
+				325BADB21FDEA15D0070BCD2 /* Teacher.h */,
+				325BADB01FDEA15C0070BCD2 /* Teacher.m */,
 				321E8F6A1FCFB42B00E523B7 /* AppDelegate.h */,
 				321E8F6B1FCFB42B00E523B7 /* AppDelegate.m */,
 				321E8F6D1FCFB42B00E523B7 /* ViewController.h */,
@@ -139,6 +180,9 @@
 				321E8F731FCFB42B00E523B7 /* Assets.xcassets */,
 				321E8F751FCFB42B00E523B7 /* LaunchScreen.storyboard */,
 				321E8F781FCFB42B00E523B7 /* Info.plist */,
+				325BADB81FDEA6AF0070BCD2 /* status1.plist */,
+				325BADB91FDEA6AF0070BCD2 /* status2.plist */,
+				325BADBA1FDEA6AF0070BCD2 /* status3.plist */,
 				321E8F791FCFB42B00E523B7 /* main.m */,
 			);
 			path = RunTime;
@@ -268,6 +312,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325BADBD1FDEA6B00070BCD2 /* status3.plist in Resources */,
+				325BADBB1FDEA6B00070BCD2 /* status1.plist in Resources */,
+				325BADBC1FDEA6B00070BCD2 /* status2.plist in Resources */,
 				321E8F771FCFB42B00E523B7 /* LaunchScreen.storyboard in Resources */,
 				321E8F741FCFB42B00E523B7 /* Assets.xcassets in Resources */,
 				321E8F721FCFB42B00E523B7 /* Main.storyboard in Resources */,
@@ -295,8 +342,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325BADC31FDEA6D80070BCD2 /* User.m in Sources */,
 				321E8FA81FCFB43F00E523B7 /* Runtime.m in Sources */,
+				325BADC01FDEA6C20070BCD2 /* StatusModel.m in Sources */,
 				321E8F6F1FCFB42B00E523B7 /* ViewController.m in Sources */,
+				325BADB71FDEA15E0070BCD2 /* Classes.m in Sources */,
+				325BADB51FDEA15E0070BCD2 /* Person.m in Sources */,
+				325BADB61FDEA15E0070BCD2 /* Teacher.m in Sources */,
+				325BADA81FDE96E90070BCD2 /* TestModel.m in Sources */,
 				321E8FAD1FCFB43F00E523B7 /* TestClass+Category.m in Sources */,
 				321E8F7A1FCFB42B00E523B7 /* main.m in Sources */,
 				321E8FA91FCFB43F00E523B7 /* TestClass+Exchange.m in Sources */,
@@ -304,6 +357,7 @@
 				321E8F6C1FCFB42B00E523B7 /* AppDelegate.m in Sources */,
 				321E8FAB1FCFB43F00E523B7 /* TestClass.m in Sources */,
 				321E8FAC1FCFB43F00E523B7 /* TestClass+AssociatedObject.m in Sources */,
+				325BADA31FDE93530070BCD2 /* NSObject+Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
