@@ -32,6 +32,7 @@
 		325BADC01FDEA6C20070BCD2 /* StatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADBF1FDEA6C20070BCD2 /* StatusModel.m */; };
 		325BADC31FDEA6D80070BCD2 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADC21FDEA6D80070BCD2 /* User.m */; };
 		325BADC61FDEA99C0070BCD2 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADC51FDEA99C0070BCD2 /* Dog.m */; };
+		325BADC91FDEABCD0070BCD2 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADC81FDEABCD0070BCD2 /* Cat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		325BADC21FDEA6D80070BCD2 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		325BADC41FDEA99C0070BCD2 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		325BADC51FDEA99C0070BCD2 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		325BADC71FDEABCD0070BCD2 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		325BADC81FDEABCD0070BCD2 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +180,8 @@
 				325BADB01FDEA15C0070BCD2 /* Teacher.m */,
 				325BADC41FDEA99C0070BCD2 /* Dog.h */,
 				325BADC51FDEA99C0070BCD2 /* Dog.m */,
+				325BADC71FDEABCD0070BCD2 /* Cat.h */,
+				325BADC81FDEABCD0070BCD2 /* Cat.m */,
 				321E8F6A1FCFB42B00E523B7 /* AppDelegate.h */,
 				321E8F6B1FCFB42B00E523B7 /* AppDelegate.m */,
 				321E8F6D1FCFB42B00E523B7 /* ViewController.h */,
@@ -359,6 +364,7 @@
 				321E8F7A1FCFB42B00E523B7 /* main.m in Sources */,
 				321E8FA91FCFB43F00E523B7 /* TestClass+Exchange.m in Sources */,
 				321E8FAA1FCFB43F00E523B7 /* ForwardTestClass.m in Sources */,
+				325BADC91FDEABCD0070BCD2 /* Cat.m in Sources */,
 				321E8F6C1FCFB42B00E523B7 /* AppDelegate.m in Sources */,
 				321E8FAB1FCFB43F00E523B7 /* TestClass.m in Sources */,
 				321E8FAC1FCFB43F00E523B7 /* TestClass+AssociatedObject.m in Sources */,

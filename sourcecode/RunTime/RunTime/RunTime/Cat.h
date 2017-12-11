@@ -1,5 +1,5 @@
 //
-//  Dog.h
+//  Cat.h
 //  RunTime
 //
 //  Created by sunjinshuai on 2017/12/11.
@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Dog : NSObject
+@interface Cat : NSObject
 
 - (void)run;
-+ (void)run;
 
 @end

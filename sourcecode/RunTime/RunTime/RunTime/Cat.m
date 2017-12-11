@@ -1,16 +1,17 @@
 //
-//  Dog.h
+//  Cat.m
 //  RunTime
 //
 //  Created by sunjinshuai on 2017/12/11.
 //  Copyright © 2017年 MYSampleCode. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Cat.h"
 
-@interface Dog : NSObject
+@implementation Cat
 
-- (void)run;
-+ (void)run;
+- (void)run {
+    NSLog(@"%@ %s", self, sel_getName(_cmd));
+}
 
 @end
