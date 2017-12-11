@@ -12,6 +12,7 @@
 #import "Runtime.h"
 #import "TestModel.h"
 #import "StatusModel.h"
+#import "Dog.h"
 
 @interface ViewController ()
 
@@ -53,6 +54,14 @@
     [self keyValuesWithObject1];
     
     [self keyValuesWithObject2];
+    
+    // 动态转发
+    [self dynamicMethod];
+}
+     
+- (void)dynamicMethod {
+    Dog *dog = [[Dog alloc] init];
+    [dog run];
 }
 
 - (void)keyValuesWithObject2 {

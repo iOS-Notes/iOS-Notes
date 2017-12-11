@@ -31,6 +31,7 @@
 		325BADBD1FDEA6B00070BCD2 /* status3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 325BADBA1FDEA6AF0070BCD2 /* status3.plist */; };
 		325BADC01FDEA6C20070BCD2 /* StatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADBF1FDEA6C20070BCD2 /* StatusModel.m */; };
 		325BADC31FDEA6D80070BCD2 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADC21FDEA6D80070BCD2 /* User.m */; };
+		325BADC61FDEA99C0070BCD2 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADC51FDEA99C0070BCD2 /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		325BADBF1FDEA6C20070BCD2 /* StatusModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusModel.m; sourceTree = "<group>"; };
 		325BADC11FDEA6D80070BCD2 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		325BADC21FDEA6D80070BCD2 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		325BADC41FDEA99C0070BCD2 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		325BADC51FDEA99C0070BCD2 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 				325BADAF1FDEA15C0070BCD2 /* Person.m */,
 				325BADB21FDEA15D0070BCD2 /* Teacher.h */,
 				325BADB01FDEA15C0070BCD2 /* Teacher.m */,
+				325BADC41FDEA99C0070BCD2 /* Dog.h */,
+				325BADC51FDEA99C0070BCD2 /* Dog.m */,
 				321E8F6A1FCFB42B00E523B7 /* AppDelegate.h */,
 				321E8F6B1FCFB42B00E523B7 /* AppDelegate.m */,
 				321E8F6D1FCFB42B00E523B7 /* ViewController.h */,
@@ -357,6 +362,7 @@
 				321E8F6C1FCFB42B00E523B7 /* AppDelegate.m in Sources */,
 				321E8FAB1FCFB43F00E523B7 /* TestClass.m in Sources */,
 				321E8FAC1FCFB43F00E523B7 /* TestClass+AssociatedObject.m in Sources */,
+				325BADC61FDEA99C0070BCD2 /* Dog.m in Sources */,
 				325BADA31FDE93530070BCD2 /* NSObject+Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
