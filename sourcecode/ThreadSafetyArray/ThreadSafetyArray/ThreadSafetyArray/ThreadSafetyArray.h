@@ -8,17 +8,29 @@
 
 /**
  实现一个线程安全的NSMutabeArray，以保证多个线程对数组操作（遍历，插入，删除）的安全;
- 简单的方式，是用一个类比如叫ThreadSafetyArray，将NSMutabeArray包装起来。
- 之后ThreadSafetyArray提供插入和删除的函数。而要遍历，就提供一个enumerateObjects函数，enumerateObjects函数传入一个block。
+ iOS-SDK只提供了非线程安全的数组。如果要多线程并发的使用一个数组对象就必须要加锁，平凡的加锁使得代码的调用非常的麻烦。
+ 我们需要多线程的读写锁在类的内部实现，所以需要对NSMutableArray进行封装，封装后的对象负责接受所有事件并将其转发给真正的NSMutableArray
  */
 
 
 #import <Foundation/Foundation.h>
+#import "ThreadSafetyObject.h"
 
-@interface ThreadSafetyArray : NSObject
+@protocol ThreadSafetyArrayProtocol
 
-- (void)addObject:(NSObject *)obj;
-- (void)removeObject:(NSObject *)obj;
-- (void)enumerateObjects:(void (^)(NSObject *obj))block;
+@optional
+- (id)lastObject;
+- (id)objectAtIndex:(NSUInteger)index;
+
+- (NSUInteger)count;
+
+- (void)addObject:(id)anObject;
+- (void)insertObject:(id)anObject atIndex:(NSUInteger)index;
+- (void)removeLastObject;
+- (void)removeObjectAtIndex:(NSUInteger)index;
+- (void)replaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject;
+@end
+
+@interface ThreadSafetyArray : ThreadSafetyObject <ThreadSafetyArrayProtocol>
 
 @end

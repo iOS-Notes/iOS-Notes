@@ -16,6 +16,7 @@
 		324174301FF62379007BB277 /* ThreadSafetyArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3241742F1FF62379007BB277 /* ThreadSafetyArrayTests.m */; };
 		3241743B1FF62379007BB277 /* ThreadSafetyArrayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3241743A1FF62379007BB277 /* ThreadSafetyArrayUITests.m */; };
 		3241744A1FF6238C007BB277 /* ThreadSafetyArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174491FF6238C007BB277 /* ThreadSafetyArray.m */; };
+		3241744D1FF627BA007BB277 /* ThreadSafetyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3241744C1FF627BA007BB277 /* ThreadSafetyObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		3241743C1FF62379007BB277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		324174481FF6238C007BB277 /* ThreadSafetyArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSafetyArray.h; sourceTree = "<group>"; };
 		324174491FF6238C007BB277 /* ThreadSafetyArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadSafetyArray.m; sourceTree = "<group>"; };
+		3241744B1FF627BA007BB277 /* ThreadSafetyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSafetyObject.h; sourceTree = "<group>"; };
+		3241744C1FF627BA007BB277 /* ThreadSafetyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadSafetyObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				3241741A1FF62379007BB277 /* ViewController.m */,
 				324174481FF6238C007BB277 /* ThreadSafetyArray.h */,
 				324174491FF6238C007BB277 /* ThreadSafetyArray.m */,
+				3241744B1FF627BA007BB277 /* ThreadSafetyObject.h */,
+				3241744C1FF627BA007BB277 /* ThreadSafetyObject.m */,
 				3241741C1FF62379007BB277 /* Main.storyboard */,
 				3241741F1FF62379007BB277 /* Assets.xcassets */,
 				324174211FF62379007BB277 /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 				3241741B1FF62379007BB277 /* ViewController.m in Sources */,
 				3241744A1FF6238C007BB277 /* ThreadSafetyArray.m in Sources */,
 				324174261FF62379007BB277 /* main.m in Sources */,
+				3241744D1FF627BA007BB277 /* ThreadSafetyObject.m in Sources */,
 				324174181FF62379007BB277 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

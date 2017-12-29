@@ -19,29 +19,9 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _array = [[NSMutableArray alloc] init];
+        self.container = [[NSMutableArray alloc] init];
     }
     return self;
-}
-
-- (void)addObject:(NSObject *)obj {
-    @synchronized(self) {
-        [_array addObject:obj];
-    }
-}
-
-- (void)removeObject:(NSObject *)obj {
-    @synchronized(self) {
-        [_array removeObject:obj];
-    }
-}
-
-- (void)enumerateObjects:(void (^)(NSObject *obj))block {
-    @synchronized(self) {
-        for (NSObject *obj in _array) {
-            block(obj);
-        }
-    }
 }
 
 @end

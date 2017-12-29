@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ThreadSafetyArray.h"
 
 @interface ViewController ()
 
@@ -16,9 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    ThreadSafetyArray *ary = [[ThreadSafetyArray alloc] init];
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    queue.maxConcurrentOperationCount = 10;
+    for (int i = 0; i < 200; i++) {
+        NSNumber *number = [NSNumber numberWithInt:i];
+        [queue addOperationWithBlock:^{
+            [ary addObject:number];
+        }];
+    }
+    [queue waitUntilAllOperationsAreFinished];
+    NSLog(@"%lu",(unsigned long)ary.count);
+    NSLog(@"%@",ary);   
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
