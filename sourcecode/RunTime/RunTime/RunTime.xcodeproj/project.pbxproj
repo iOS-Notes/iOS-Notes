@@ -21,6 +21,9 @@
 		321E8FAB1FCFB43F00E523B7 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E8FA51FCFB43E00E523B7 /* TestClass.m */; };
 		321E8FAC1FCFB43F00E523B7 /* TestClass+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E8FA61FCFB43F00E523B7 /* TestClass+AssociatedObject.m */; };
 		321E8FAD1FCFB43F00E523B7 /* TestClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E8FA71FCFB43F00E523B7 /* TestClass+Category.m */; };
+		3220B1411FFCA50800A58AA0 /* MYPropertyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1401FFCA50800A58AA0 /* MYPropertyInfo.m */; };
+		3220B1441FFCA70B00A58AA0 /* MYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1431FFCA70B00A58AA0 /* MYClassInfo.m */; };
+		3220B1471FFCA80B00A58AA0 /* NSObject+MYJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1461FFCA80B00A58AA0 /* NSObject+MYJSONModel.m */; };
 		325BADA31FDE93530070BCD2 /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADA21FDE93530070BCD2 /* NSObject+Model.m */; };
 		325BADA81FDE96E90070BCD2 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADA71FDE96E90070BCD2 /* TestModel.m */; };
 		325BADB51FDEA15E0070BCD2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADAF1FDEA15C0070BCD2 /* Person.m */; };
@@ -81,6 +84,12 @@
 		321E8FA51FCFB43E00E523B7 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		321E8FA61FCFB43F00E523B7 /* TestClass+AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestClass+AssociatedObject.m"; sourceTree = "<group>"; };
 		321E8FA71FCFB43F00E523B7 /* TestClass+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestClass+Category.m"; sourceTree = "<group>"; };
+		3220B13F1FFCA50800A58AA0 /* MYPropertyInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYPropertyInfo.h; sourceTree = "<group>"; };
+		3220B1401FFCA50800A58AA0 /* MYPropertyInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPropertyInfo.m; sourceTree = "<group>"; };
+		3220B1421FFCA70B00A58AA0 /* MYClassInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYClassInfo.h; sourceTree = "<group>"; };
+		3220B1431FFCA70B00A58AA0 /* MYClassInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYClassInfo.m; sourceTree = "<group>"; };
+		3220B1451FFCA80B00A58AA0 /* NSObject+MYJSONModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MYJSONModel.h"; sourceTree = "<group>"; };
+		3220B1461FFCA80B00A58AA0 /* NSObject+MYJSONModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MYJSONModel.m"; sourceTree = "<group>"; };
 		325BADA11FDE93530070BCD2 /* NSObject+Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
 		325BADA21FDE93530070BCD2 /* NSObject+Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
 		325BADA61FDE96E90070BCD2 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
@@ -152,6 +161,7 @@
 		321E8F691FCFB42B00E523B7 /* RunTime */ = {
 			isa = PBXGroup;
 			children = (
+				3220B13E1FFCA4ED00A58AA0 /* MYJSONModel */,
 				321E8FA21FCFB43E00E523B7 /* ForwardTestClass.h */,
 				321E8FA41FCFB43E00E523B7 /* ForwardTestClass.m */,
 				321E8F9F1FCFB43D00E523B7 /* Runtime.h */,
@@ -214,6 +224,19 @@
 				321E8F901FCFB42B00E523B7 /* Info.plist */,
 			);
 			path = RunTimeUITests;
+			sourceTree = "<group>";
+		};
+		3220B13E1FFCA4ED00A58AA0 /* MYJSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				3220B13F1FFCA50800A58AA0 /* MYPropertyInfo.h */,
+				3220B1401FFCA50800A58AA0 /* MYPropertyInfo.m */,
+				3220B1421FFCA70B00A58AA0 /* MYClassInfo.h */,
+				3220B1431FFCA70B00A58AA0 /* MYClassInfo.m */,
+				3220B1451FFCA80B00A58AA0 /* NSObject+MYJSONModel.h */,
+				3220B1461FFCA80B00A58AA0 /* NSObject+MYJSONModel.m */,
+			);
+			path = MYJSONModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,11 +378,13 @@
 				325BADC31FDEA6D80070BCD2 /* User.m in Sources */,
 				321E8FA81FCFB43F00E523B7 /* Runtime.m in Sources */,
 				325BADC01FDEA6C20070BCD2 /* StatusModel.m in Sources */,
+				3220B1471FFCA80B00A58AA0 /* NSObject+MYJSONModel.m in Sources */,
 				321E8F6F1FCFB42B00E523B7 /* ViewController.m in Sources */,
 				325BADB71FDEA15E0070BCD2 /* Classes.m in Sources */,
 				325BADB51FDEA15E0070BCD2 /* Person.m in Sources */,
 				325BADB61FDEA15E0070BCD2 /* Teacher.m in Sources */,
 				325BADA81FDE96E90070BCD2 /* TestModel.m in Sources */,
+				3220B1411FFCA50800A58AA0 /* MYPropertyInfo.m in Sources */,
 				321E8FAD1FCFB43F00E523B7 /* TestClass+Category.m in Sources */,
 				321E8F7A1FCFB42B00E523B7 /* main.m in Sources */,
 				321E8FA91FCFB43F00E523B7 /* TestClass+Exchange.m in Sources */,
@@ -367,6 +392,7 @@
 				325BADC91FDEABCD0070BCD2 /* Cat.m in Sources */,
 				321E8F6C1FCFB42B00E523B7 /* AppDelegate.m in Sources */,
 				321E8FAB1FCFB43F00E523B7 /* TestClass.m in Sources */,
+				3220B1441FFCA70B00A58AA0 /* MYClassInfo.m in Sources */,
 				321E8FAC1FCFB43F00E523B7 /* TestClass+AssociatedObject.m in Sources */,
 				325BADC61FDEA99C0070BCD2 /* Dog.m in Sources */,
 				325BADA31FDE93530070BCD2 /* NSObject+Model.m in Sources */,
