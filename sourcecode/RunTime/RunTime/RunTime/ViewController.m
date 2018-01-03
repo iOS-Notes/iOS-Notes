@@ -13,6 +13,9 @@
 #import "TestModel.h"
 #import "StatusModel.h"
 #import "Dog.h"
+#import "City.h"
+#import "Programmer.h"
+#import "NSObject+MYJSONModel.h"
 
 @interface ViewController ()
 
@@ -57,6 +60,16 @@
     
     // 动态转发
     [self dynamicMethod];
+    
+    testDemo1();
+    
+    testDemo2();
+    
+    testDemo3();
+    
+    testDemo4();
+    
+    testDemo5();
 }
      
 - (void)dynamicMethod {
@@ -100,6 +113,148 @@
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:filePath];
     
     return dict;
+}
+
+void testDemo1()
+{
+    Programmer *programmer = [[Programmer alloc] init];
+    programmer.age = 20;
+    programmer.name = @"yester";
+    programmer.sex = @"女";
+    programmer.tag = @(6);
+    //person.height = @(168.8);
+    programmer.weight = 46.6;
+    
+    NSString *path = NSTemporaryDirectory();
+    path = [NSString stringWithFormat:@"%@Person.plist",path];
+    // 归档
+    [NSKeyedArchiver archiveRootObject:programmer toFile:path];
+    NSLog(@"archive path : %@",path);
+    
+    // 解归档
+    Programmer *programmer1 = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    NSLog(@"person: age: %ld, name: %@, sex: %@ tag:%@ height:%@ weight:%f",programmer1.age,programmer1.name,programmer1.sex,programmer1.tag,programmer1.height,programmer1.weight);
+}
+
+void testDemo2()
+{
+    Programmer *programmer = [[Programmer alloc] init];
+    programmer.age = 20;
+    programmer.name = @"yester";
+    programmer.sex = @"女";
+    programmer.tag = @(6);
+    //person.height = @(168.8);
+    programmer.weight = 46.6;
+    
+    NSDictionary *dic = [programmer my_ModelToDictonary];
+    NSLog(@"person dic : %@",dic);
+    
+    Programmer *person1 = [Programmer my_ModelWithDictonary:dic];
+    NSLog(@"person: age: %ld, name: %@, sex: %@ tag:%@ height:%@ weight:%f",person1.age,person1.name,person1.sex,person1.tag,person1.height,person1.weight);
+    
+}
+
+void testDemo3()
+{
+    City *city = [[City alloc]init];
+    
+    Programmer *mayor = [[Programmer alloc] init];
+    mayor.age = 20;
+    mayor.name = @"maey";
+    mayor.sex = @"女";
+    mayor.tag = @(6);
+    //mayor.height = @(168.8);
+    mayor.weight = 46.6;
+    
+    Programmer *deputie = [[Programmer alloc] init];
+    deputie.age = 26;
+    deputie.name = @"jack";
+    deputie.sex = @"男";
+    deputie.tag = @(8);
+    //deputie.height = @(178.8);
+    deputie.weight = 48.6;
+    
+    Programmer *deputie1 = [[Programmer alloc] init];
+    deputie1.age = 28;
+    deputie1.name = @"mark";
+    deputie1.sex = @"男";
+    deputie1.tag = @(7);
+    //deputie1.height = @(178.8);
+    deputie1.weight = 46.8;
+    
+    city.programmer = mayor;
+    city.total = 66666666;
+    city.deputies = @[mayor,deputie,deputie1];
+    
+    city.name = @"hancheng";
+    city.level = @(1);
+    city.area = 166666.6666;
+    
+    NSDictionary *dic = [city my_ModelToDictonary];
+    NSLog(@"city dic : %@",dic);
+    
+    City *city1 = [City my_ModelWithDictonary:dic];
+    NSLog(@"city: mayor: %@, name: %@, deputies: %@ total:%ld level:%@ area:%f",city1.programmer,city1.name,city1.deputies,city1.total,city1.level,city1.area);
+    
+    NSLog(@"city json: %@",[city my_ModelToJSONString]);
+}
+
+void testDemo4()
+{
+    City *city = [[City alloc]init];
+    
+    Programmer *mayor = [[Programmer alloc] init];
+    mayor.age = 20;
+    mayor.name = @"maey";
+    mayor.sex = @"女";
+    mayor.tag = @(6);
+    //mayor.height = @(168.8);
+    mayor.weight = 46.6;
+    
+    Programmer *deputie = [[Programmer alloc] init];
+    deputie.age = 26;
+    deputie.name = @"jack";
+    deputie.sex = @"男";
+    deputie.tag = @(8);
+    //deputie.height = @(178.8);
+    deputie.weight = 48.6;
+    
+    Programmer *deputie1 = [[Programmer alloc] init];
+    deputie1.age = 28;
+    deputie1.name = @"mark";
+    deputie1.sex = @"男";
+    deputie1.tag = @(7);
+    //deputie1.height = @(178.8);
+    deputie1.weight = 46.8;
+    
+    city.programmer = mayor;
+    city.total = 66666666;
+    city.deputies = @[mayor,deputie,deputie1];
+    
+    city.name = @"hancheng";
+    city.level = @(1);
+    city.area = 166666.6666;
+    
+    NSString *path = NSTemporaryDirectory();
+    path = [NSString stringWithFormat:@"%@City.plist",path];
+    // 归档
+    [NSKeyedArchiver archiveRootObject:city toFile:path];
+    NSLog(@"archive path : %@",path);
+    
+    // 解归档
+    City *city1 = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    NSLog(@"city: mayor: %@, name: %@, deputies: %@ total:%ld level:%@ area:%f",city1.programmer,city1.name,city1.deputies,city1.total,city1.level,city1.area);
+    
+}
+
+void testDemo5()
+{
+    NSString *jsonString = @"{\"deputies\":[{\"age\":20,\"sex\":\"女\",\"weight\":46.6,\"name\":\"maey\",\"tag\":6,\"height\":168.8},{\"age\":26,\"sex\":\"男\",\"weight\":48.6,\"name\":\"jack\",\"tag\":8,\"height\":178.8},{\"age\":28,\"sex\":\"男\",\"weight\":46.8,\"name\":\"mark\",\"tag\":7,\"height\":178.8}],\"mayor\":{\"age\":20,\"sex\":\"女\",\"weight\":46.6,\"name\":\"maey\",\"tag\":6,\"height\":168.8},\"area\":166666.6666,\"level\":1,\"total_num\":66666666,\"name\":\"hancheng\"}";
+    
+    City *city1 = [City my_ModelWithJSON:jsonString];
+    NSLog(@"city: mayor: %@, name: %@, deputies: %@ total:%ld level:%@ area:%f",city1.programmer,city1.name,city1.deputies,city1.total,city1.level,city1.area);
+    
+    NSLog(@"city : %@",[city1 my_ModelToJSONString]);
 }
 
 - (void)didReceiveMemoryWarning {

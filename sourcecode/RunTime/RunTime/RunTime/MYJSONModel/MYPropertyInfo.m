@@ -7,6 +7,7 @@
 //
 
 #import "MYPropertyInfo.h"
+#import "MYFoundation.h"
 
 @implementation MYPropertyInfo
 
@@ -66,7 +67,7 @@
         
         if (_typeClass) {
             // 判断是否自定义对象类型
-            _isCustomFondation = ![[self class] isClassFromFoundation:_typeClass];
+            _isCustomFondation = ![MYFoundation isClassFromFoundation:_typeClass];
         }
         
         if (_typeClass && _propertyName.length > 0) {
@@ -80,36 +81,6 @@
         }
     }
     return self;
-}
-
-+ (BOOL)isClassFromFoundation:(Class)class {
-    if (class == [NSString class] || class == [NSObject class]) {
-        return YES;
-    }
-    
-    static NSArray *foundations;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        foundations = @[[NSURL class],
-                        [NSDate class],
-                        [NSValue class],
-                        [NSData class],
-                        [NSError class],
-                        [NSArray class],
-                        [NSDictionary class],
-                        [NSString class],
-                        [NSAttributedString class]
-                        ];
-    });
-    
-    BOOL result = NO;
-    for (Class foundationClass in foundations) {
-        if ([class isSubclassOfClass:foundationClass]) {
-            result = YES;
-            break;
-        }
-    }
-    return result;
 }
 
 @end

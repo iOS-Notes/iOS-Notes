@@ -9,6 +9,7 @@
 #import "NSObject+MYJSONModel.h"
 #import "MYClassInfo.h"
 #import "MYPropertyInfo.h"
+#import "MYFoundation.h"
 #import <objc/message.h>
 
 @implementation NSObject (MYJSONModel)
@@ -382,7 +383,7 @@
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:self.count];
     // 遍历数组
     for (id obj in self) {
-        if (![MYPropertyInfo isClassFromFoundation:[obj class]]) {
+        if (![MYFoundation isClassFromFoundation:[obj class]]) {
             // obj 是 model 则 model 转 字典
             NSDictionary *dic = [obj my_ModelToDictonary];
             if (dic) {
@@ -425,7 +426,7 @@
     NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:self.count];
     // 遍历字典
     [self enumerateKeysAndObjectsUsingBlock:^(NSString *key, id obj, BOOL * stop) {
-        if (![MYPropertyInfo isClassFromFoundation:[obj class]]) {
+        if (![MYFoundation isClassFromFoundation:[obj class]]) {
             // obj 是 模型 则 model to dic
             NSDictionary *objDic = [obj my_ModelToDictonary];
             if (objDic) {

@@ -31,7 +31,4 @@
 
 - (instancetype)initWithProperty:(objc_property_t)property;
 
-// 是否是Foundation对象类型
-+ (BOOL)isClassFromFoundation:(Class)cls;
-
 @end
