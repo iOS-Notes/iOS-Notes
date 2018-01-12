@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3246E2132008495500826FBA /* MYNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3246E2112008495400826FBA /* MYNetworking.m */; };
+		3246E21620085C8900826FBA /* MYGCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3246E21520085C8900826FBA /* MYGCDGroup.m */; };
+		3246E21920085D1600826FBA /* MYGCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3246E21820085D1600826FBA /* MYGCDSemaphore.m */; };
+		3246E21C20088D6E00826FBA /* MYGCDApply.m in Sources */ = {isa = PBXBuildFile; fileRef = 3246E21B20088D6E00826FBA /* MYGCDApply.m */; };
 		32CC0EC71FD79D2C00D45E30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0EC61FD79D2C00D45E30 /* AppDelegate.m */; };
 		32CC0ECA1FD79D2C00D45E30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0EC91FD79D2C00D45E30 /* ViewController.m */; };
 		32CC0ECD1FD79D2C00D45E30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC0ECB1FD79D2C00D45E30 /* Main.storyboard */; };
@@ -15,6 +19,7 @@
 		32CC0ED51FD79D2C00D45E30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0ED41FD79D2C00D45E30 /* main.m */; };
 		32CC0EDF1FD79D2D00D45E30 /* GCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0EDE1FD79D2D00D45E30 /* GCDTests.m */; };
 		32CC0EEA1FD79D2D00D45E30 /* GCDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0EE91FD79D2D00D45E30 /* GCDUITests.m */; };
+		93DAC91766C5DA031E83D450 /* libPods-GCD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39240926C410176A48495091 /* libPods-GCD.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3246E2112008495400826FBA /* MYNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNetworking.m; sourceTree = "<group>"; };
+		3246E2122008495500826FBA /* MYNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNetworking.h; sourceTree = "<group>"; };
+		3246E21420085C8900826FBA /* MYGCDGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGCDGroup.h; sourceTree = "<group>"; };
+		3246E21520085C8900826FBA /* MYGCDGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGCDGroup.m; sourceTree = "<group>"; };
+		3246E21720085D1600826FBA /* MYGCDSemaphore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGCDSemaphore.h; sourceTree = "<group>"; };
+		3246E21820085D1600826FBA /* MYGCDSemaphore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGCDSemaphore.m; sourceTree = "<group>"; };
+		3246E21A20088D6E00826FBA /* MYGCDApply.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGCDApply.h; sourceTree = "<group>"; };
+		3246E21B20088D6E00826FBA /* MYGCDApply.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGCDApply.m; sourceTree = "<group>"; };
 		32CC0EC21FD79D2C00D45E30 /* GCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CC0EC51FD79D2C00D45E30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32CC0EC61FD79D2C00D45E30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +64,9 @@
 		32CC0EE51FD79D2D00D45E30 /* GCDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CC0EE91FD79D2D00D45E30 /* GCDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDUITests.m; sourceTree = "<group>"; };
 		32CC0EEB1FD79D2D00D45E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39240926C410176A48495091 /* libPods-GCD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GCD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCECCF57E4496A38275C3A8E /* Pods-GCD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCD.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCD/Pods-GCD.release.xcconfig"; sourceTree = "<group>"; };
+		C2492BC5BDB9F01BE3086ADB /* Pods-GCD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCD/Pods-GCD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DAC91766C5DA031E83D450 /* libPods-GCD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +102,8 @@
 				32CC0EDD1FD79D2D00D45E30 /* GCDTests */,
 				32CC0EE81FD79D2D00D45E30 /* GCDUITests */,
 				32CC0EC31FD79D2C00D45E30 /* Products */,
+				53C1BA50FB580BE615A449A1 /* Pods */,
+				B2C1E973CE835DDDE85E3BCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +120,14 @@
 		32CC0EC41FD79D2C00D45E30 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
+				3246E2122008495500826FBA /* MYNetworking.h */,
+				3246E2112008495400826FBA /* MYNetworking.m */,
+				3246E21420085C8900826FBA /* MYGCDGroup.h */,
+				3246E21520085C8900826FBA /* MYGCDGroup.m */,
+				3246E21A20088D6E00826FBA /* MYGCDApply.h */,
+				3246E21B20088D6E00826FBA /* MYGCDApply.m */,
+				3246E21720085D1600826FBA /* MYGCDSemaphore.h */,
+				3246E21820085D1600826FBA /* MYGCDSemaphore.m */,
 				32CC0EC51FD79D2C00D45E30 /* AppDelegate.h */,
 				32CC0EC61FD79D2C00D45E30 /* AppDelegate.m */,
 				32CC0EC81FD79D2C00D45E30 /* ViewController.h */,
@@ -132,6 +159,23 @@
 			path = GCDUITests;
 			sourceTree = "<group>";
 		};
+		53C1BA50FB580BE615A449A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2492BC5BDB9F01BE3086ADB /* Pods-GCD.debug.xcconfig */,
+				BCECCF57E4496A38275C3A8E /* Pods-GCD.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2C1E973CE835DDDE85E3BCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39240926C410176A48495091 /* libPods-GCD.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32CC0EEE1FD79D2D00D45E30 /* Build configuration list for PBXNativeTarget "GCD" */;
 			buildPhases = (
+				14C27873E9A9F02FF4CCCBF0 /* [CP] Check Pods Manifest.lock */,
 				32CC0EBE1FD79D2C00D45E30 /* Sources */,
 				32CC0EBF1FD79D2C00D45E30 /* Frameworks */,
 				32CC0EC01FD79D2C00D45E30 /* Resources */,
+				64C8FE2F033929176C5B79A6 /* [CP] Embed Pods Frameworks */,
+				DCAE54AEBA399DFBCB1183EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +307,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14C27873E9A9F02FF4CCCBF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GCD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64C8FE2F033929176C5B79A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCD/Pods-GCD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCAE54AEBA399DFBCB1183EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCD/Pods-GCD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32CC0EBE1FD79D2C00D45E30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -267,7 +365,11 @@
 			files = (
 				32CC0ECA1FD79D2C00D45E30 /* ViewController.m in Sources */,
 				32CC0ED51FD79D2C00D45E30 /* main.m in Sources */,
+				3246E21620085C8900826FBA /* MYGCDGroup.m in Sources */,
+				3246E21C20088D6E00826FBA /* MYGCDApply.m in Sources */,
 				32CC0EC71FD79D2C00D45E30 /* AppDelegate.m in Sources */,
+				3246E2132008495500826FBA /* MYNetworking.m in Sources */,
+				3246E21920085D1600826FBA /* MYGCDSemaphore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +530,7 @@
 		};
 		32CC0EEF1FD79D2D00D45E30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2492BC5BDB9F01BE3086ADB /* Pods-GCD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +544,7 @@
 		};
 		32CC0EF01FD79D2D00D45E30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCECCF57E4496A38275C3A8E /* Pods-GCD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
