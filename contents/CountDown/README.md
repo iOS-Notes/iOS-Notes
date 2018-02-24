@@ -192,3 +192,71 @@
     self.detailTextLabel.text = [NSString stringWithFormat:@"倒计时%@", [dateformatter stringFromDate:[NSDate date]]];
 }
 ```
+
+## 浅析NSTimer & CADisplayLink内存泄漏
+
+`NSRunLoop` 与定时器
+
+定时器的运行需要结合一个 `NSRunLoop`，同时 `NSRunLoop` 对该定时器会有一个强引用，这也是为什么我们不对 `NSRunLoop` 中的定时器进行强引的原因。
+
+`- invalidate` 的作用
+由于 `NSRunLoop` 对定时器有着牵引，那么问题就来了，那么定时器怎样才能被释放掉呢(先不考虑使用removeFromRunLoop:)，此时 `- invalidate` 函数的作用就来了，我们来看看官方就此函数的介绍：
+> Removes the object from all runloop modes (releasing the receiver if it has been implicitly retained) and releases the ‘target’ object.
+
+据官方介绍可知，`- invalidate` 做了两件事，首先是把本身（定时器）从 `NSRunLoop` 中移除，然后就是释放对 `target` 对象的强引用。从而解决定时器带来的内存泄漏问题。
+
+内存泄漏在哪？
+
+如图所示，在开发中，如果创建定时器只是简单的计时，不做其他引用，那么 `timer` 对象与 `myClock` 对象循环引用的问题就可以避免（即省略self.timer = timer，前文已经提到过，不再阐述），即图中箭头5可避免。
+
+虽然孤岛问题已经避免了，但还是存在问题，因为 `myClock` 对象被 `UIViewController` 以及 `timer` 引用（`timer` 直接被 `NSRunLoop` 强引用着），当 `UIViewController` 控制器被 `UIWindow` 释放后，`myClock` 不会被销毁，从而导致内存泄漏。
+
+如果对 `timer` 对象发送一个 `invalidate` 消息，这样 `NSRunLoop` 即不会对 `timer` 进行强引，同时 `timer` 也会释放对 `myClock` 对象的强引，这样不就解决了吗？没错，内存泄漏是解决了。
+
+在开发中我们可能会遇到某些需求，只有在 `myClock` 对象要被释放时才去释放 `timer`（此处要注意释放的先后顺序及释放条件），如果提前向 `timer` 发送了 `invalidate` 消息，那么 `myClock` 对象可能会因为 `timer` 被提前释放而导致数据错了，就像闹钟失去了秒针一样，就无法正常工作了。所以我们要做的是在向 `myClock` 对象发送 `dealloc` 消息前在给 `timer` 发送 `invalidate` 消息，从而避免本末倒置的问题。这种情况就像一个死循环（因为如果不给 `timer` 发送 `invalidate` 消息， `myClock` 对象根本不会被销毁， `dealloc` 方法根本不会执行），那么该怎么做呢？
+
+如何解决？
+
+1、NSTimer Target
+
+为了解决 `timer` 与 `myClock` 之间类似死锁的问题，我们会将定时器中的 `target` 对象替换成定时器自己，采用分类实现。
+
+```
+#import "NSTimer+TimerTarget.h"
+
+@implementation NSTimer (TimerTarget)
+
++ (NSTimer *)my_scheduledTimerWithTimeInterval:(NSTimeInterval)interval
+					repeat:(BOOL)yesOrNo 
+					 block:(void (^)(NSTimer *))block {
+    return [self scheduledTimerWithTimeInterval:interval target:self selector:@selector(startTimer:) userInfo:[block copy] repeats:yesOrNo];
+}
+
++ (void)startTimer:(NSTimer *)timer {
+    void (^block)(NSTimer *timer) = timer.userInfo;
+    if (block) {
+        block(timer);
+    }
+}
+@end
+```
+
+2、NSTimer Proxy
+
+这种方式就是创建一个 `NSProxy` 子类 `TimerProxy`，`TimerProxy` 的作用是什么呢？就是什么也不做，可以说只会重载消息转发机制，如果创建一个 `TimerProxy` 对象将其作为 `timer` 的 `target`，专门用于转发 `timer` 消息至 `myClock` 对象，那么问题是不是就解决了呢。
+
+```
+NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.25 target:[TimerProxy timerProxyWithTarget:self] selector:@selector(startTimer) userInfo:nil repeats:YES];
+
+[[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+
+self.timer = timer;
+```
+
+3、NSTimer Block
+
+还有一种方式就是采用Block，iOS 10增加的API。
+
+```
++ scheduledTimerWithTimeInterval:repeats:block:
+```
