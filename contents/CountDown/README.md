@@ -193,20 +193,20 @@
 }
 ```
 
-## 浅析NSTimer & CADisplayLink内存泄漏
+# 浅析NSTimer & CADisplayLink内存泄漏
 
-`NSRunLoop` 与定时器
+## `NSRunLoop` 与定时器
 
 定时器的运行需要结合一个 `NSRunLoop`，同时 `NSRunLoop` 对该定时器会有一个强引用，这也是为什么我们不对 `NSRunLoop` 中的定时器进行强引的原因。
 
-`- invalidate` 的作用
+## `- invalidate` 的作用
 
 由于 `NSRunLoop` 对定时器有着牵引，那么问题就来了，那么定时器怎样才能被释放掉呢(先不考虑使用removeFromRunLoop:)，此时 `- invalidate` 函数的作用就来了，我们来看看官方就此函数的介绍：
 > Removes the object from all runloop modes (releasing the receiver if it has been implicitly retained) and releases the target object.
 
 据官方介绍可知，`- invalidate` 做了两件事，首先是把本身（定时器）从 `NSRunLoop` 中移除，然后就是释放对 `target` 对象的强引用。从而解决定时器带来的内存泄漏问题。
 
-内存泄漏在哪？
+## 内存泄漏在哪？
 
 ![图1](https://github.com/iOS-Strikers/iOS-Analyze/blob/master/contents/CountDown/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-24%2012.10.38.png)
 
@@ -218,9 +218,9 @@
 
 在开发中我们可能会遇到某些需求，只有在 `myClock` 对象要被释放时才去释放 `timer`（此处要注意释放的先后顺序及释放条件），如果提前向 `timer` 发送了 `invalidate` 消息，那么 `myClock` 对象可能会因为 `timer` 被提前释放而导致数据错了，就像闹钟失去了秒针一样，就无法正常工作了。所以我们要做的是在向 `myClock` 对象发送 `dealloc` 消息前在给 `timer` 发送 `invalidate` 消息，从而避免本末倒置的问题。这种情况就像一个死循环（因为如果不给 `timer` 发送 `invalidate` 消息， `myClock` 对象根本不会被销毁， `dealloc` 方法根本不会执行），那么该怎么做呢？
 
-如何解决？
+## 解决方案
 
-1、NSTimer Target
+### 1、NSTimer Target
 
 ![图2](https://github.com/iOS-Strikers/iOS-Analyze/blob/master/contents/CountDown/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-24%2012.13.21.png)
 
@@ -246,7 +246,7 @@
 @end
 ```
 
-2、NSTimer Proxy
+### 2、NSTimer Proxy
 
 ![图3](https://github.com/iOS-Strikers/iOS-Analyze/blob/master/contents/CountDown/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-24%2012.15.58.png)
 
@@ -260,10 +260,14 @@ NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.25 target:[TimerProxy
 self.timer = timer;
 ```
 
-3、NSTimer Block
+### 3、NSTimer Block
 
 还有一种方式就是采用Block，iOS 10增加的API。
 
 ```
 + scheduledTimerWithTimeInterval:repeats:block:
 ```
+
+# Example 
+
+浅析NSTimer & CADisplayLink内存泄漏：<https://github.com/iOS-Strikers/iOS-Analyze/tree/master/sourcecode/NSTimer%26CADisplayLink>
