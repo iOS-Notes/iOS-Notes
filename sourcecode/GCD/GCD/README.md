@@ -213,3 +213,138 @@ dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAU
 ```
 
 **在主线程执行同步任务还是异步任务，都是不开启新线程，以串行方式执行任务**
+
+### 线程之间的通信
+
+线程间通信常用方法
+
+一、NSThread
+
+```
+- (void)performSelectorOnMainThread:(SEL)aSelector withObject:(id)arg waitUntilDone:(BOOL)wait;
+- (void)performSelector:(SEL)aSelector onThread:(NSThread *)thr withObject:(id)arg waitUntilDone:(BOOL)wait;
+```
+
+```
+- (void)thread {
+    // 1.去网络上加载数据
+    NSString *imageURLString = @"http://imgsrc.baidu.com/forum/w%3D580/sign=13eeace7d058ccbf1bbcb53229d9bcd4/9245d688d43f879404f24d7bd31b0ef41bd53a51.jpg";
+    [self performSelectorInBackground:@selector(loadImage:) withObject:imageURLString];
+}
+
+- (void)loadImage:(NSString *)imageURLString {
+    NSLog(@"loadImage--- %@",[NSThread currentThread]);
+    
+    // 1.拿着imageURLString去网络上下载
+    NSURL *url = [NSURL URLWithString:imageURLString];
+    
+    // 2.去网络上加载图片
+    NSData *imageData = [NSData dataWithContentsOfURL:url];
+    
+    // 3.将我们从网络上获取到的图片的二进制,转成UIImage
+    UIImage *image = [UIImage imageWithData:imageData];
+    
+    // 4.回到主线程,并且将image传给主线程,让主线程去更新UI
+    [self performSelectorOnMainThread:@selector(updateUI:) withObject:image waitUntilDone:YES];//YES同步,NO 异步
+    
+    NSLog(@"---子线程over---");
+}
+
+- (void)updateUI:(UIImage *)image {
+    NSLog(@"updateUI---%@",[NSThread currentThread]);
+    
+    self.imageView.image = image;
+}
+
+```
+
+二、GCD
+
+```
+// 开启一个全局队列的子线程
+dispatch_async(dispatch_get_global_queue(0, 0), ^{
+    // 1. 开始请求数据
+    // ...
+    // 2. 数据请求完毕
+    // 我们知道UI的更新必须在主线程操作，所以我们要从子线程回调到主线程
+    dispatch_async(dispatch_get_main_queue(), ^{
+            
+        //我已经回到主线程更新
+    }); 
+});
+```
+
+三、NSOperation
+
+#### 第一种方法
+
+```
+- (void)operation {
+ 
+   // 1.创建一个新的队列
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    // 2.添加任务(操作)
+    [queue addOperationWithBlock:^{
+        // 2.1在子线程中下载图片
+        NSURL *url  = [NSURL URLWithString:@"http://imgcache.mysodao.com/img2/M04/8C/74/CgAPDk9dyjvS1AanAAJPpRypnFA573_700x0x1.JPG"];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        UIImage *image = [UIImage imageWithData:data];
+        
+        // 2.2回到主线程更新UI
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            self.imageView.image = image;
+        }];
+    }];
+}
+```
+
+#### 第二种方法
+
+```
+- (void)operation {
+ 
+   // 1.创建一个新的队列
+   // 一般情况下, 在做企业开发时候, 都会定义一个全局的自定义队列, 便于使用
+   NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+
+   // 2.添加一个操作下载第一张图片
+   __block UIImage *image1 = nil;
+   NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSURL *url  = [NSURL URLWithString:@"http://imgcache.mysodao.com/img2/M04/8C/74/CgAPDk9dyjvS1AanAAJPpRypnFA573_700x0x1.JPG"];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        image1 = [UIImage imageWithData:data];
+    }];
+
+   // 3.添加一个操作下载第二张图片
+   __block UIImage *image2 = nil;
+    NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSURL *url  = [NSURL URLWithString:@"http://imgcache.mysodao.com/img1/M02/EE/B5/CgAPDE-kEtqjE8CWAAg9m-Zz4qo025-22365300.JPG"];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        image2 = [UIImage imageWithData:data];
+   }];
+   // 4.添加一个操作合成图片
+   NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
+        UIGraphicsBeginImageContext(CGSizeMake(200, 200));
+        [image1 drawInRect:CGRectMake(0, 0, 100, 200)];
+        [image2 drawInRect:CGRectMake(100, 0, 100, 200)];
+        UIImage *res = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+
+        // 5.回到主线程更新UI
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            self.imageView.image = res;
+        }];
+    }];
+
+    // 6.添加依赖
+
+    [op3 addDependency:op1];
+    [op3 addDependency:op2];
+
+    // 7.添加操作到队列中
+    [queue addOperation:op1];
+    [queue addOperation:op2];
+    [queue addOperation:op3];
+}
+```
