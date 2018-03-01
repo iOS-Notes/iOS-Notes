@@ -147,6 +147,69 @@ dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAU
 **在串行队列中，无论是执行同步任务，不开启新线程，串行方式执行任务**
 **在串行队列中，无论是执行异任务，开启1条新线程，串行方式执行任务**
 
-#### 主队列
+### 主队列
 
+#### 主队列+同步执行
 
+```
+- (void)syncMainQueue {
+    
+    NSLog(@"开始执行任务");
+    dispatch_queue_t queue = dispatch_get_main_queue();
+    
+    dispatch_sync(queue, ^{
+        NSLog(@"第一个任务当前线程为: %@", [NSThread currentThread]);
+    });
+    
+    dispatch_sync(queue, ^{
+        NSLog(@"第二个任务当前线程为: %@", [NSThread currentThread]);
+    });
+    
+    dispatch_sync(queue, ^{
+        NSLog(@"第三个任务当前线程为: %@", [NSThread currentThread]);
+    });
+    
+    NSLog(@"结束执行任务");
+}
+```
+
+```
+2016-05-05 17:56:24.607 GCD-Example[14437:7689741] 开始执行任务
+```
+
+当我们运行的时候发现异常了，断言在执行完开始Log之后不动了，其实这是因为我们在ViewDidload方法里执行了同步任务。
+**在主线程执行同步任务，会阻塞主线程**
+
+#### 主队列+异步执行
+
+```
+- (void)asyncMainQueue {
+    
+    NSLog(@"开始执行任务");
+    dispatch_queue_t queue = dispatch_get_main_queue();
+    
+    dispatch_async(queue, ^{
+        NSLog(@"第一个任务当前线程为: %@", [NSThread currentThread]);
+    });
+    
+    dispatch_async(queue, ^{
+        NSLog(@"第二个任务当前线程为: %@", [NSThread currentThread]);
+    });
+    
+    dispatch_async(queue, ^{
+        NSLog(@"第三个任务当前线程为: %@", [NSThread currentThread]);
+    });
+    
+    NSLog(@"结束执行任务");
+}
+```
+
+```
+2016-05-05 18:08:16.059 GCD-Example[14537:7704614] 开始执行任务
+2016-05-05 18:08:16.059 GCD-Example[14537:7704614] 结束执行任务
+2016-05-05 18:08:16.064 GCD-Example[14537:7704614] 第一个任务当前线程为: <NSThread: 0x608000261700>{number = 1, name = main}
+2016-05-05 18:08:16.064 GCD-Example[14537:7704614] 第二个任务当前线程为: <NSThread: 0x608000261700>{number = 1, name = main}
+2016-05-05 18:08:16.065 GCD-Example[14537:7704614] 第三个任务当前线程为: <NSThread: 0x608000261700>{number = 1, name = main}
+```
+
+**在主线程执行同步任务还是异步任务，都是不开启新线程，以串行方式执行任务**
