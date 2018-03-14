@@ -11,6 +11,7 @@
 		3246E21620085C8900826FBA /* MYGCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3246E21520085C8900826FBA /* MYGCDGroup.m */; };
 		3246E21920085D1600826FBA /* MYGCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3246E21820085D1600826FBA /* MYGCDSemaphore.m */; };
 		3246E21C20088D6E00826FBA /* MYGCDApply.m in Sources */ = {isa = PBXBuildFile; fileRef = 3246E21B20088D6E00826FBA /* MYGCDApply.m */; };
+		327001792058F3D100AD95EB /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327001782058F3D100AD95EB /* TestViewController.m */; };
 		32CC0EC71FD79D2C00D45E30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0EC61FD79D2C00D45E30 /* AppDelegate.m */; };
 		32CC0ECA1FD79D2C00D45E30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0EC91FD79D2C00D45E30 /* ViewController.m */; };
 		32CC0ECD1FD79D2C00D45E30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC0ECB1FD79D2C00D45E30 /* Main.storyboard */; };
@@ -48,6 +49,8 @@
 		3246E21820085D1600826FBA /* MYGCDSemaphore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGCDSemaphore.m; sourceTree = "<group>"; };
 		3246E21A20088D6E00826FBA /* MYGCDApply.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYGCDApply.h; sourceTree = "<group>"; };
 		3246E21B20088D6E00826FBA /* MYGCDApply.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYGCDApply.m; sourceTree = "<group>"; };
+		327001772058F3D100AD95EB /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		327001782058F3D100AD95EB /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		32CC0EC21FD79D2C00D45E30 /* GCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CC0EC51FD79D2C00D45E30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32CC0EC61FD79D2C00D45E30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				32CC0EC61FD79D2C00D45E30 /* AppDelegate.m */,
 				32CC0EC81FD79D2C00D45E30 /* ViewController.h */,
 				32CC0EC91FD79D2C00D45E30 /* ViewController.m */,
+				327001772058F3D100AD95EB /* TestViewController.h */,
+				327001782058F3D100AD95EB /* TestViewController.m */,
 				32CC0ECB1FD79D2C00D45E30 /* Main.storyboard */,
 				32CC0ECE1FD79D2C00D45E30 /* Assets.xcassets */,
 				32CC0ED01FD79D2C00D45E30 /* LaunchScreen.storyboard */,
@@ -369,6 +374,7 @@
 				3246E21C20088D6E00826FBA /* MYGCDApply.m in Sources */,
 				32CC0EC71FD79D2C00D45E30 /* AppDelegate.m in Sources */,
 				3246E2132008495500826FBA /* MYNetworking.m in Sources */,
+				327001792058F3D100AD95EB /* TestViewController.m in Sources */,
 				3246E21920085D1600826FBA /* MYGCDSemaphore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
