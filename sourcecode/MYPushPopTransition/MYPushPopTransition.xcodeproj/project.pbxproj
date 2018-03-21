@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32E1AB0820628D6A0072A1E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB0720628D6A0072A1E4 /* AppDelegate.m */; };
+		32E1AB0B20628D6A0072A1E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB0A20628D6A0072A1E4 /* ViewController.m */; };
+		32E1AB0E20628D6A0072A1E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E1AB0C20628D6A0072A1E4 /* Main.storyboard */; };
+		32E1AB1020628D6A0072A1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E1AB0F20628D6A0072A1E4 /* Assets.xcassets */; };
+		32E1AB1320628D6A0072A1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E1AB1120628D6A0072A1E4 /* LaunchScreen.storyboard */; };
+		32E1AB1620628D6A0072A1E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB1520628D6A0072A1E4 /* main.m */; };
+		32E1AB2020628D6A0072A1E4 /* MYPushPopTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB1F20628D6A0072A1E4 /* MYPushPopTransitionTests.m */; };
+		32E1AB2B20628D6B0072A1E4 /* MYPushPopTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB2A20628D6B0072A1E4 /* MYPushPopTransitionUITests.m */; };
+		32E1AB3A20628EFB0072A1E4 /* MYDemoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB3920628EFB0072A1E4 /* MYDemoCollectionViewController.m */; };
+		32E1AB3D20628F820072A1E4 /* MYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB3C20628F820072A1E4 /* MYTestViewController.m */; };
+		32E1AB4020628FD20072A1E4 /* MYAnimatorPushPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB3F20628FD20072A1E4 /* MYAnimatorPushPopTransition.m */; };
+		32E1AB432062902B0072A1E4 /* MYAnimatorBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB422062902B0072A1E4 /* MYAnimatorBaseTransition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32E1AB1C20628D6A0072A1E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32E1AAFB20628D6A0072A1E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32E1AB0220628D6A0072A1E4;
+			remoteInfo = MYPushPopTransition;
+		};
+		32E1AB2720628D6B0072A1E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32E1AAFB20628D6A0072A1E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32E1AB0220628D6A0072A1E4;
+			remoteInfo = MYPushPopTransition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32E1AB0320628D6A0072A1E4 /* MYPushPopTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYPushPopTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E1AB0620628D6A0072A1E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32E1AB0720628D6A0072A1E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32E1AB0920628D6A0072A1E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32E1AB0A20628D6A0072A1E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		32E1AB0D20628D6A0072A1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32E1AB0F20628D6A0072A1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32E1AB1220628D6A0072A1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32E1AB1420628D6A0072A1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32E1AB1520628D6A0072A1E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32E1AB1B20628D6A0072A1E4 /* MYPushPopTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYPushPopTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E1AB1F20628D6A0072A1E4 /* MYPushPopTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPushPopTransitionTests.m; sourceTree = "<group>"; };
+		32E1AB2120628D6B0072A1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32E1AB2620628D6B0072A1E4 /* MYPushPopTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYPushPopTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E1AB2A20628D6B0072A1E4 /* MYPushPopTransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPushPopTransitionUITests.m; sourceTree = "<group>"; };
+		32E1AB2C20628D6B0072A1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32E1AB3820628EFB0072A1E4 /* MYDemoCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYDemoCollectionViewController.h; sourceTree = "<group>"; };
+		32E1AB3920628EFB0072A1E4 /* MYDemoCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYDemoCollectionViewController.m; sourceTree = "<group>"; };
+		32E1AB3B20628F820072A1E4 /* MYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTestViewController.h; sourceTree = "<group>"; };
+		32E1AB3C20628F820072A1E4 /* MYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTestViewController.m; sourceTree = "<group>"; };
+		32E1AB3E20628FD20072A1E4 /* MYAnimatorPushPopTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYAnimatorPushPopTransition.h; sourceTree = "<group>"; };
+		32E1AB3F20628FD20072A1E4 /* MYAnimatorPushPopTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYAnimatorPushPopTransition.m; sourceTree = "<group>"; };
+		32E1AB412062902B0072A1E4 /* MYAnimatorBaseTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYAnimatorBaseTransition.h; sourceTree = "<group>"; };
+		32E1AB422062902B0072A1E4 /* MYAnimatorBaseTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYAnimatorBaseTransition.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32E1AB0020628D6A0072A1E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32E1AB1820628D6A0072A1E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32E1AB2320628D6B0072A1E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32E1AAFA20628D6A0072A1E4 = {
+			isa = PBXGroup;
+			children = (
+				32E1AB0520628D6A0072A1E4 /* MYPushPopTransition */,
+				32E1AB1E20628D6A0072A1E4 /* MYPushPopTransitionTests */,
+				32E1AB2920628D6B0072A1E4 /* MYPushPopTransitionUITests */,
+				32E1AB0420628D6A0072A1E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32E1AB0420628D6A0072A1E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32E1AB0320628D6A0072A1E4 /* MYPushPopTransition.app */,
+				32E1AB1B20628D6A0072A1E4 /* MYPushPopTransitionTests.xctest */,
+				32E1AB2620628D6B0072A1E4 /* MYPushPopTransitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32E1AB0520628D6A0072A1E4 /* MYPushPopTransition */ = {
+			isa = PBXGroup;
+			children = (
+				32E1AB0620628D6A0072A1E4 /* AppDelegate.h */,
+				32E1AB0720628D6A0072A1E4 /* AppDelegate.m */,
+				32E1AB0920628D6A0072A1E4 /* ViewController.h */,
+				32E1AB0A20628D6A0072A1E4 /* ViewController.m */,
+				32E1AB3820628EFB0072A1E4 /* MYDemoCollectionViewController.h */,
+				32E1AB3920628EFB0072A1E4 /* MYDemoCollectionViewController.m */,
+				32E1AB3B20628F820072A1E4 /* MYTestViewController.h */,
+				32E1AB3C20628F820072A1E4 /* MYTestViewController.m */,
+				32E1AB3E20628FD20072A1E4 /* MYAnimatorPushPopTransition.h */,
+				32E1AB3F20628FD20072A1E4 /* MYAnimatorPushPopTransition.m */,
+				32E1AB412062902B0072A1E4 /* MYAnimatorBaseTransition.h */,
+				32E1AB422062902B0072A1E4 /* MYAnimatorBaseTransition.m */,
+				32E1AB0C20628D6A0072A1E4 /* Main.storyboard */,
+				32E1AB0F20628D6A0072A1E4 /* Assets.xcassets */,
+				32E1AB1120628D6A0072A1E4 /* LaunchScreen.storyboard */,
+				32E1AB1420628D6A0072A1E4 /* Info.plist */,
+				32E1AB1520628D6A0072A1E4 /* main.m */,
+			);
+			path = MYPushPopTransition;
+			sourceTree = "<group>";
+		};
+		32E1AB1E20628D6A0072A1E4 /* MYPushPopTransitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				32E1AB1F20628D6A0072A1E4 /* MYPushPopTransitionTests.m */,
+				32E1AB2120628D6B0072A1E4 /* Info.plist */,
+			);
+			path = MYPushPopTransitionTests;
+			sourceTree = "<group>";
+		};
+		32E1AB2920628D6B0072A1E4 /* MYPushPopTransitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32E1AB2A20628D6B0072A1E4 /* MYPushPopTransitionUITests.m */,
+				32E1AB2C20628D6B0072A1E4 /* Info.plist */,
+			);
+			path = MYPushPopTransitionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32E1AB0220628D6A0072A1E4 /* MYPushPopTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32E1AB2F20628D6B0072A1E4 /* Build configuration list for PBXNativeTarget "MYPushPopTransition" */;
+			buildPhases = (
+				32E1AAFF20628D6A0072A1E4 /* Sources */,
+				32E1AB0020628D6A0072A1E4 /* Frameworks */,
+				32E1AB0120628D6A0072A1E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MYPushPopTransition;
+			productName = MYPushPopTransition;
+			productReference = 32E1AB0320628D6A0072A1E4 /* MYPushPopTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32E1AB1A20628D6A0072A1E4 /* MYPushPopTransitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32E1AB3220628D6B0072A1E4 /* Build configuration list for PBXNativeTarget "MYPushPopTransitionTests" */;
+			buildPhases = (
+				32E1AB1720628D6A0072A1E4 /* Sources */,
+				32E1AB1820628D6A0072A1E4 /* Frameworks */,
+				32E1AB1920628D6A0072A1E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32E1AB1D20628D6A0072A1E4 /* PBXTargetDependency */,
+			);
+			name = MYPushPopTransitionTests;
+			productName = MYPushPopTransitionTests;
+			productReference = 32E1AB1B20628D6A0072A1E4 /* MYPushPopTransitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32E1AB2520628D6B0072A1E4 /* MYPushPopTransitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32E1AB3520628D6B0072A1E4 /* Build configuration list for PBXNativeTarget "MYPushPopTransitionUITests" */;
+			buildPhases = (
+				32E1AB2220628D6B0072A1E4 /* Sources */,
+				32E1AB2320628D6B0072A1E4 /* Frameworks */,
+				32E1AB2420628D6B0072A1E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32E1AB2820628D6B0072A1E4 /* PBXTargetDependency */,
+			);
+			name = MYPushPopTransitionUITests;
+			productName = MYPushPopTransitionUITests;
+			productReference = 32E1AB2620628D6B0072A1E4 /* MYPushPopTransitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32E1AAFB20628D6A0072A1E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = MYPushPopTransition;
+				TargetAttributes = {
+					32E1AB0220628D6A0072A1E4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					32E1AB1A20628D6A0072A1E4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 32E1AB0220628D6A0072A1E4;
+					};
+					32E1AB2520628D6B0072A1E4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 32E1AB0220628D6A0072A1E4;
+					};
+				};
+			};
+			buildConfigurationList = 32E1AAFE20628D6A0072A1E4 /* Build configuration list for PBXProject "MYPushPopTransition" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32E1AAFA20628D6A0072A1E4;
+			productRefGroup = 32E1AB0420628D6A0072A1E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32E1AB0220628D6A0072A1E4 /* MYPushPopTransition */,
+				32E1AB1A20628D6A0072A1E4 /* MYPushPopTransitionTests */,
+				32E1AB2520628D6B0072A1E4 /* MYPushPopTransitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32E1AB0120628D6A0072A1E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E1AB1320628D6A0072A1E4 /* LaunchScreen.storyboard in Resources */,
+				32E1AB1020628D6A0072A1E4 /* Assets.xcassets in Resources */,
+				32E1AB0E20628D6A0072A1E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32E1AB1920628D6A0072A1E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32E1AB2420628D6B0072A1E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32E1AAFF20628D6A0072A1E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E1AB0B20628D6A0072A1E4 /* ViewController.m in Sources */,
+				32E1AB432062902B0072A1E4 /* MYAnimatorBaseTransition.m in Sources */,
+				32E1AB1620628D6A0072A1E4 /* main.m in Sources */,
+				32E1AB3A20628EFB0072A1E4 /* MYDemoCollectionViewController.m in Sources */,
+				32E1AB4020628FD20072A1E4 /* MYAnimatorPushPopTransition.m in Sources */,
+				32E1AB0820628D6A0072A1E4 /* AppDelegate.m in Sources */,
+				32E1AB3D20628F820072A1E4 /* MYTestViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32E1AB1720628D6A0072A1E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E1AB2020628D6A0072A1E4 /* MYPushPopTransitionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32E1AB2220628D6B0072A1E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E1AB2B20628D6B0072A1E4 /* MYPushPopTransitionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32E1AB1D20628D6A0072A1E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32E1AB0220628D6A0072A1E4 /* MYPushPopTransition */;
+			targetProxy = 32E1AB1C20628D6A0072A1E4 /* PBXContainerItemProxy */;
+		};
+		32E1AB2820628D6B0072A1E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32E1AB0220628D6A0072A1E4 /* MYPushPopTransition */;
+			targetProxy = 32E1AB2720628D6B0072A1E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32E1AB0C20628D6A0072A1E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32E1AB0D20628D6A0072A1E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32E1AB1120628D6A0072A1E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32E1AB1220628D6A0072A1E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32E1AB2D20628D6B0072A1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32E1AB2E20628D6B0072A1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32E1AB3020628D6B0072A1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MYPushPopTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunjinshuai.MYPushPopTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32E1AB3120628D6B0072A1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MYPushPopTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunjinshuai.MYPushPopTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32E1AB3320628D6B0072A1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MYPushPopTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunjinshuai.MYPushPopTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYPushPopTransition.app/MYPushPopTransition";
+			};
+			name = Debug;
+		};
+		32E1AB3420628D6B0072A1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MYPushPopTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunjinshuai.MYPushPopTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYPushPopTransition.app/MYPushPopTransition";
+			};
+			name = Release;
+		};
+		32E1AB3620628D6B0072A1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MYPushPopTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunjinshuai.MYPushPopTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MYPushPopTransition;
+			};
+			name = Debug;
+		};
+		32E1AB3720628D6B0072A1E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MYPushPopTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunjinshuai.MYPushPopTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MYPushPopTransition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32E1AAFE20628D6A0072A1E4 /* Build configuration list for PBXProject "MYPushPopTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32E1AB2D20628D6B0072A1E4 /* Debug */,
+				32E1AB2E20628D6B0072A1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32E1AB2F20628D6B0072A1E4 /* Build configuration list for PBXNativeTarget "MYPushPopTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32E1AB3020628D6B0072A1E4 /* Debug */,
+				32E1AB3120628D6B0072A1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32E1AB3220628D6B0072A1E4 /* Build configuration list for PBXNativeTarget "MYPushPopTransitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32E1AB3320628D6B0072A1E4 /* Debug */,
+				32E1AB3420628D6B0072A1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32E1AB3520628D6B0072A1E4 /* Build configuration list for PBXNativeTarget "MYPushPopTransitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32E1AB3620628D6B0072A1E4 /* Debug */,
+				32E1AB3720628D6B0072A1E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32E1AAFB20628D6A0072A1E4 /* Project object */;
+}
