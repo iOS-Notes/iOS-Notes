@@ -15,6 +15,7 @@
 		32E3B8CF207A190F009CE0A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B8CE207A190F009CE0A6 /* main.m */; };
 		32E3B8D9207A190F009CE0A6 /* WeakRefArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B8D8207A190F009CE0A6 /* WeakRefArrayTests.m */; };
 		32E3B8E4207A190F009CE0A6 /* WeakRefArrayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B8E3207A190F009CE0A6 /* WeakRefArrayUITests.m */; };
+		32E3B8F3207A195A009CE0A6 /* WeakRefArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B8F2207A195A009CE0A6 /* WeakRefArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		32E3B8DF207A190F009CE0A6 /* WeakRefArrayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeakRefArrayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E3B8E3207A190F009CE0A6 /* WeakRefArrayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakRefArrayUITests.m; sourceTree = "<group>"; };
 		32E3B8E5207A190F009CE0A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32E3B8F1207A195A009CE0A6 /* WeakRefArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakRefArray.h; sourceTree = "<group>"; };
+		32E3B8F2207A195A009CE0A6 /* WeakRefArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakRefArray.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				32E3B8CA207A190F009CE0A6 /* LaunchScreen.storyboard */,
 				32E3B8CD207A190F009CE0A6 /* Info.plist */,
 				32E3B8CE207A190F009CE0A6 /* main.m */,
+				32E3B8F1207A195A009CE0A6 /* WeakRefArray.h */,
+				32E3B8F2207A195A009CE0A6 /* WeakRefArray.m */,
 			);
 			path = WeakRefArray;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32E3B8C4207A190E009CE0A6 /* ViewController.m in Sources */,
+				32E3B8F3207A195A009CE0A6 /* WeakRefArray.m in Sources */,
 				32E3B8CF207A190F009CE0A6 /* main.m in Sources */,
 				32E3B8C1207A190E009CE0A6 /* AppDelegate.m in Sources */,
 			);

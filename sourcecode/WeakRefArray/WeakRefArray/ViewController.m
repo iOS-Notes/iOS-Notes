@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "WeakRefArray.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) WeakRefArray *weakArr;
 
 @end
 
@@ -16,9 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSObject *str1 = [NSObject new];
+    NSObject *str2 = [NSObject new];
+    self.weakArr = [WeakRefArray array];
+    [self.weakArr addObject:str1];
+    [self.weakArr addObject:str2];
+    
+    NSLog(@"%@",self.weakArr);
 }
 
+- (IBAction)clickButton:(id)sender {
+    NSLog(@"%@",self.weakArr);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
