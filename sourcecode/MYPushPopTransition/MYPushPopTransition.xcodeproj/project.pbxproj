@@ -19,6 +19,9 @@
 		32E1AB3D20628F820072A1E4 /* MYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB3C20628F820072A1E4 /* MYTestViewController.m */; };
 		32E1AB4020628FD20072A1E4 /* MYAnimatorPushPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB3F20628FD20072A1E4 /* MYAnimatorPushPopTransition.m */; };
 		32E1AB432062902B0072A1E4 /* MYAnimatorBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB422062902B0072A1E4 /* MYAnimatorBaseTransition.m */; };
+		81DFCDE7208DB7E30059E8E6 /* MYNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DFCDE6208DB7E30059E8E6 /* MYNavigationBar.m */; };
+		81DFCDEA208DB89A0059E8E6 /* MYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DFCDE9208DB89A0059E8E6 /* MYNavigationController.m */; };
+		81DFCDED208DD5E70059E8E6 /* UIViewController+CustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DFCDEC208DD5E70059E8E6 /* UIViewController+CustomNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,12 @@
 		32E1AB3F20628FD20072A1E4 /* MYAnimatorPushPopTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYAnimatorPushPopTransition.m; sourceTree = "<group>"; };
 		32E1AB412062902B0072A1E4 /* MYAnimatorBaseTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYAnimatorBaseTransition.h; sourceTree = "<group>"; };
 		32E1AB422062902B0072A1E4 /* MYAnimatorBaseTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYAnimatorBaseTransition.m; sourceTree = "<group>"; };
+		81DFCDE5208DB7E30059E8E6 /* MYNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNavigationBar.h; sourceTree = "<group>"; };
+		81DFCDE6208DB7E30059E8E6 /* MYNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNavigationBar.m; sourceTree = "<group>"; };
+		81DFCDE8208DB89A0059E8E6 /* MYNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNavigationController.h; sourceTree = "<group>"; };
+		81DFCDE9208DB89A0059E8E6 /* MYNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNavigationController.m; sourceTree = "<group>"; };
+		81DFCDEB208DD5E70059E8E6 /* UIViewController+CustomNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CustomNavigationBar.h"; sourceTree = "<group>"; };
+		81DFCDEC208DD5E70059E8E6 /* UIViewController+CustomNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CustomNavigationBar.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +122,7 @@
 		32E1AB0520628D6A0072A1E4 /* MYPushPopTransition */ = {
 			isa = PBXGroup;
 			children = (
+				81DFCDE4208DB7C90059E8E6 /* MYNavigationBar */,
 				32E1AB0620628D6A0072A1E4 /* AppDelegate.h */,
 				32E1AB0720628D6A0072A1E4 /* AppDelegate.m */,
 				32E1AB0920628D6A0072A1E4 /* ViewController.h */,
@@ -150,6 +160,19 @@
 				32E1AB2C20628D6B0072A1E4 /* Info.plist */,
 			);
 			path = MYPushPopTransitionUITests;
+			sourceTree = "<group>";
+		};
+		81DFCDE4208DB7C90059E8E6 /* MYNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				81DFCDE5208DB7E30059E8E6 /* MYNavigationBar.h */,
+				81DFCDE6208DB7E30059E8E6 /* MYNavigationBar.m */,
+				81DFCDEB208DD5E70059E8E6 /* UIViewController+CustomNavigationBar.h */,
+				81DFCDEC208DD5E70059E8E6 /* UIViewController+CustomNavigationBar.m */,
+				81DFCDE8208DB89A0059E8E6 /* MYNavigationController.h */,
+				81DFCDE9208DB89A0059E8E6 /* MYNavigationController.m */,
+			);
+			path = MYNavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DFCDEA208DB89A0059E8E6 /* MYNavigationController.m in Sources */,
 				32E1AB0B20628D6A0072A1E4 /* ViewController.m in Sources */,
 				32E1AB432062902B0072A1E4 /* MYAnimatorBaseTransition.m in Sources */,
 				32E1AB1620628D6A0072A1E4 /* main.m in Sources */,
@@ -292,6 +316,8 @@
 				32E1AB4020628FD20072A1E4 /* MYAnimatorPushPopTransition.m in Sources */,
 				32E1AB0820628D6A0072A1E4 /* AppDelegate.m in Sources */,
 				32E1AB3D20628F820072A1E4 /* MYTestViewController.m in Sources */,
+				81DFCDE7208DB7E30059E8E6 /* MYNavigationBar.m in Sources */,
+				81DFCDED208DD5E70059E8E6 /* UIViewController+CustomNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
