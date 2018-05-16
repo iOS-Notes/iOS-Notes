@@ -1,4 +1,4 @@
-# 倒计时的实现
+## 倒计时的实现
 
 * 第一种就是直接在TableView的Cell上使用NSTimer。
 * 第二种是将NSTimer添加到当前线程所对应的RunLoop中的commonModes中。
@@ -208,7 +208,7 @@
 
 ## 内存泄漏在哪？
 
-![图1](https://github.com/iOS-Strikers/iOS-Analyze/blob/master/contents/CountDown/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-24%2012.10.38.png)
+![图1](https://github.com/iOS-Advanced/iOS-Advanced/blob/master/contents/CountDown/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-24%2012.10.38.png)
 
 如图所示，在开发中，如果创建定时器只是简单的计时，不做其他引用，那么 `timer` 对象与 `myClock` 对象循环引用的问题就可以避免（即省略self.timer = timer，前文已经提到过，不再阐述），即图中箭头5可避免。
 
@@ -222,7 +222,7 @@
 
 ### 1、NSTimer Target
 
-![图2](https://github.com/iOS-Strikers/iOS-Analyze/blob/master/contents/CountDown/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-24%2012.13.21.png)
+![图2](https://github.com/iOS-Advanced/iOS-Advanced/blob/master/contents/CountDown/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-24%2012.13.21.png)
 
 为了解决 `timer` 与 `myClock` 之间类似死锁的问题，我们会将定时器中的 `target` 对象替换成定时器自己，采用分类实现。
 
@@ -248,7 +248,7 @@
 
 ### 2、NSTimer Proxy
 
-![图3](https://github.com/iOS-Strikers/iOS-Analyze/blob/master/contents/CountDown/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-24%2012.15.58.png)
+![图3](https://github.com/iOS-Advanced/iOS-Advanced/blob/master/contents/CountDown/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-24%2012.15.58.png)
 
 这种方式就是创建一个 `NSProxy` 子类 `TimerProxy`，`TimerProxy` 的作用是什么呢？就是什么也不做，可以说只会重载消息转发机制，如果创建一个 `TimerProxy` 对象将其作为 `timer` 的 `target`，专门用于转发 `timer` 消息至 `myClock` 对象，那么问题是不是就解决了呢。
 
