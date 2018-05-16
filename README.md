@@ -13,6 +13,7 @@
 
 * 探索通知的原理：<https://github.com/iOS-Advanced/iOS-Advanced/tree/master/contents/NSNotification>
 * Load&Initialize： <https://github.com/iOS-Advanced/iOS-Advanced/blob/master/contents/Load%26Initialize/Load%26Initialize.md>
+* 手动实现 KVO：<https://github.com/iOS-Advanced/iOS-Advanced/wiki/%E6%89%8B%E5%8A%A8%E5%AE%9E%E7%8E%B0-KVO>
 
 ### 基础
 
