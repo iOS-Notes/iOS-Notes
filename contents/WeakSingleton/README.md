@@ -56,3 +56,10 @@ Template <class或者也可以用typename T>
     //函数定义体
 }
 ```
+
+## `reinterpret_cast`
+
+`reinterpret_cast` 作用为： 
+**允许将任何指针转换为任何其他指针类型，也允许将任何整数类型转换为任何指针类型以及反向转换。**
+
+
