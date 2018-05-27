@@ -16,6 +16,9 @@
 		327A429D1FCED86500541508 /* NSNotificationTheoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A429C1FCED86500541508 /* NSNotificationTheoryTests.m */; };
 		327A42A81FCED86500541508 /* NSNotificationTheoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A42A71FCED86500541508 /* NSNotificationTheoryUITests.m */; };
 		327A42BA1FCED88700541508 /* MYTestNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A42B71FCED88700541508 /* MYTestNotificationViewController.m */; };
+		81FF82E320BA9F3100F356B0 /* NSNotificationCenter+Weak.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FF82E220BA9F3100F356B0 /* NSNotificationCenter+Weak.m */; };
+		81FF82E620BA9FE000F356B0 /* MYTestNotificationCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FF82E520BA9FE000F356B0 /* MYTestNotificationCenterViewController.m */; };
+		81FF82E920BAA03800F356B0 /* MYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FF82E820BAA03800F356B0 /* MYTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		327A42A91FCED86500541508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		327A42B61FCED88700541508 /* MYTestNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTestNotificationViewController.h; sourceTree = "<group>"; };
 		327A42B71FCED88700541508 /* MYTestNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTestNotificationViewController.m; sourceTree = "<group>"; };
+		81FF82E120BA9F3100F356B0 /* NSNotificationCenter+Weak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Weak.h"; sourceTree = "<group>"; };
+		81FF82E220BA9F3100F356B0 /* NSNotificationCenter+Weak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Weak.m"; sourceTree = "<group>"; };
+		81FF82E420BA9FE000F356B0 /* MYTestNotificationCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTestNotificationCenterViewController.h; sourceTree = "<group>"; };
+		81FF82E520BA9FE000F356B0 /* MYTestNotificationCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTestNotificationCenterViewController.m; sourceTree = "<group>"; };
+		81FF82E720BAA03700F356B0 /* MYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTestViewController.h; sourceTree = "<group>"; };
+		81FF82E820BAA03800F356B0 /* MYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,12 @@
 			children = (
 				327A42B61FCED88700541508 /* MYTestNotificationViewController.h */,
 				327A42B71FCED88700541508 /* MYTestNotificationViewController.m */,
+				81FF82E120BA9F3100F356B0 /* NSNotificationCenter+Weak.h */,
+				81FF82E220BA9F3100F356B0 /* NSNotificationCenter+Weak.m */,
+				81FF82E420BA9FE000F356B0 /* MYTestNotificationCenterViewController.h */,
+				81FF82E520BA9FE000F356B0 /* MYTestNotificationCenterViewController.m */,
+				81FF82E720BAA03700F356B0 /* MYTestViewController.h */,
+				81FF82E820BAA03800F356B0 /* MYTestViewController.m */,
 				327A42831FCED86400541508 /* AppDelegate.h */,
 				327A42841FCED86400541508 /* AppDelegate.m */,
 				327A42861FCED86400541508 /* ViewController.h */,
@@ -270,7 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81FF82E320BA9F3100F356B0 /* NSNotificationCenter+Weak.m in Sources */,
 				327A42BA1FCED88700541508 /* MYTestNotificationViewController.m in Sources */,
+				81FF82E620BA9FE000F356B0 /* MYTestNotificationCenterViewController.m in Sources */,
+				81FF82E920BAA03800F356B0 /* MYTestViewController.m in Sources */,
 				327A42881FCED86400541508 /* ViewController.m in Sources */,
 				327A42931FCED86400541508 /* main.m in Sources */,
 				327A42851FCED86400541508 /* AppDelegate.m in Sources */,
