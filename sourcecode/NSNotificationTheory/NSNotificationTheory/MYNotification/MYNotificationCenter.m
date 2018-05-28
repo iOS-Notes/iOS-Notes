@@ -90,7 +90,7 @@
 
 - (void)dealloc {
     NSLog(@"%@ dealloc", self);
-    [MYNotificationCenter.defaultCenter removeObserverId:self.observerId];
+    [[MYNotificationCenter defaultCenter] removeObserverId:self.observerId];
 }
 @end
 
@@ -99,7 +99,6 @@ NSString * const key_observersDic_noContent = @"key_observersDic_noContent";
 
 @interface MYNotificationCenter ()
 
-@property (nonatomic, strong) MYNotificationCenter *defaultCenter;
 @property (nonatomic, strong) NSMutableDictionary *observersDic;
 
 @end
@@ -168,7 +167,7 @@ static MYNotificationCenter *_defaultCenter = nil;
     objc_setAssociatedObject(resultObserver, keyOfmonitor, monitor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
     //添加进observersDic
-    NSMutableDictionary *observersDic = MYNotificationCenter.defaultCenter.observersDic;
+    NSMutableDictionary *observersDic = [MYNotificationCenter defaultCenter].observersDic;
     @synchronized(observersDic) {
         NSString *key = (observerInfo.name && [observerInfo.name isKindOfClass:NSString.class]) ? observerInfo.name : key_observersDic_noContent;
         if ([observersDic objectForKey:key]) {
@@ -187,7 +186,7 @@ static MYNotificationCenter *_defaultCenter = nil;
     if (!notification) {
         return;
     }
-    NSMutableDictionary *observersDic = MYNotificationCenter.defaultCenter.observersDic;
+    NSMutableDictionary *observersDic = [MYNotificationCenter defaultCenter].observersDic;
     NSMutableArray *tempArr = [observersDic objectForKey:notification.name];
     if (tempArr) {
         [tempArr enumerateObjectsUsingBlock:^(MYObserverInfoModel *obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -244,7 +243,7 @@ static MYNotificationCenter *_defaultCenter = nil;
     if (!observerId) {
         return;
     }
-    NSMutableDictionary *observersDic = MYNotificationCenter.defaultCenter.observersDic;
+    NSMutableDictionary *observersDic = [MYNotificationCenter defaultCenter].observersDic;
     @synchronized(observersDic) {
         if (aName && [aName isKindOfClass:[NSString class]]) {
             NSMutableArray *tempArr = [observersDic objectForKey:[aName mutableCopy]];

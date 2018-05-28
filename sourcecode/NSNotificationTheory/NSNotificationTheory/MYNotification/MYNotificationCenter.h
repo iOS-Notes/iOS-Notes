@@ -22,7 +22,7 @@
 
 @interface MYNotificationCenter : NSObject
 
-@property (nonatomic, strong, class, readonly) MYNotificationCenter *defaultCenter;
++ (MYNotificationCenter *)defaultCenter;
 
 - (void)addObserver:(id)observer
            selector:(SEL)aSelector
