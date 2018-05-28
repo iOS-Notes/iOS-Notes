@@ -252,3 +252,6 @@
 ```
 
 其中 `_observer` 是 `addObserverForName` 方式的 `api` 返回观察者对象。这也就意味着，你需要为每一个观察者记录一个成员对象，然后在 `remove` 的时候依次删除。试想一下，你如果需要 10 个观察者，则需要记录 10 个成员对象，这个想想就是很麻烦，而且它还不能够方便的指定 `observer` 。因此，理想的做法就是自己再做一层封装，将这些细节封装起来。
+
+##### Example
+<https://github.com/iOS-Advanced/iOS-Advanced/tree/master/sourcecode/NSNotificationTheory>
