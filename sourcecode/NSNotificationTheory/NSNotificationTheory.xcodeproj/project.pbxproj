@@ -19,6 +19,7 @@
 		81FF82E320BA9F3100F356B0 /* NSNotificationCenter+Weak.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FF82E220BA9F3100F356B0 /* NSNotificationCenter+Weak.m */; };
 		81FF82E620BA9FE000F356B0 /* MYTestNotificationCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FF82E520BA9FE000F356B0 /* MYTestNotificationCenterViewController.m */; };
 		81FF82E920BAA03800F356B0 /* MYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FF82E820BAA03800F356B0 /* MYTestViewController.m */; };
+		81FF82ED20BB95E700F356B0 /* MYNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FF82EC20BB95E700F356B0 /* MYNotificationCenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		81FF82E520BA9FE000F356B0 /* MYTestNotificationCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTestNotificationCenterViewController.m; sourceTree = "<group>"; };
 		81FF82E720BAA03700F356B0 /* MYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTestViewController.h; sourceTree = "<group>"; };
 		81FF82E820BAA03800F356B0 /* MYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTestViewController.m; sourceTree = "<group>"; };
+		81FF82EB20BB95E700F356B0 /* MYNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNotificationCenter.h; sourceTree = "<group>"; };
+		81FF82EC20BB95E700F356B0 /* MYNotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNotificationCenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,7 @@
 		327A42821FCED86400541508 /* NSNotificationTheory */ = {
 			isa = PBXGroup;
 			children = (
+				81FF82EA20BB95CC00F356B0 /* MYNotification */,
 				327A42B61FCED88700541508 /* MYTestNotificationViewController.h */,
 				327A42B71FCED88700541508 /* MYTestNotificationViewController.m */,
 				81FF82E120BA9F3100F356B0 /* NSNotificationCenter+Weak.h */,
@@ -150,6 +154,15 @@
 				327A42A91FCED86500541508 /* Info.plist */,
 			);
 			path = NSNotificationTheoryUITests;
+			sourceTree = "<group>";
+		};
+		81FF82EA20BB95CC00F356B0 /* MYNotification */ = {
+			isa = PBXGroup;
+			children = (
+				81FF82EB20BB95E700F356B0 /* MYNotificationCenter.h */,
+				81FF82EC20BB95E700F356B0 /* MYNotificationCenter.m */,
+			);
+			path = MYNotification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +305,7 @@
 				327A42881FCED86400541508 /* ViewController.m in Sources */,
 				327A42931FCED86400541508 /* main.m in Sources */,
 				327A42851FCED86400541508 /* AppDelegate.m in Sources */,
+				81FF82ED20BB95E700F356B0 /* MYNotificationCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

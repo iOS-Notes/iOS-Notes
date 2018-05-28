@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MYTestNotificationViewController.h"
 #import "MYTestViewController.h"
+#import "MYNotificationCenter.h"
 
 @interface ViewController ()
 
@@ -21,7 +22,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"TESTNOTIFICATION" object:nil];
+    [[MYNotificationCenter defaultCenter] postNotificationName:@"TESTNOTIFICATION" object:nil];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(self.view.center.x - 50, self.view.center.y, 100, 50);

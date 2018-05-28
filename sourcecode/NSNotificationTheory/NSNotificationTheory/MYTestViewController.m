@@ -7,6 +7,7 @@
 //
 
 #import "MYTestViewController.h"
+#import "MYNotificationCenter.h"
 
 @interface MYTestViewController ()
 
@@ -17,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(testNotification) name:@"" object:nil];
+    [[MYNotificationCenter defaultCenter] addObserver:self selector:@selector(testNotification) name:@"" object:nil];
 }
 
 - (void)testNotification {
