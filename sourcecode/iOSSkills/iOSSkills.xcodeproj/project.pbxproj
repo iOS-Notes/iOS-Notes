@@ -15,6 +15,7 @@
 		816042B220C4E49C00625BCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 816042B120C4E49C00625BCB /* main.m */; };
 		816042BC20C4E49C00625BCB /* iOSSkillsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 816042BB20C4E49C00625BCB /* iOSSkillsTests.m */; };
 		816042C720C4E49C00625BCB /* iOSSkillsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 816042C620C4E49C00625BCB /* iOSSkillsUITests.m */; };
+		816042D620C5094600625BCB /* BinarySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816042D520C5094600625BCB /* BinarySearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		816042C220C4E49C00625BCB /* iOSSkillsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSSkillsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		816042C620C4E49C00625BCB /* iOSSkillsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSSkillsUITests.m; sourceTree = "<group>"; };
 		816042C820C4E49C00625BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816042D420C5094600625BCB /* BinarySearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinarySearchViewController.h; sourceTree = "<group>"; };
+		816042D520C5094600625BCB /* BinarySearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinarySearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				816042A320C4E49A00625BCB /* AppDelegate.m */,
 				816042A520C4E49A00625BCB /* ViewController.h */,
 				816042A620C4E49A00625BCB /* ViewController.m */,
+				816042D420C5094600625BCB /* BinarySearchViewController.h */,
+				816042D520C5094600625BCB /* BinarySearchViewController.m */,
 				816042A820C4E49A00625BCB /* Main.storyboard */,
 				816042AB20C4E49C00625BCB /* Assets.xcassets */,
 				816042AD20C4E49C00625BCB /* LaunchScreen.storyboard */,
@@ -263,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				816042A720C4E49A00625BCB /* ViewController.m in Sources */,
+				816042D620C5094600625BCB /* BinarySearchViewController.m in Sources */,
 				816042B220C4E49C00625BCB /* main.m in Sources */,
 				816042A420C4E49A00625BCB /* AppDelegate.m in Sources */,
 			);
