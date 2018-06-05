@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-
-#define TICK   NSDate *startTime = [NSDate date];
-#define TOCK   NSLog(@"Time: %f", -[startTime timeIntervalSinceNow]);
+#import "Header.h"
 
 @interface ViewController ()
 

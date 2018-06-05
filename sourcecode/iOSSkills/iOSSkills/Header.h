@@ -9,5 +9,7 @@
 #ifndef Header_h
 #define Header_h
 
+#define TICK   NSDate *startTime = [NSDate date];
+#define TOCK   NSLog(@"Time: %f", -[startTime timeIntervalSinceNow]);
 
 #endif /* Header_h */
