@@ -1,6 +1,6 @@
 # sunjinshuai Blog
 <p align='center'>
-<img src='images/background-cover_.png'>
+<img src='https://github.com/iOS-Advanced/iOS-Advanced/blob/master/resource/background-cover.jpg'>
 </p>
 <p align='center'>
 <a href="https://weibo.com/u/5113807465"><img src="https://img.shields.io/badge/weibo-@sunjinshuai-f974ce.svg?style=flat&colorA=f4292e"></a>
@@ -13,7 +13,12 @@
 
 
 ## 📱 iOS
-
+| Topic | Version | Article |
+|:-------:|:-------:|:------|
+|基础知识|| [浅析 NSTimer 和 CADisplayLink 内存泄漏](https://github.com/iOS-Advanced/iOS-Advanced/wiki/%E6%B5%85%E6%9E%90-NSTimer-%E5%92%8C-CADisplayLink-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F)|
+|内存管理|| |
+|APM|| |
+|Runtime|| |
 
 ## ♥️ 感谢
 
