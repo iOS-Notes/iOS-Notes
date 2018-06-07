@@ -1,4 +1,4 @@
-# Joy Blog
+# sunjinshuai Blog
 <p align='center'>
 <img src='images/background-cover_.png'>
 </p>
