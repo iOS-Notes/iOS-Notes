@@ -1,6 +1,6 @@
 # sunjinshuai Blog
 <p align='center'>
-<img src='images/background-cover_.png'>
+<img src='https://github.com/iOS-Advanced/iOS-Advanced/blob/master/resource/background-cover.jpg'>
 </p>
 <p align='center'>
 <a href="https://weibo.com/u/5113807465"><img src="https://img.shields.io/badge/weibo-@sunjinshuai-f974ce.svg?style=flat&colorA=f4292e"></a>
