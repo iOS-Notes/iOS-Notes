@@ -6,8 +6,8 @@
 //  Copyright © 2018年 NSTimer&CADisplayLink. All rights reserved.
 //
 
-#import "MYBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface MYNSTimerBlockViewController : MYBaseViewController
+@interface MYNSTimerBlockViewController : UIViewController
 
 @end

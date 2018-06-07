@@ -21,6 +21,7 @@
 		32AF582520413ED400BE9ABA /* NSTimer+TimerTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF582420413ED400BE9ABA /* NSTimer+TimerTarget.m */; };
 		32AF582820413F1C00BE9ABA /* MYTimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF582720413F1C00BE9ABA /* MYTimerProxy.m */; };
 		32AF582B20413F8900BE9ABA /* MYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF582A20413F8900BE9ABA /* MYBaseViewController.m */; };
+		817A438420C8E1FB00DB6EEC /* MemoryLeaksViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 817A438320C8E1FB00DB6EEC /* MemoryLeaksViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		32AF582720413F1C00BE9ABA /* MYTimerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTimerProxy.m; sourceTree = "<group>"; };
 		32AF582920413F8900BE9ABA /* MYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYBaseViewController.h; sourceTree = "<group>"; };
 		32AF582A20413F8900BE9ABA /* MYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYBaseViewController.m; sourceTree = "<group>"; };
+		817A438220C8E1FB00DB6EEC /* MemoryLeaksViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryLeaksViewCell.h; sourceTree = "<group>"; };
+		817A438320C8E1FB00DB6EEC /* MemoryLeaksViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLeaksViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				32AF582A20413F8900BE9ABA /* MYBaseViewController.m */,
 				32AF581A20413E9300BE9ABA /* MYNSTimerBlockViewController.h */,
 				32AF581B20413E9300BE9ABA /* MYNSTimerBlockViewController.m */,
+				817A438220C8E1FB00DB6EEC /* MemoryLeaksViewCell.h */,
+				817A438320C8E1FB00DB6EEC /* MemoryLeaksViewCell.m */,
 				32AF581D20413EA900BE9ABA /* MYNSTimerTargetViewController.h */,
 				32AF581E20413EA900BE9ABA /* MYNSTimerTargetViewController.m */,
 				32AF582020413EB900BE9ABA /* MYNSTimerProxyViewController.h */,
@@ -301,6 +306,7 @@
 				32AF582820413F1C00BE9ABA /* MYTimerProxy.m in Sources */,
 				32AF57F820413D1300BE9ABA /* main.m in Sources */,
 				32AF57EA20413D1300BE9ABA /* AppDelegate.m in Sources */,
+				817A438420C8E1FB00DB6EEC /* MemoryLeaksViewCell.m in Sources */,
 				32AF581F20413EA900BE9ABA /* MYNSTimerTargetViewController.m in Sources */,
 				32AF582520413ED400BE9ABA /* NSTimer+TimerTarget.m in Sources */,
 				32AF581C20413E9300BE9ABA /* MYNSTimerBlockViewController.m in Sources */,
