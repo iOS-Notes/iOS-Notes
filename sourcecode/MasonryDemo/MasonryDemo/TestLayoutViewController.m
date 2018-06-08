@@ -7,11 +7,14 @@
 //
 
 #import "TestLayoutViewController.h"
+#import "TestLayoutView.h"
+#import "TestLayoutView1.h"
 #import <Masonry.h>
 
 @interface TestLayoutViewController ()
 
 @property (nonatomic, strong) UIView *redView;
+@property (nonatomic, strong) TestLayoutView1 *layoutView;
 
 @end
 
@@ -20,7 +23,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self testLayout];
+    self.layoutView = [[TestLayoutView1 alloc] init];
+    [self.view addSubview:self.layoutView];
+    [self.layoutView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+//    [self testLayout];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -51,7 +59,12 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    NSLog(@"self.view 的尺寸%@，redView 的尺寸%@",self.view,self.redView);
+//    NSLog(@"self.view 的尺寸%@，redView 的尺寸%@",self.view,self.redView);
+}
+
+- (void)updateViewConstraints {
+    [super updateViewConstraints];
+    
 }
 
 @end

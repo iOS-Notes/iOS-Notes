@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7324698E9D0C045A10453C1E /* libPods-MasonryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BED13C49AFDA795738928AC3 /* libPods-MasonryDemo.a */; };
 		817A438720CA66D800DB6EEC /* TestLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817A438620CA66D800DB6EEC /* TestLayoutViewController.m */; };
+		817A438A20CA87B800DB6EEC /* TestLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 817A438920CA87B800DB6EEC /* TestLayoutView.m */; };
+		817A438D20CA898D00DB6EEC /* TestLayoutView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 817A438C20CA898D00DB6EEC /* TestLayoutView1.m */; };
 		81FF83BE20BD652C00F356B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FF83BD20BD652C00F356B0 /* AppDelegate.m */; };
 		81FF83C120BD652C00F356B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FF83C020BD652C00F356B0 /* ViewController.m */; };
 		81FF83C420BD652C00F356B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FF83C220BD652C00F356B0 /* Main.storyboard */; };
@@ -41,6 +43,10 @@
 		641AB98553337EE9ADC0EB0D /* Pods-MasonryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryDemo/Pods-MasonryDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		817A438520CA66D800DB6EEC /* TestLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLayoutViewController.h; sourceTree = "<group>"; };
 		817A438620CA66D800DB6EEC /* TestLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLayoutViewController.m; sourceTree = "<group>"; };
+		817A438820CA87B800DB6EEC /* TestLayoutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLayoutView.h; sourceTree = "<group>"; };
+		817A438920CA87B800DB6EEC /* TestLayoutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLayoutView.m; sourceTree = "<group>"; };
+		817A438B20CA898D00DB6EEC /* TestLayoutView1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLayoutView1.h; sourceTree = "<group>"; };
+		817A438C20CA898D00DB6EEC /* TestLayoutView1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLayoutView1.m; sourceTree = "<group>"; };
 		81FF83B920BD652C00F356B0 /* MasonryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FF83BC20BD652C00F356B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81FF83BD20BD652C00F356B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +123,10 @@
 				81FF83C020BD652C00F356B0 /* ViewController.m */,
 				817A438520CA66D800DB6EEC /* TestLayoutViewController.h */,
 				817A438620CA66D800DB6EEC /* TestLayoutViewController.m */,
+				817A438820CA87B800DB6EEC /* TestLayoutView.h */,
+				817A438920CA87B800DB6EEC /* TestLayoutView.m */,
+				817A438B20CA898D00DB6EEC /* TestLayoutView1.h */,
+				817A438C20CA898D00DB6EEC /* TestLayoutView1.m */,
 				81FF83C220BD652C00F356B0 /* Main.storyboard */,
 				81FF83C520BD652D00F356B0 /* Assets.xcassets */,
 				81FF83C720BD652D00F356B0 /* LaunchScreen.storyboard */,
@@ -315,7 +325,9 @@
 			files = (
 				81FF83C120BD652C00F356B0 /* ViewController.m in Sources */,
 				81FF83CC20BD652D00F356B0 /* main.m in Sources */,
+				817A438A20CA87B800DB6EEC /* TestLayoutView.m in Sources */,
 				817A438720CA66D800DB6EEC /* TestLayoutViewController.m in Sources */,
+				817A438D20CA898D00DB6EEC /* TestLayoutView1.m in Sources */,
 				81FF83BE20BD652C00F356B0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
