@@ -20,7 +20,7 @@ Latest：[浅析 NSTimer 和 CADisplayLink 内存泄漏](https://github.com/iOS-
 |网络||[浅谈如何在项目中处理页面中的多个网络请求](https://www.jianshu.com/p/5c4b8b6aa44f) |
 |APM|| |
 |Runtime|| |
-|Xcode Tool||~~[Xcode 插件管理工具 Alcatraz](https://github.com/iOS-Advanced/iOS-Advanced/wiki/Xcode%E6%8F%92%E4%BB%B6%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7Alcatraz)~~<br>[CornerStone的使用](https://www.jianshu.com/p/7f5c019c528b)<br>[Mac上更新Ruby](https://www.jianshu.com/p/d99b5662d8a0) |
+|Xcode Tool||[CornerStone的使用](https://www.jianshu.com/p/7f5c019c528b)<br>[Mac上更新Ruby](https://www.jianshu.com/p/d99b5662d8a0) |
 
 ## ♥️ 感谢
 
