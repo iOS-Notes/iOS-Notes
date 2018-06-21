@@ -10,4 +10,12 @@
 
 @implementation Message
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.text = @"hello word";
+    }
+    return self;
+}
+
 @end

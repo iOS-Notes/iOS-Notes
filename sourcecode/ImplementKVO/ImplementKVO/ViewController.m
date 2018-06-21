@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Message.h"
+#import "TestKVOViewController.h"
 #import "NSObject+KVO.h"
 
 @interface ViewController ()
@@ -36,6 +37,11 @@
                        }];
     
     [self changeMessage:nil];
+}
+
+- (IBAction)testKVO {
+    TestKVOViewController *testKVO = [[TestKVOViewController alloc] init];
+    [self.navigationController pushViewController:testKVO animated:YES];
 }
 
 - (IBAction)changeMessage:(id)sender {

@@ -52,17 +52,6 @@ static NSArray *ClassMethodNames(Class c) {
     return array;
 }
 
-static void PrintDescription(NSString *name, id obj) {
-    NSString *str = [NSString stringWithFormat:
-                     @"%@: %@\n\tNSObject class %s\n\tRuntime class %s\n\timplements methods <%@>\n\n",
-                     name,
-                     obj,
-                     class_getName([obj class]),
-                     class_getName(object_getClass(obj)),
-                     [ClassMethodNames(object_getClass(obj)) componentsJoinedByString:@", "]];
-    printf("%s\n", [str UTF8String]);
-}
-
 static NSString * getterForSetter(NSString *setter) {
     if (setter.length <=0 || ![setter hasPrefix:@"set"] || ![setter hasSuffix:@":"]) {
         return nil;
@@ -96,6 +85,11 @@ static NSString * setterForGetter(NSString *getter) {
 }
 
 #pragma mark - Overridden Methods
+/**
+ 1. 获取旧值。
+ 2. 创建super的结构体，并向super发送属性的消息。
+ 3. 遍历调用block。
+ */
 static void kvo_setter(id self, SEL _cmd, id newValue) {
     NSString *setterName = NSStringFromSelector(_cmd);
     NSString *getterName = getterForSetter(setterName);
@@ -139,6 +133,12 @@ static Class kvo_class(id self, SEL _cmd) {
 
 @implementation NSObject (KVO)
 
+/**
+ 1. 通过Method判断是否有这个key对应的selector，如果没有则Crash。
+ 2. 判断当前类是否是KVO子类，如果不是则创建，并设置其isa指针。
+ 3. 如果没有实现，则添加Key对应的setter方法。
+ 4. 将调用对象添加到数组中。
+ */
 - (void)addObserver:(NSObject *)observer
              forKey:(NSString *)key
           withBlock:(ObservingBlock)block {
@@ -178,7 +178,6 @@ static Class kvo_class(id self, SEL _cmd) {
     [observers addObject:info];
 }
 
-
 - (void)removeObserver:(NSObject *)observer forKey:(NSString *)key {
     NSMutableArray* observers = objc_getAssociatedObject(self, (__bridge const void *)(kKVOAssociatedObservers));
     
@@ -193,7 +192,11 @@ static Class kvo_class(id self, SEL _cmd) {
     [observers removeObject:infoToRemove];
 }
 
-
+/**
+ 1. 判断是否存在KVO类，如果存在则返回。
+ 2. 如果不存在，则创建KVO类。
+ 3. 重写KVO类的class方法，指向自定义的IMP。
+ */
 - (Class)makeKvoClassWithOriginalClassName:(NSString *)originalClazzName {
     NSString *kvoClazzName = [kKVOClassPrefix stringByAppendingString:originalClazzName];
     Class clazz = NSClassFromString(kvoClazzName);
