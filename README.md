@@ -29,5 +29,5 @@ Latest：[浅析 NSTimer 和 CADisplayLink 内存泄漏](https://www.jianshu.com
 
 ## ❗️ 勘误
 
-+ 如果在文章中发现了问题，欢迎提交 PR 或者 issue，欢迎大神们多多指点🙏🙏🙏
+如果在文章中发现了问题，欢迎提交 PR 或者 issue，欢迎大神们多多指点🙏🙏🙏
 
