@@ -23,6 +23,20 @@ Latest：[浅析 NSTimer 和 CADisplayLink 内存泄漏](https://www.jianshu.com
 |Autolayout||[谈谈 Autolayout](https://www.jianshu.com/p/2056743a0090)<br>[浅谈 iOS AutoLayout 中 Label 的抗拉伸和抗压缩](https://www.jianshu.com/p/8e68b82b471a)|
 |Other||[CornerStone的使用](https://www.jianshu.com/p/7f5c019c528b)<br>[Mac上更新Ruby](https://www.jianshu.com/p/d99b5662d8a0)<br>[MarkDown 语法](https://github.com/iOS-Advanced/iOS-Advanced/wiki/MarkDown-%E8%AF%AD%E6%B3%95) |
 
+----------------------------
+
+# 💻 Mac
+
+| Project | Version | Article |
+|:-------:|:-------:|:------|
+|Mac||[Mac 安装软件提示软件已损坏解决办法](https://www.jianshu.com/p/c594c3d1167c)|
+|Charles||[Charles 之 http、https 配置](https://www.jianshu.com/p/e6dd256de239)|
+|iTools||[神器 iTools 的巧妙使用](https://github.com/iOS-Advanced/iOS-Advanced/wiki/%E7%A5%9E%E5%99%A8-iTools-%E7%9A%84%E5%B7%A7%E5%A6%99%E4%BD%BF%E7%94%A8)|
+|iterm2||[Mac iterm2 配色方案](https://www.jianshu.com/p/157ae1a4acaf)|
+|Ruby||[Mac 上更新 Ruby](https://www.jianshu.com/p/d99b5662d8a0)|
+
+----------------------------
+
 ## ♥️ 感谢
 
 感谢您的 Star，感谢您的阅读！
