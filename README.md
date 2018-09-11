@@ -38,6 +38,17 @@ Latest：[浅析 NSTimer 和 CADisplayLink 内存泄漏](https://www.jianshu.com
 
 ----------------------------
 
+# 🐙 Python
+
+| Project | Version | Article |
+|:-------:|:-------:|:------|
+|基础语法||[Python之 基础语法](https://github.com/sunjinshuai/Python/blob/master/Article/basic_grammar.md)|
+|基本数据类型||[Python之 标准数据类型](https://github.com/sunjinshuai/Python/blob/master/Article/basic_data_type.md)<br>[Python之 基本数据类型转换](https://github.com/sunjinshuai/Python/blob/master/Article/basic_data_type.md)|
+|List||[Python之 List](https://github.com/sunjinshuai/Python/blob/master/Article/list.md)|
+|Tuple||[Python之 Tuple](https://github.com/sunjinshuai/Python/blob/master/Article/tuple.md)|
+
+----------------------------
+
 ## ♥️ 感谢
 
 感谢您的 Star，感谢您的阅读！
