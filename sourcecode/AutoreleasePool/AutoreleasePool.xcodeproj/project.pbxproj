@@ -15,7 +15,7 @@
 		81F1DE3620B04F26005AA8A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F1DE3520B04F26005AA8A4 /* main.m */; };
 		81F1DE4020B04F26005AA8A4 /* AutoreleasePoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F1DE3F20B04F26005AA8A4 /* AutoreleasePoolTests.m */; };
 		81F1DE4B20B04F26005AA8A4 /* AutoreleasePoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F1DE4A20B04F26005AA8A4 /* AutoreleasePoolUITests.m */; };
-		81F1DE5A20B05B4D005AA8A4 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F1DE5920B05B4D005AA8A4 /* TestObject.m */; };
+		81F1EE6B214A06F50002C247 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F1EE6A214A06F50002C247 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		81F1DE4620B04F26005AA8A4 /* AutoreleasePoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoreleasePoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F1DE4A20B04F26005AA8A4 /* AutoreleasePoolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoreleasePoolUITests.m; sourceTree = "<group>"; };
 		81F1DE4C20B04F26005AA8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81F1DE5820B05B4D005AA8A4 /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
-		81F1DE5920B05B4D005AA8A4 /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		81F1EE69214A06F50002C247 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		81F1EE6A214A06F50002C247 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 				81F1DE2720B04F24005AA8A4 /* AppDelegate.m */,
 				81F1DE2920B04F24005AA8A4 /* ViewController.h */,
 				81F1DE2A20B04F24005AA8A4 /* ViewController.m */,
-				81F1DE5820B05B4D005AA8A4 /* TestObject.h */,
-				81F1DE5920B05B4D005AA8A4 /* TestObject.m */,
+				81F1EE69214A06F50002C247 /* TestViewController.h */,
+				81F1EE6A214A06F50002C247 /* TestViewController.m */,
 				81F1DE2C20B04F24005AA8A4 /* Main.storyboard */,
 				81F1DE2F20B04F25005AA8A4 /* Assets.xcassets */,
 				81F1DE3120B04F25005AA8A4 /* LaunchScreen.storyboard */,
@@ -269,8 +269,8 @@
 			files = (
 				81F1DE2B20B04F24005AA8A4 /* ViewController.m in Sources */,
 				81F1DE3620B04F26005AA8A4 /* main.m in Sources */,
-				81F1DE5A20B05B4D005AA8A4 /* TestObject.m in Sources */,
 				81F1DE2820B04F24005AA8A4 /* AppDelegate.m in Sources */,
+				81F1EE6B214A06F50002C247 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

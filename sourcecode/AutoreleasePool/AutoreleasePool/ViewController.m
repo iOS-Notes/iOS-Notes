@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "TestObject.h"
+#import "TestViewController.h"
 
 @interface ViewController ()
 
@@ -20,16 +20,16 @@ __weak id _testObject = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    TestObject *testObject = [TestObject instanceWithNumber:10];
-    _testObject = testObject;
-
-    NSLog(@"TestObject : %@", _testObject);
+    self.view.backgroundColor = [UIColor whiteColor];
+    
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    NSLog(@"TestObject : %@", _testObject);
+
+- (IBAction)pushToTestView:(UIButton *)sender {
+    TestViewController *test = [[TestViewController alloc] init];
+    [self.navigationController pushViewController:test animated:YES];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -16,7 +16,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
+    dispatch_async(queue, ^{
+        NSLog(@"current thread %@", [NSThread currentThread]);
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"111" object:nil];
+    });
+    
     return YES;
 }
 
