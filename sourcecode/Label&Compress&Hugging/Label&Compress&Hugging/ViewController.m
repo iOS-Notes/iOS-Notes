@@ -20,6 +20,47 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [self demo2];
+}
+
+
+/**
+ Content Compression Resistance Priority 
+ */
+- (void)demo1 {
+    
+    UILabel *yellowLabel = [[UILabel alloc] init];
+    yellowLabel.text = @"我是黄色Label,我是黄色Label";
+    yellowLabel.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:yellowLabel];
+    [yellowLabel setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+    [yellowLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.left.equalTo(self.view).offset(100).priority(250);
+        make.right.equalTo(self.view).offset(-100).priority(250);
+    }];
+    
+}
+
+
+/**
+ Content Hugging Priority
+ */
+- (void)demo2 {
+    
+    UILabel *bluelabel = [[UILabel alloc] init];
+    bluelabel.text = @"我是蓝色Label";
+    bluelabel.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:bluelabel];
+    [bluelabel setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+    [bluelabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.left.equalTo(self.view).offset(100).priority(250);
+        make.right.equalTo(self.view).offset(-100).priority(250);
+    }];
+}
+
+- (void)demo3 {
     UILabel *yellowLabel = [[UILabel alloc] init];
     yellowLabel.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:yellowLabel];
@@ -73,7 +114,6 @@
     }];
     
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
