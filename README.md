@@ -56,7 +56,7 @@ Latest：[浅谈 iOS NSNotification](https://www.jianshu.com/p/d3718f2b23c6)
 
 | Project | Version | Article |
 |:-------:|:-------:|:------|
-|Flutter||[Flutter之 环境搭建](https://github.com/iOS-Advanced/iOS-Advanced/wiki/Flutter-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA)|
+|Flutter||[Flutter之 环境搭建](https://www.jianshu.com/p/40a02512e141)|
 
 ----------------------------
 
