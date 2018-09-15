@@ -27,6 +27,7 @@
     [self.dataSource addObject:@"*NSTimer Block*-MYNSTimerBlockViewController"];
     [self.dataSource addObject:@"*NSTimer Target*-MYNSTimerTargetViewController"];
     [self.dataSource addObject:@"*NSTimer Proxy*-MYNSTimerProxyViewController"];
+    [self.dataSource addObject:@"*NSTimer 是否精确*-MYNSTimerAccurateViewController"];
     
     [self.view addSubview:self.tableView];
 }

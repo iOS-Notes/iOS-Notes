@@ -6,11 +6,14 @@
 //  Copyright © 2017年 MYSampleCode. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+#include <stdio.h>
 
 int main(int argc, char * argv[]) {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    }
+    static int i = 10;
+    void (^blk)(void) = ^{
+        i = 30;
+        printf("%d", i);
+    };
+    blk();
+    return 0;
 }
