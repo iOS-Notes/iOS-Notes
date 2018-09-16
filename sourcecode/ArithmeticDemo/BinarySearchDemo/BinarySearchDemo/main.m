@@ -1,9 +1,9 @@
 //
 //  main.m
-//  ArithmeticDemo
+//  BinarySearchDemo
 //
-//  Created by QMMac on 2018/8/21.
-//  Copyright © 2018 QMMac. All rights reserved.
+//  Created by sunjinshuai on 2018/9/16.
+//  Copyright © 2018年 sunjinshuai. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

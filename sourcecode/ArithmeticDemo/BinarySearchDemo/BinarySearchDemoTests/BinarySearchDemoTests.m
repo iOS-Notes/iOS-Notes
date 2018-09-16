@@ -1,18 +1,18 @@
 //
-//  ArithmeticDemoTests.m
-//  ArithmeticDemoTests
+//  BinarySearchDemoTests.m
+//  BinarySearchDemoTests
 //
-//  Created by QMMac on 2018/8/21.
-//  Copyright © 2018 QMMac. All rights reserved.
+//  Created by sunjinshuai on 2018/9/16.
+//  Copyright © 2018年 sunjinshuai. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface ArithmeticDemoTests : XCTestCase
+@interface BinarySearchDemoTests : XCTestCase
 
 @end
 
-@implementation ArithmeticDemoTests
+@implementation BinarySearchDemoTests
 
 - (void)setUp {
     [super setUp];
