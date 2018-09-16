@@ -25,12 +25,15 @@
         node.data = @(i);
         [linkedList insertNode:node];
     }
- 
-    [linkedList printLog];
-    [linkedList reverse];
-    [linkedList printLog];
     
-    NSLog(@"index :%@", [linkedList objectAtIndex:2]);
+    
+    
+    LinkedNode *node = [LinkedNode new];
+    node.data = @(10);
+    
+    [linkedList insertNode:node atIndex:2];
+    
+    [linkedList printLog];
 }
 
 

@@ -57,16 +57,40 @@
 }
 
 - (void)insertNode:(LinkedNode *)node atIndex:(NSInteger)index {
+    if (index < 0) {
+        [self insertHeadNode:node];
+        
+        return;
+    }
+    
+    if (index > self.length) {
+        LinkedNode *lastNode = [self lastNode];
+        lastNode.next = node;
+        return;
+    }
+    
+    int i = 0;
+    
+    LinkedNode *headNode = _headNode;
+    
+    while (headNode) {
+        if (i == index) {
+            LinkedNode *curNode = [self objectAtIndex:i];
+            
+        }
+        headNode = headNode.next;
+        i++;
+    }
+}
+
+- (void)removeNode:(LinkedNode *)node atIndex:(NSInteger)index {
     if (index < 0 || index > self.length) {
         @throw [NSException exceptionWithName:@"LinkedList is out of bounds" reason:@"Add failed. Illegal index." userInfo:nil];
         return;
     }
     
-    
-}
-
-- (void)removeNode:(LinkedNode *)node atIndex:(NSInteger)index {
-    
+    LinkedNode *curNode = [self objectAtIndex:index];
+    curNode.next = nil;
 }
 
 - (LinkedNode *)objectAtIndex:(NSInteger)index {
@@ -102,6 +126,10 @@
         headNode = next;
     }
     _headNode = prev;
+}
+
+- (LinkedNode *)headNode {
+    return _headNode;
 }
 
 /**
