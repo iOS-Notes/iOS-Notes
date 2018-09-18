@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     NSArray *tempArray = @[@24, @17, @85, @13, @9, @54, @76, @45, @5, @63];
-    [self quickSortArray:[NSMutableArray arrayWithArray:tempArray] leftIndex:0 rightIndex:tempArray.count - 1];
+    [self bubbleDescendingOrderSortWithArray:[NSMutableArray arrayWithArray:tempArray]];
 }
 
 // 冒泡排序：
@@ -36,8 +36,8 @@
                 [descendingArr exchangeObjectAtIndex:j withObjectAtIndex:j + 1];
             }
         }
+        [self printLogArray:descendingArr];
     }
-    NSLog(@"冒泡降序排序后结果：%@", descendingArr);
 }
 
 #pragma mark - 冒泡升序排序
@@ -150,6 +150,15 @@
     [self quickSortArray:array leftIndex:i + 1 rightIndex:right];
     
     NSLog(@"快速排序后结果：%@", array);
+}
+
+// 打印数组
+- (void)printLogArray:(NSMutableArray * )array {
+    NSString * str = @"";
+    for (NSNumber * value in array) {
+        str = [str stringByAppendingString:[NSString stringWithFormat:@"%zd ",[value integerValue]]];
+    }
+    NSLog(@"%@",str);
 }
 
 @end
