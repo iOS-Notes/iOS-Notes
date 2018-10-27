@@ -52,7 +52,7 @@ Latest：[iOS 编译过程](https://www.jianshu.com/p/fda47fdc94de)
 
 ----------------------------
 
-# 🐝 算法
+# 📚 算法
 
 | Project | Version | Article |
 |:-------:|:-------:|:------|
@@ -60,7 +60,7 @@ Latest：[iOS 编译过程](https://www.jianshu.com/p/fda47fdc94de)
 
 ----------------------------
 
-# 🐝 设计模式
+# 🍭 设计模式
 
 | Project | Version | Article |
 |:-------:|:-------:|:------|
