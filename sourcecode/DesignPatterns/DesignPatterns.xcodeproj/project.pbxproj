@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32156911218B4A2D000BDF40 /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = 32156910218B4A2D000BDF40 /* A.m */; };
+		32156914218B4D42000BDF40 /* B.m in Sources */ = {isa = PBXBuildFile; fileRef = 32156913218B4D42000BDF40 /* B.m */; };
 		4C790AC221846A2300C0ACF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C790AC121846A2300C0ACF4 /* main.m */; };
 		4C790ACA21846AAD00C0ACF4 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C790AC921846AAD00C0ACF4 /* Animal.m */; };
 		4C790ACD21846EA900C0ACF4 /* Herbivore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C790ACC21846EA900C0ACF4 /* Herbivore.m */; };
@@ -26,6 +28,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3215690F218B4A2D000BDF40 /* A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
+		32156910218B4A2D000BDF40 /* A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
+		32156912218B4D42000BDF40 /* B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = B.h; sourceTree = "<group>"; };
+		32156913218B4D42000BDF40 /* B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B.m; sourceTree = "<group>"; };
 		4C790ABE21846A2300C0ACF4 /* DesignPatterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C790AC121846A2300C0ACF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C790AC821846AAD00C0ACF4 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
@@ -73,6 +79,10 @@
 				4C790ACC21846EA900C0ACF4 /* Herbivore.m */,
 				4C790ACE21846EB500C0ACF4 /* Carnivore.h */,
 				4C790ACF21846EB500C0ACF4 /* Carnivore.m */,
+				3215690F218B4A2D000BDF40 /* A.h */,
+				32156910218B4A2D000BDF40 /* A.m */,
+				32156912218B4D42000BDF40 /* B.h */,
+				32156913218B4D42000BDF40 /* B.m */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -133,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32156914218B4D42000BDF40 /* B.m in Sources */,
+				32156911218B4A2D000BDF40 /* A.m in Sources */,
 				4C790AC221846A2300C0ACF4 /* main.m in Sources */,
 				4C790ACD21846EA900C0ACF4 /* Herbivore.m in Sources */,
 				4C790ACA21846AAD00C0ACF4 /* Animal.m in Sources */,
