@@ -13,6 +13,8 @@
 #import "Mother.h"
 #import "Book.h"
 #import "Newspaper.h"
+#import "A.h"
+#import "B.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -32,6 +34,12 @@ int main(int argc, const char * argv[]) {
 //        [herbivore eatWithAnimalName:@"马"];
 //        [herbivore eatWithAnimalName:@"牛"];
         
+//        B *b = [[B alloc] init];
+//        NSInteger sub = [b addition:100 b:50];
+//        NSInteger difference = [b subtraction:sub b:100];
+//        NSLog(@"100+50=%ld", sub);
+//        NSLog(@"100+100+50=%ld", difference);
+
         Mother *mother = [Mother new];
         Book *book = [Book new];
         Newspaper *newspaper = [Newspaper new];
