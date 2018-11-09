@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C4EEB0A219563D100262050 /* Mother.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4EEB09219563D100262050 /* Mother.m */; };
+		4C4EEB0D219563DC00262050 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4EEB0C219563DC00262050 /* Book.m */; };
+		4C4EEB102195668100262050 /* Newspaper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4EEB0F2195668100262050 /* Newspaper.m */; };
 		4C790AC221846A2300C0ACF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C790AC121846A2300C0ACF4 /* main.m */; };
 		4C790ACA21846AAD00C0ACF4 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C790AC921846AAD00C0ACF4 /* Animal.m */; };
 		4C790ACD21846EA900C0ACF4 /* Herbivore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C790ACC21846EA900C0ACF4 /* Herbivore.m */; };
@@ -26,6 +29,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C4EEB08219563D100262050 /* Mother.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mother.h; sourceTree = "<group>"; };
+		4C4EEB09219563D100262050 /* Mother.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mother.m; sourceTree = "<group>"; };
+		4C4EEB0B219563DC00262050 /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		4C4EEB0C219563DC00262050 /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		4C4EEB0E2195668100262050 /* Newspaper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Newspaper.h; sourceTree = "<group>"; };
+		4C4EEB0F2195668100262050 /* Newspaper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Newspaper.m; sourceTree = "<group>"; };
+		4C4EEB1121956AD300262050 /* IReaderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IReaderProtocol.h; sourceTree = "<group>"; };
 		4C790ABE21846A2300C0ACF4 /* DesignPatterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C790AC121846A2300C0ACF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C790AC821846AAD00C0ACF4 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
@@ -73,6 +83,13 @@
 				4C790ACC21846EA900C0ACF4 /* Herbivore.m */,
 				4C790ACE21846EB500C0ACF4 /* Carnivore.h */,
 				4C790ACF21846EB500C0ACF4 /* Carnivore.m */,
+				4C4EEB08219563D100262050 /* Mother.h */,
+				4C4EEB09219563D100262050 /* Mother.m */,
+				4C4EEB0B219563DC00262050 /* Book.h */,
+				4C4EEB0C219563DC00262050 /* Book.m */,
+				4C4EEB0E2195668100262050 /* Newspaper.h */,
+				4C4EEB0F2195668100262050 /* Newspaper.m */,
+				4C4EEB1121956AD300262050 /* IReaderProtocol.h */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -137,6 +154,9 @@
 				4C790ACD21846EA900C0ACF4 /* Herbivore.m in Sources */,
 				4C790ACA21846AAD00C0ACF4 /* Animal.m in Sources */,
 				4C790AD021846EB500C0ACF4 /* Carnivore.m in Sources */,
+				4C4EEB0D219563DC00262050 /* Book.m in Sources */,
+				4C4EEB0A219563D100262050 /* Mother.m in Sources */,
+				4C4EEB102195668100262050 /* Newspaper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
