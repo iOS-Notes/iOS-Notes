@@ -12,6 +12,7 @@
 #import "Herbivore.h"
 #import "Mother.h"
 #import "Book.h"
+#import "Newspaper.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -33,7 +34,9 @@ int main(int argc, const char * argv[]) {
         
         Mother *mother = [Mother new];
         Book *book = [Book new];
+        Newspaper *newspaper = [Newspaper new];
         [mother tellStory:book];
+        [mother tellStory:newspaper];
     }
     return 0;
 }

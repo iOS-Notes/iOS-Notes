@@ -11,9 +11,11 @@
 
 @implementation Mother
 
-- (void)tellStory:(Book *)book {
+- (void)tellStory:(NSObject<IReaderProtocol> *)reading {
     NSLog(@"妈妈开始讲故事");
-    [book theStoryContent];
+    if ([reading respondsToSelector:@selector(theStoryContent)]) {
+        [reading theStoryContent];
+    }
 }
 
 @end

@@ -7,15 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IReaderProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Book : NSObject
-
-/**
- 故事内容
- */
-- (void)theStoryContent;
+@interface Book : NSObject <IReaderProtocol>
 
 @end
 

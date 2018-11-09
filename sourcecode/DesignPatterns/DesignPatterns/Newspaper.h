@@ -7,15 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IReaderProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Newspaper : NSObject
-
-/**
- 报纸内容
- */
-- (void)theStoryContent;
+@interface Newspaper : NSObject <IReaderProtocol>
 
 @end
 
