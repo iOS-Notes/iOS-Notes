@@ -27,7 +27,7 @@
 }
 
 - (void)method5 {
-    //not necessarily
+    NSLog(@"类 B 实现接口 H 的方法5");
 }
 
 @end

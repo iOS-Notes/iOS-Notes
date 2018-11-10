@@ -18,6 +18,9 @@
     if ([classB respondsToSelector:@selector(method2)]) {
         [classB method2];
     }
+    if ([classB respondsToSelector:@selector(method5)]) {
+        [classB method5];
+    }
 }
 
 @end
