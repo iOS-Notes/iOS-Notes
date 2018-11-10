@@ -18,14 +18,6 @@
     NSLog(@"类 B 实现接口 H 的方法2");
 }
 
-- (void)method3 {
-    //not necessarily
-}
-
-- (void)method4 {
-    //not necessarily
-}
-
 - (void)method5 {
     NSLog(@"类 B 实现接口 H 的方法5");
 }

@@ -11,6 +11,6 @@
 
 @interface ClassA : NSObject
 
-- (void)depend:(NSObject<InterfaceH> *)classB;
+- (void)depend:(NSObject<InterfaceH1> *)classB;
 
 @end

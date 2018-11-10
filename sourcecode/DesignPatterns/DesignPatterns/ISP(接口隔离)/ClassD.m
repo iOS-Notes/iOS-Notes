@@ -10,14 +10,6 @@
 
 @implementation ClassD
 
-- (void)method1 { 
-    //not necessarily
-}
-
-- (void)method2 { 
-    //not necessarily
-}
-
 - (void)method3 { 
     NSLog(@"类 D 实现接口 H 的方法3");
 }

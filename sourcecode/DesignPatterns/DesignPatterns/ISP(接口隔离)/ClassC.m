@@ -10,7 +10,7 @@
 
 @implementation ClassC
 
-- (void)depend:(NSObject<InterfaceH> *)classD {
+- (void)depend:(NSObject<InterfaceH2> *)classD {
     
     if ([classD respondsToSelector:@selector(method3)]) {
         [classD method3];

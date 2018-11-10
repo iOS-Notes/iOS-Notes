@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "InterfaceH.h"
 
-@interface ClassD : NSObject <InterfaceH>
+@interface ClassD : NSObject <InterfaceH2>
 
 @end
