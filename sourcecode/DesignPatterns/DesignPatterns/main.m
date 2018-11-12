@@ -15,6 +15,8 @@
 #import "Newspaper.h"
 #import "A.h"
 #import "B.h"
+#import "SubCompany.h"
+#import "Company.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -40,11 +42,15 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"100+50=%ld", sub);
 //        NSLog(@"100+100+50=%ld", difference);
 
-        Mother *mother = [Mother new];
-        Book *book = [Book new];
-        Newspaper *newspaper = [Newspaper new];
-        [mother tellStory:book];
-        [mother tellStory:newspaper];
+//        Mother *mother = [Mother new];
+//        Book *book = [Book new];
+//        Newspaper *newspaper = [Newspaper new];
+//        [mother tellStory:book];
+//        [mother tellStory:newspaper];
+        
+        Company *company = [Company new];
+        SubCompany *subCompany = [SubCompany new];
+        [company printAllEmployeeWithSubCompany:subCompany];
     }
     return 0;
 }

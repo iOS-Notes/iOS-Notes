@@ -16,6 +16,10 @@
 		4C790ACA21846AAD00C0ACF4 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C790AC921846AAD00C0ACF4 /* Animal.m */; };
 		4C790ACD21846EA900C0ACF4 /* Herbivore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C790ACC21846EA900C0ACF4 /* Herbivore.m */; };
 		4C790AD021846EB500C0ACF4 /* Carnivore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C790ACF21846EB500C0ACF4 /* Carnivore.m */; };
+		4CBF74E321991E5C00FD911F /* EmployeeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF74E221991E5C00FD911F /* EmployeeModel.m */; };
+		4CBF74E621991EAB00FD911F /* SubEmployeeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF74E521991EAB00FD911F /* SubEmployeeModel.m */; };
+		4CBF74E921991F9200FD911F /* SubCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF74E821991F9200FD911F /* SubCompany.m */; };
+		4CBF74EC21991F9B00FD911F /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF74EB21991F9B00FD911F /* Company.m */; };
 		4CD4C8DE2196852600710739 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4C8DD2196852600710739 /* ClassA.m */; };
 		4CD4C8E12196853200710739 /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4C8E02196853200710739 /* ClassB.m */; };
 		4CD4C8E42196854D00710739 /* ClassC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4C8E32196854D00710739 /* ClassC.m */; };
@@ -54,6 +58,14 @@
 		4C790ACC21846EA900C0ACF4 /* Herbivore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Herbivore.m; sourceTree = "<group>"; };
 		4C790ACE21846EB500C0ACF4 /* Carnivore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Carnivore.h; sourceTree = "<group>"; };
 		4C790ACF21846EB500C0ACF4 /* Carnivore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Carnivore.m; sourceTree = "<group>"; };
+		4CBF74E121991E5C00FD911F /* EmployeeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeModel.h; sourceTree = "<group>"; };
+		4CBF74E221991E5C00FD911F /* EmployeeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeModel.m; sourceTree = "<group>"; };
+		4CBF74E421991EAB00FD911F /* SubEmployeeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubEmployeeModel.h; sourceTree = "<group>"; };
+		4CBF74E521991EAB00FD911F /* SubEmployeeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubEmployeeModel.m; sourceTree = "<group>"; };
+		4CBF74E721991F9200FD911F /* SubCompany.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubCompany.h; sourceTree = "<group>"; };
+		4CBF74E821991F9200FD911F /* SubCompany.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubCompany.m; sourceTree = "<group>"; };
+		4CBF74EA21991F9B00FD911F /* Company.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		4CBF74EB21991F9B00FD911F /* Company.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
 		4CD4C8DB219684C300710739 /* InterfaceH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceH.h; sourceTree = "<group>"; };
 		4CD4C8DC2196852600710739 /* ClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
 		4CD4C8DD2196852600710739 /* ClassA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
@@ -96,12 +108,28 @@
 			isa = PBXGroup;
 			children = (
 				4C790AC121846A2300C0ACF4 /* main.m */,
+				4CBF74E021991E2600FD911F /* LOD(迪米特法则) */,
 				4CD4C8E82196857B00710739 /* ISP(接口隔离) */,
 				4CD4C8D8219683F600710739 /* SRP(单一职责) */,
 				4CD4C8D92196840400710739 /* DIP(依赖倒置) */,
 				4CD4C8DA2196842B00710739 /* LSP(里氏替换) */,
 			);
 			path = DesignPatterns;
+			sourceTree = "<group>";
+		};
+		4CBF74E021991E2600FD911F /* LOD(迪米特法则) */ = {
+			isa = PBXGroup;
+			children = (
+				4CBF74E121991E5C00FD911F /* EmployeeModel.h */,
+				4CBF74E221991E5C00FD911F /* EmployeeModel.m */,
+				4CBF74E421991EAB00FD911F /* SubEmployeeModel.h */,
+				4CBF74E521991EAB00FD911F /* SubEmployeeModel.m */,
+				4CBF74E721991F9200FD911F /* SubCompany.h */,
+				4CBF74E821991F9200FD911F /* SubCompany.m */,
+				4CBF74EA21991F9B00FD911F /* Company.h */,
+				4CBF74EB21991F9B00FD911F /* Company.m */,
+			);
+			path = "LOD(迪米特法则)";
 			sourceTree = "<group>";
 		};
 		4CD4C8D8219683F600710739 /* SRP(单一职责) */ = {
@@ -215,11 +243,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				32156914218B4D42000BDF40 /* B.m in Sources */,
+				4CBF74E321991E5C00FD911F /* EmployeeModel.m in Sources */,
 				32156911218B4A2D000BDF40 /* A.m in Sources */,
 				4C790AC221846A2300C0ACF4 /* main.m in Sources */,
 				4C790ACD21846EA900C0ACF4 /* Herbivore.m in Sources */,
+				4CBF74E621991EAB00FD911F /* SubEmployeeModel.m in Sources */,
+				4CBF74EC21991F9B00FD911F /* Company.m in Sources */,
 				4C790ACA21846AAD00C0ACF4 /* Animal.m in Sources */,
 				4C790AD021846EB500C0ACF4 /* Carnivore.m in Sources */,
+				4CBF74E921991F9200FD911F /* SubCompany.m in Sources */,
 				4CD4C8DE2196852600710739 /* ClassA.m in Sources */,
 				4C4EEB0D219563DC00262050 /* Book.m in Sources */,
 				4CD4C8E42196854D00710739 /* ClassC.m in Sources */,
