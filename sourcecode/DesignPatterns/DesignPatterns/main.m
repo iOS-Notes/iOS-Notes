@@ -19,6 +19,7 @@
 #import "Company.h"
 #import "BookStore.h"
 #import "NovelBook.h"
+#import "OffNovelBook.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -61,10 +62,18 @@ int main(int argc, const char * argv[]) {
 //        开闭原则
 //        模拟书店卖书
         BookStore *bookStore = [BookStore new];
+        
+        NSLog(@"------------书店卖出去的原价书籍记录如下：------------");
         for (NovelBook *novelBook in bookStore.bookArray) {
+            NSLog(@"书籍名称：%@ 书籍作者：%@ 书籍价格：%2f", [novelBook bookName], [novelBook bookAuthor], [novelBook bookPrice]);
+        }
+        
+        NSLog(@"------------书店卖出去的打折书籍记录如下：------------");
+        for (OffNovelBook *novelBook in bookStore.offBookArray) {
             NSLog(@"书籍名称：%@ 书籍作者：%@ 书籍价格：%2f", [novelBook bookName], [novelBook bookAuthor], [novelBook bookPrice]);
         }
     }
     return 0;
 }
+
 

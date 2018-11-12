@@ -13,4 +13,6 @@
 
 - (NSArray<IBookProtocol> *)bookArray;
 
+- (NSArray<IBookProtocol> *)offBookArray;
+
 @end
