@@ -16,6 +16,8 @@
 		4C790ACA21846AAD00C0ACF4 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C790AC921846AAD00C0ACF4 /* Animal.m */; };
 		4C790ACD21846EA900C0ACF4 /* Herbivore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C790ACC21846EA900C0ACF4 /* Herbivore.m */; };
 		4C790AD021846EB500C0ACF4 /* Carnivore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C790ACF21846EB500C0ACF4 /* Carnivore.m */; };
+		4CAFACD72199599000F7A83D /* NovelBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAFACD62199599000F7A83D /* NovelBook.m */; };
+		4CAFACDA219959A100F7A83D /* BookStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAFACD9219959A100F7A83D /* BookStore.m */; };
 		4CBF74E321991E5C00FD911F /* EmployeeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF74E221991E5C00FD911F /* EmployeeModel.m */; };
 		4CBF74E621991EAB00FD911F /* SubEmployeeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF74E521991EAB00FD911F /* SubEmployeeModel.m */; };
 		4CBF74E921991F9200FD911F /* SubCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF74E821991F9200FD911F /* SubCompany.m */; };
@@ -58,6 +60,11 @@
 		4C790ACC21846EA900C0ACF4 /* Herbivore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Herbivore.m; sourceTree = "<group>"; };
 		4C790ACE21846EB500C0ACF4 /* Carnivore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Carnivore.h; sourceTree = "<group>"; };
 		4C790ACF21846EB500C0ACF4 /* Carnivore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Carnivore.m; sourceTree = "<group>"; };
+		4CAFACD3219958EC00F7A83D /* IBookProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBookProtocol.h; sourceTree = "<group>"; };
+		4CAFACD52199599000F7A83D /* NovelBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NovelBook.h; sourceTree = "<group>"; };
+		4CAFACD62199599000F7A83D /* NovelBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NovelBook.m; sourceTree = "<group>"; };
+		4CAFACD8219959A100F7A83D /* BookStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookStore.h; sourceTree = "<group>"; };
+		4CAFACD9219959A100F7A83D /* BookStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookStore.m; sourceTree = "<group>"; };
 		4CBF74E121991E5C00FD911F /* EmployeeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeModel.h; sourceTree = "<group>"; };
 		4CBF74E221991E5C00FD911F /* EmployeeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeModel.m; sourceTree = "<group>"; };
 		4CBF74E421991EAB00FD911F /* SubEmployeeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubEmployeeModel.h; sourceTree = "<group>"; };
@@ -108,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				4C790AC121846A2300C0ACF4 /* main.m */,
+				4CAFACD4219958EF00F7A83D /* OCP(开闭原则) */,
 				4CBF74E021991E2600FD911F /* LOD(迪米特法则) */,
 				4CD4C8E82196857B00710739 /* ISP(接口隔离) */,
 				4CD4C8D8219683F600710739 /* SRP(单一职责) */,
@@ -115,6 +123,18 @@
 				4CD4C8DA2196842B00710739 /* LSP(里氏替换) */,
 			);
 			path = DesignPatterns;
+			sourceTree = "<group>";
+		};
+		4CAFACD4219958EF00F7A83D /* OCP(开闭原则) */ = {
+			isa = PBXGroup;
+			children = (
+				4CAFACD3219958EC00F7A83D /* IBookProtocol.h */,
+				4CAFACD52199599000F7A83D /* NovelBook.h */,
+				4CAFACD62199599000F7A83D /* NovelBook.m */,
+				4CAFACD8219959A100F7A83D /* BookStore.h */,
+				4CAFACD9219959A100F7A83D /* BookStore.m */,
+			);
+			path = "OCP(开闭原则)";
 			sourceTree = "<group>";
 		};
 		4CBF74E021991E2600FD911F /* LOD(迪米特法则) */ = {
@@ -248,6 +268,7 @@
 				4C790AC221846A2300C0ACF4 /* main.m in Sources */,
 				4C790ACD21846EA900C0ACF4 /* Herbivore.m in Sources */,
 				4CBF74E621991EAB00FD911F /* SubEmployeeModel.m in Sources */,
+				4CAFACDA219959A100F7A83D /* BookStore.m in Sources */,
 				4CBF74EC21991F9B00FD911F /* Company.m in Sources */,
 				4C790ACA21846AAD00C0ACF4 /* Animal.m in Sources */,
 				4C790AD021846EB500C0ACF4 /* Carnivore.m in Sources */,
@@ -257,6 +278,7 @@
 				4CD4C8E42196854D00710739 /* ClassC.m in Sources */,
 				4CD4C8E72196855600710739 /* ClassD.m in Sources */,
 				4C4EEB0A219563D100262050 /* Mother.m in Sources */,
+				4CAFACD72199599000F7A83D /* NovelBook.m in Sources */,
 				4CD4C8E12196853200710739 /* ClassB.m in Sources */,
 				4C4EEB102195668100262050 /* Newspaper.m in Sources */,
 			);

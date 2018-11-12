@@ -17,9 +17,12 @@
 #import "B.h"
 #import "SubCompany.h"
 #import "Company.h"
+#import "BookStore.h"
+#import "NovelBook.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+//        单一职责
 //        Animal *animal = [Animal new];
 //        [animal eatMeatWithAnimalName:@"狼"];
 //        [animal eatMeatWithAnimalName:@"豹"];
@@ -36,21 +39,31 @@ int main(int argc, const char * argv[]) {
 //        [herbivore eatWithAnimalName:@"马"];
 //        [herbivore eatWithAnimalName:@"牛"];
         
+//        里氏替换
 //        B *b = [[B alloc] init];
 //        NSInteger sub = [b addition:100 b:50];
 //        NSInteger difference = [b subtraction:sub b:100];
 //        NSLog(@"100+50=%ld", sub);
 //        NSLog(@"100+100+50=%ld", difference);
-
+        
+//        依赖倒置
 //        Mother *mother = [Mother new];
 //        Book *book = [Book new];
 //        Newspaper *newspaper = [Newspaper new];
 //        [mother tellStory:book];
 //        [mother tellStory:newspaper];
         
-        Company *company = [Company new];
-        SubCompany *subCompany = [SubCompany new];
-        [company printAllEmployeeWithSubCompany:subCompany];
+//        迪米特法则
+//        Company *company = [Company new];
+//        SubCompany *subCompany = [SubCompany new];
+//        [company printAllEmployeeWithSubCompany:subCompany];
+        
+//        开闭原则
+//        模拟书店卖书
+        BookStore *bookStore = [BookStore new];
+        for (NovelBook *novelBook in bookStore.bookArray) {
+            NSLog(@"书籍名称：%@ 书籍作者：%@ 书籍价格：%2f", [novelBook bookName], [novelBook bookAuthor], [novelBook bookPrice]);
+        }
     }
     return 0;
 }
