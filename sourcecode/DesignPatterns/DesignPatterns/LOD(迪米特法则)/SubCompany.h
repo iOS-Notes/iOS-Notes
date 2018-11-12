@@ -12,7 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SubCompany : NSObject
 
+/**
+ 获取所有分公司员工
+ */
 - (NSArray *)getAllEmployee;
+
+/**
+ 打印分公司所有员工
+ */
+- (void)printAllEmployee;
 
 @end
 

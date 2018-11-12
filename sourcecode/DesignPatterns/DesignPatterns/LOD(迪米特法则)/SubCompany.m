@@ -21,4 +21,12 @@
     return employeeArray.copy;
 }
 
+- (void)printAllEmployee {
+    // 分公司员工
+    NSArray<SubEmployeeModel *> *subEmployeeArray = self.getAllEmployee;
+    for (SubEmployeeModel *employeeModel in subEmployeeArray) {
+        NSLog(@"分公司员工ID:%@", employeeModel.subemployee_id);
+    }
+}
+
 @end

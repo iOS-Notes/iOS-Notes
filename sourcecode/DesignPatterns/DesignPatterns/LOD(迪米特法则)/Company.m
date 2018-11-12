@@ -9,7 +9,6 @@
 #import "Company.h"
 #import "SubCompany.h"
 #import "EmployeeModel.h"
-#import "SubEmployeeModel.h"
 
 @implementation Company
 
@@ -25,10 +24,7 @@
 
 - (void)printAllEmployeeWithSubCompany:(SubCompany *)subCompany {
     // 分公司员工
-    NSArray<SubEmployeeModel *> *subEmployeeArray = subCompany.getAllEmployee;
-    for (SubEmployeeModel *employeeModel in subEmployeeArray) {
-        NSLog(@"分公司员工ID:%@", employeeModel.subemployee_id);
-    }
+    [subCompany printAllEmployee];
     
     // 总公司员工
     NSArray<EmployeeModel *> *employeeArray = self.getAllEmployee;
