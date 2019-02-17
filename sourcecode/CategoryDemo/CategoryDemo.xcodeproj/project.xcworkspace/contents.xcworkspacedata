@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Project 01 - SimpleStopWatch.xcodeproj">
+      location = "self:CategoryDemo.xcodeproj">
    </FileRef>
 </Workspace>
