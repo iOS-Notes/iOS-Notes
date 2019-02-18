@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ViewController+Attribute.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,9 @@
     [super viewDidLoad];
     
     [self test];
+    
+    self.name = @"ViewController+Attribute";
+    NSLog(@"%@", self.name);
 }
 
 - (void)test {

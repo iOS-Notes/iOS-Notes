@@ -17,6 +17,7 @@
 		32F16BD82219A69100764868 /* CategoryDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BD72219A69100764868 /* CategoryDemoUITests.m */; };
 		32F16BE72219A72300764868 /* ViewController+GetSelf.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BE62219A72300764868 /* ViewController+GetSelf.m */; };
 		32F16BEA2219AA3000764868 /* CategoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F16BE92219AA3000764868 /* CategoryManager.m */; };
+		4C94CB7F221A6153008AAFE5 /* ViewController+Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C94CB7D221A6153008AAFE5 /* ViewController+Attribute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		32F16BE62219A72300764868 /* ViewController+GetSelf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+GetSelf.m"; sourceTree = "<group>"; };
 		32F16BE82219AA3000764868 /* CategoryManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryManager.h; sourceTree = "<group>"; };
 		32F16BE92219AA3000764868 /* CategoryManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryManager.m; sourceTree = "<group>"; };
+		4C94CB7D221A6153008AAFE5 /* ViewController+Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Attribute.m"; sourceTree = "<group>"; };
+		4C94CB7E221A6153008AAFE5 /* ViewController+Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+Attribute.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				32F16BB72219A68F00764868 /* ViewController.m */,
 				32F16BE52219A72300764868 /* ViewController+GetSelf.h */,
 				32F16BE62219A72300764868 /* ViewController+GetSelf.m */,
+				4C94CB7E221A6153008AAFE5 /* ViewController+Attribute.h */,
+				4C94CB7D221A6153008AAFE5 /* ViewController+Attribute.m */,
 				32F16BE82219AA3000764868 /* CategoryManager.h */,
 				32F16BE92219AA3000764868 /* CategoryManager.m */,
 				32F16BB92219A68F00764868 /* Main.storyboard */,
@@ -277,6 +282,7 @@
 				32F16BC32219A69100764868 /* main.m in Sources */,
 				32F16BB52219A68F00764868 /* AppDelegate.m in Sources */,
 				32F16BE72219A72300764868 /* ViewController+GetSelf.m in Sources */,
+				4C94CB7F221A6153008AAFE5 /* ViewController+Attribute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
