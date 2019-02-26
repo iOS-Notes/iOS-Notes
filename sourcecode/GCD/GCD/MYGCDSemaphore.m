@@ -23,7 +23,7 @@
     
     __block int cakeNumber = 0;
     
-    dispatch_async(producerQueue,  ^{ //生产者队列
+    dispatch_async(producerQueue, ^{ //生产者队列
         while (1) {
             if (!dispatch_semaphore_signal(sem)) {
                 NSLog(@"Product:生产出了第%d个蛋糕",++cakeNumber);
@@ -33,7 +33,7 @@
         }
     });
     
-    dispatch_async(consumerQueue,  ^{//消费者队列
+    dispatch_async(consumerQueue, ^{//消费者队列
         while (1) {
             if (dispatch_semaphore_wait(sem, dispatch_time(DISPATCH_TIME_NOW, 0 * NSEC_PER_SEC))) {
                 if (cakeNumber > 0) {
@@ -43,26 +43,6 @@
             }
         }
     });
-}
-
-- (void)testHttpSemaphore {
-    dispatch_group_t group = dispatch_group_create();
-    dispatch_semaphore_t semaphore = dispatch_semaphore_create(10); //信号总量是10
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    for (int i = 0; i < 5; i++) {
-        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);//信号量-1
-        dispatch_group_async(group, queue, ^{
-            
-            NSString *url = @"http://114.215.108.225:8081/d/json/1.0?pos=3002";
-            [MYNetworking getWithUrl:url refreshCache:NO success:^(id response) {
-                NSLog(@"group%d",i);
-                dispatch_semaphore_signal(semaphore);   //信号量＋1
-            } fail:^(NSError *error) {
-            }];
-        });
-    }
-    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
- 
 }
 
 /**

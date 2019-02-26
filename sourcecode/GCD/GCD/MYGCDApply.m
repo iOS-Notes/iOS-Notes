@@ -7,7 +7,6 @@
 //
 
 #import "MYGCDApply.h"
-#import "MYNetworking.h"
 
 @implementation MYGCDApply
 
@@ -22,16 +21,15 @@
  创建并行运行线程而付出的开销，很可能比直接使用 for 循环要多，若你要以合适的步长迭代非常大的集合，那才应该考虑使用 dispatch_apply。
  */
 - (void)testGCDApply {
-    NSString *url = @"http://114.215.108.225:8081/d/json/1.0?pos=3002";
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_apply(10, queue, ^(size_t index) {
-        // 执行10次
-        [MYNetworking getWithUrl:url refreshCache:NO success:^(id response) {
-            NSLog(@"group%zu", index);
-        } fail:^(NSError *error) {
-            NSLog(@"group%zu", index);
-        }];
+    NSLog(@"----start-----当前线程---%@",[NSThread currentThread]);
+    
+    dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    dispatch_apply(10, globalQueue, ^(size_t index) {
+        NSLog(@"执行第%zd次的任务---%@",index, [NSThread currentThread]);
     });
+    
+    NSLog(@"----end-----当前线程---%@", [NSThread currentThread]);
 }
 
 @end

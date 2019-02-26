@@ -23,8 +23,9 @@
  */
 - (void)testGCDGroup {
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{ // 1
-        NSString *url = @"http://114.215.108.225:8081/d/json/1.0?pos=3002";
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+    dispatch_async(queue, ^{
+        NSString *url = @"https://github.com/heimashi/easy_mock_api";
         dispatch_group_t group = dispatch_group_create();
         for (int i = 0; i < 10; i++) {
             dispatch_group_enter(group);
@@ -48,7 +49,7 @@
  使用 dispatch_group_enter 和 dispatch_group_leave，这种方式使用更为灵活，enter 和 leave 必须配合使用，有几次 enter 就要有几次 leave，否则 group 会一直存在。当所有 enter 的 block 都 leave 后，会执行 dispatch_group_notify 的block。
  */
 - (void)testGCDGroup2 {
-    NSString *url = @"http://114.215.108.225:8081/d/json/1.0?pos=3002";
+    NSString *url = @"https://github.com/heimashi/easy_mock_api";
     dispatch_group_t group = dispatch_group_create();
     for (int i = 0; i < 10; i++) {
         dispatch_group_enter(group);
@@ -65,6 +66,7 @@
     });
 }
 
+// 队列组：当我们遇到需要异步下载3张图片，都下载完之后再拼接成一个整图的时候，就需要用到gcd队列组。
 - (void)testGCDGroup3 {
     // 创建一个分组
     dispatch_group_t group = dispatch_group_create();

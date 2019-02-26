@@ -12,8 +12,6 @@
 
 - (void)testProductAndConsumer;
 
-- (void)testHttpSemaphore;
-
 - (void)testSemaphore;
 
 @end

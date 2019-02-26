@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MYNetworking.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 配置请求和响应类型，由于部分伙伴们的服务器不接收JSON传过去，现在默认值改成了plainText
+    [MYNetworking configRequestType:kMYRequestTypePlainText
+                       responseType:kMYResponseTypeJSON
+                shouldAutoEncodeUrl:YES
+            callbackOnCancelRequest:NO];
     return YES;
 }
 
