@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self dispatch_barrier_async];
 }
 
 #pragma mark --------队列的三种获取方式----------
