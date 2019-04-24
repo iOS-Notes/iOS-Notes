@@ -56,7 +56,7 @@ Latest：[浅谈面向对象的六大设计原则](https://www.jianshu.com/p/7b4
 
 | Project | Version | Article |
 |:-------:|:-------:|:------|
-|算法||[如何实现 LRU 缓存淘汰算法](https://www.jianshu.com/p/9cda7c69dfb9)<br/>[为什么数组都从0开始编号](https://www.jianshu.com/p/9cda7c69dfb9)|
+|算法||[冒泡排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BubbleSort)|
 
 ----------------------------
 
