@@ -56,7 +56,7 @@ Latest：[浅谈面向对象的六大设计原则](https://www.jianshu.com/p/7b4
 
 | Project | Version | Article |
 |:-------:|:-------:|:------|
-|算法||[冒泡排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BubbleSort) <br> [选择排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/SelectionSort) <br> [插入排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/InsertionSort)|
+|算法||[冒泡排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BubbleSort) <br> [选择排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/SelectionSort) <br> [插入排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/InsertionSort) <br> [快速排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/QuickSort)|
 
 ----------------------------
 
