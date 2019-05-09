@@ -56,8 +56,12 @@ Latest：[浅谈面向对象的六大设计原则](https://www.jianshu.com/p/7b4
 
 | Project | Description | Article |
 |:-------:|:-------:|:------|
-|算法||[冒泡排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BubbleSort) <br> [选择排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/SelectionSort) <br> [插入排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/InsertionSort) <br> [快速排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/QuickSort) <br> [希尔排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/ShellSort) <br> [归并排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/MergeSort)|
-
+|冒泡排序| 冒泡排序是一种简单的排序算法。它重复地遍历要排序的数列，一次比较两个元素，如果前一个元素大于后一个元素，就交换这两个元素的位置，直到没有再需要交换的元素，也就是说该数列已经排序完成。 |[冒泡排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BubbleSort)|
+|选择排序| 选择排序是一种简单直观的排序算法，首先在待排序序列中找到最小(大)元素，存放到排序序列的起始位置，然后，再从剩余待排序元素中继续寻找最小(大)元素，然后放到已排序序列的末尾。以此类推，直到所有元素均排序完毕。 |[选择排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/SelectionSort)|
+|插入排序| 插入排序的算法描述是一种简单直观的排序算法。它的工作原理是通过构建有序序列，对于待排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。 |[插入排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/InsertionSort)|
+|快速排序| 通过一趟排序将待排序的记录分割成独立的两部分，其中一部分记录的关键字均比另一部分记录的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序的目的。 |[快速排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/QuickSort)|
+|希尔排序| 希尔排序又叫缩小增量排序，将整个待排序的序列分割成为若干子序列分别进行直接插入排序，待整个序列中的记录“基本有序”时，再对全体记录进行依次直接插入排序。 |[希尔排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/ShellSort)|
+|归并排序| 归并排序采用分治法，先把待排序序列拆分成一个个子序列，直到子序列只有一个元素，停止拆分，然后对每个子序列进行边排序边合并。 |[归并排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/MergeSort)|
 ----------------------------
 
 # 🍭 设计模式
