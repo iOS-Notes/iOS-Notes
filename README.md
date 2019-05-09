@@ -54,9 +54,9 @@ Latest：[浅谈面向对象的六大设计原则](https://www.jianshu.com/p/7b4
 
 # 📚 算法
 
-| Project | Version | Article |
+| Project | Description | Article |
 |:-------:|:-------:|:------|
-|算法||[冒泡排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BubbleSort) <br> [选择排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/SelectionSort) <br> [插入排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/InsertionSort) <br> [快速排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/QuickSort) <br> [希尔排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/ShellSort)|
+|算法||[冒泡排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BubbleSort) <br> [选择排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/SelectionSort) <br> [插入排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/InsertionSort) <br> [快速排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/QuickSort) <br> [希尔排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/ShellSort) <br> [归并排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/MergeSort)|
 
 ----------------------------
 
