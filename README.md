@@ -62,6 +62,7 @@ Latest：[浅谈面向对象的六大设计原则](https://www.jianshu.com/p/7b4
 |4、| 通过一趟排序将待排序的记录分割成独立的两部分，其中一部分记录的关键字均比另一部分记录的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序的目的。 |[快速排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/QuickSort)|
 |5、| 希尔排序又叫缩小增量排序，将整个待排序的序列分割成为若干子序列分别进行直接插入排序，待整个序列中的记录“基本有序”时，再对全体记录进行依次直接插入排序。 |[希尔排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/ShellSort)|
 |6、| 归并排序采用分治法，先把待排序序列拆分成一个个子序列，直到子序列只有一个元素，停止拆分，然后对每个子序列进行边排序边合并。 |[归并排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/MergeSort)|
+|7、| 桶排序的核心思想是将要排序的数据分到几个有序的桶里，每个桶里的数据再单独进行排序。桶内排完序之后，再把每个桶里的数据按照顺序依次取出，组成的序列就是有序的了。|[桶排序](https://github.com/sunjinshuai/Play-Leetcode/tree/master/Algorithm-Sort/BucketSort)|
 ----------------------------
 
 # 🍭 设计模式
