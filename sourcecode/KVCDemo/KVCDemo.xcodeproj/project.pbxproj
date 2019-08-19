@@ -7,32 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C2E1A65221FF94300869BB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E1A64221FF94300869BB9 /* AppDelegate.m */; };
-		4C2E1A68221FF94300869BB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E1A67221FF94300869BB9 /* ViewController.m */; };
-		4C2E1A6B221FF94300869BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2E1A69221FF94300869BB9 /* Main.storyboard */; };
-		4C2E1A6D221FF94500869BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2E1A6C221FF94500869BB9 /* Assets.xcassets */; };
-		4C2E1A70221FF94500869BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2E1A6E221FF94500869BB9 /* LaunchScreen.storyboard */; };
-		4C2E1A73221FF94500869BB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E1A72221FF94500869BB9 /* main.m */; };
-		4C2E1A7B221FF96100869BB9 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2E1A7A221FF96100869BB9 /* BankAccount.m */; };
+		680855CB230A4C4B001E781C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 680855CA230A4C4B001E781C /* main.m */; };
+		680855D1230A4C80001E781C /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 680855CF230A4C80001E781C /* BankAccount.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		680855C6230A4C4B001E781C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4C2E1A60221FF94300869BB9 /* KVCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C2E1A63221FF94300869BB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4C2E1A64221FF94300869BB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4C2E1A66221FF94300869BB9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4C2E1A67221FF94300869BB9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4C2E1A6A221FF94300869BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4C2E1A6C221FF94500869BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C2E1A6F221FF94500869BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4C2E1A71221FF94500869BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C2E1A72221FF94500869BB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C2E1A79221FF96100869BB9 /* BankAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
-		4C2E1A7A221FF96100869BB9 /* BankAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
+		680855C8230A4C4B001E781C /* KVCTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KVCTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		680855CA230A4C4B001E781C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		680855CF230A4C80001E781C /* BankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
+		680855D0230A4C80001E781C /* BankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4C2E1A5D221FF94300869BB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680855C5230A4C4B001E781C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,7 +52,7 @@
 		4C2E1A57221FF94300869BB9 = {
 			isa = PBXGroup;
 			children = (
-				4C2E1A62221FF94300869BB9 /* KVCDemo */,
+				680855C9230A4C4B001E781C /* KVCTest */,
 				4C2E1A61221FF94300869BB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,26 +61,19 @@
 			isa = PBXGroup;
 			children = (
 				4C2E1A60221FF94300869BB9 /* KVCDemo.app */,
+				680855C8230A4C4B001E781C /* KVCTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C2E1A62221FF94300869BB9 /* KVCDemo */ = {
+		680855C9230A4C4B001E781C /* KVCTest */ = {
 			isa = PBXGroup;
 			children = (
-				4C2E1A63221FF94300869BB9 /* AppDelegate.h */,
-				4C2E1A64221FF94300869BB9 /* AppDelegate.m */,
-				4C2E1A66221FF94300869BB9 /* ViewController.h */,
-				4C2E1A67221FF94300869BB9 /* ViewController.m */,
-				4C2E1A79221FF96100869BB9 /* BankAccount.h */,
-				4C2E1A7A221FF96100869BB9 /* BankAccount.m */,
-				4C2E1A69221FF94300869BB9 /* Main.storyboard */,
-				4C2E1A6C221FF94500869BB9 /* Assets.xcassets */,
-				4C2E1A6E221FF94500869BB9 /* LaunchScreen.storyboard */,
-				4C2E1A71221FF94500869BB9 /* Info.plist */,
-				4C2E1A72221FF94500869BB9 /* main.m */,
+				680855D0230A4C80001E781C /* BankAccount.h */,
+				680855CF230A4C80001E781C /* BankAccount.m */,
+				680855CA230A4C4B001E781C /* main.m */,
 			);
-			path = KVCDemo;
+			path = KVCTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +96,23 @@
 			productReference = 4C2E1A60221FF94300869BB9 /* KVCDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		680855C7230A4C4B001E781C /* KVCTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 680855CE230A4C4B001E781C /* Build configuration list for PBXNativeTarget "KVCTest" */;
+			buildPhases = (
+				680855C4230A4C4B001E781C /* Sources */,
+				680855C5230A4C4B001E781C /* Frameworks */,
+				680855C6230A4C4B001E781C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KVCTest;
+			productName = KVCTest;
+			productReference = 680855C8230A4C4B001E781C /* KVCTest */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +124,9 @@
 				TargetAttributes = {
 					4C2E1A5F221FF94300869BB9 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					680855C7230A4C4B001E781C = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
@@ -124,6 +144,7 @@
 			projectRoot = "";
 			targets = (
 				4C2E1A5F221FF94300869BB9 /* KVCDemo */,
+				680855C7230A4C4B001E781C /* KVCTest */,
 			);
 		};
 /* End PBXProject section */
@@ -133,9 +154,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2E1A70221FF94500869BB9 /* LaunchScreen.storyboard in Resources */,
-				4C2E1A6D221FF94500869BB9 /* Assets.xcassets in Resources */,
-				4C2E1A6B221FF94300869BB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,33 +164,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2E1A68221FF94300869BB9 /* ViewController.m in Sources */,
-				4C2E1A7B221FF96100869BB9 /* BankAccount.m in Sources */,
-				4C2E1A73221FF94500869BB9 /* main.m in Sources */,
-				4C2E1A65221FF94300869BB9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680855C4230A4C4B001E781C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680855CB230A4C4B001E781C /* main.m in Sources */,
+				680855D1230A4C80001E781C /* BankAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4C2E1A69221FF94300869BB9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C2E1A6A221FF94300869BB9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4C2E1A6E221FF94500869BB9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C2E1A6F221FF94500869BB9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4C2E1A74221FF94500869BB9 /* Debug */ = {
@@ -319,6 +323,33 @@
 			};
 			name = Release;
 		};
+		680855CC230A4C4B001E781C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7D2H3Q3ZU;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		680855CD230A4C4B001E781C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7D2H3Q3ZU;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +367,15 @@
 			buildConfigurations = (
 				4C2E1A77221FF94500869BB9 /* Debug */,
 				4C2E1A78221FF94500869BB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		680855CE230A4C4B001E781C /* Build configuration list for PBXNativeTarget "KVCTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680855CC230A4C4B001E781C /* Debug */,
+				680855CD230A4C4B001E781C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

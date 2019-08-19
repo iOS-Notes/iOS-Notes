@@ -10,4 +10,6 @@
 
 @interface BankAccount : NSObject
 
+@property (nonatomic, copy) NSString *name;
+
 @end

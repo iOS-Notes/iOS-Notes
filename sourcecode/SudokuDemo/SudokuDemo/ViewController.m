@@ -87,13 +87,13 @@
     UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, SCREEN_WIDTH, SCREEN_HEIGHT)];
     [self.view addSubview:backView];
     // 列数
-    int colunm = 2;
+    int colunm = 4;
     // 间距
-    int margin = 10;
+    int margin = 29;
     // 宽度
     int width = (SCREEN_WIDTH - (colunm + 1) * margin) / colunm;
     // 高度
-    int height = width;
+    int height = (215 - 20 - margin * 2) / 2;
     // 循环添加9个小格子
     for (int i = 0; i < 9; i++) {
         UIButton *button = [[UIButton alloc] init];

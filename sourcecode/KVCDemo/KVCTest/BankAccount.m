@@ -10,4 +10,8 @@
 
 @implementation BankAccount
 
+- (id)valueForUndefinedKey:(NSString *)key {
+    return @"";
+}
+
 @end
