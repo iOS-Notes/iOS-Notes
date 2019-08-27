@@ -13,8 +13,6 @@
 		321E8F741FCFB42B00E523B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 321E8F731FCFB42B00E523B7 /* Assets.xcassets */; };
 		321E8F771FCFB42B00E523B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321E8F751FCFB42B00E523B7 /* LaunchScreen.storyboard */; };
 		321E8F7A1FCFB42B00E523B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E8F791FCFB42B00E523B7 /* main.m */; };
-		321E8F841FCFB42B00E523B7 /* RunTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E8F831FCFB42B00E523B7 /* RunTimeTests.m */; };
-		321E8F8F1FCFB42B00E523B7 /* RunTimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E8F8E1FCFB42B00E523B7 /* RunTimeUITests.m */; };
 		321E8FA81FCFB43F00E523B7 /* Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E8F9E1FCFB43D00E523B7 /* Runtime.m */; };
 		321E8FA91FCFB43F00E523B7 /* TestClass+Exchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E8FA11FCFB43E00E523B7 /* TestClass+Exchange.m */; };
 		321E8FAA1FCFB43F00E523B7 /* ForwardTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 321E8FA41FCFB43E00E523B7 /* ForwardTestClass.m */; };
@@ -41,6 +39,9 @@
 		325BADC31FDEA6D80070BCD2 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADC21FDEA6D80070BCD2 /* User.m */; };
 		325BADC61FDEA99C0070BCD2 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADC51FDEA99C0070BCD2 /* Dog.m */; };
 		325BADC91FDEABCD0070BCD2 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADC81FDEABCD0070BCD2 /* Cat.m */; };
+		680A5A0F2314DB18004683BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 680A5A0E2314DB18004683BC /* main.m */; };
+		680A5A152314DB46004683BC /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 680A5A142314DB46004683BC /* Father.m */; };
+		680A5A182314DB61004683BC /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 680A5A172314DB61004683BC /* Son.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		680A5A0A2314DB18004683BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		321E8F671FCFB42B00E523B7 /* RunTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		321E8F6A1FCFB42B00E523B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,11 +85,7 @@
 		321E8F781FCFB42B00E523B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		321E8F791FCFB42B00E523B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		321E8F7F1FCFB42B00E523B7 /* RunTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		321E8F831FCFB42B00E523B7 /* RunTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeTests.m; sourceTree = "<group>"; };
-		321E8F851FCFB42B00E523B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		321E8F8A1FCFB42B00E523B7 /* RunTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		321E8F8E1FCFB42B00E523B7 /* RunTimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeUITests.m; sourceTree = "<group>"; };
-		321E8F901FCFB42B00E523B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		321E8F9C1FCFB43D00E523B7 /* TestClass+Exchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestClass+Exchange.h"; sourceTree = "<group>"; };
 		321E8F9D1FCFB43D00E523B7 /* TestClass+AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestClass+AssociatedObject.h"; sourceTree = "<group>"; };
 		321E8F9E1FCFB43D00E523B7 /* Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime.m; sourceTree = "<group>"; };
@@ -126,6 +135,12 @@
 		325BADC51FDEA99C0070BCD2 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		325BADC71FDEABCD0070BCD2 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
 		325BADC81FDEABCD0070BCD2 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		680A5A0C2314DB18004683BC /* SelfClass与SuperClass的区别 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SelfClass与SuperClass的区别"; sourceTree = BUILT_PRODUCTS_DIR; };
+		680A5A0E2314DB18004683BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		680A5A132314DB46004683BC /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		680A5A142314DB46004683BC /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		680A5A162314DB61004683BC /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		680A5A172314DB61004683BC /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +165,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		680A5A092314DB18004683BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -157,8 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				321E8F691FCFB42B00E523B7 /* RunTime */,
-				321E8F821FCFB42B00E523B7 /* RunTimeTests */,
-				321E8F8D1FCFB42B00E523B7 /* RunTimeUITests */,
+				680A5A0D2314DB18004683BC /* SelfClass与SuperClass的区别 */,
 				321E8F681FCFB42B00E523B7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -169,6 +190,7 @@
 				321E8F671FCFB42B00E523B7 /* RunTime.app */,
 				321E8F7F1FCFB42B00E523B7 /* RunTimeTests.xctest */,
 				321E8F8A1FCFB42B00E523B7 /* RunTimeUITests.xctest */,
+				680A5A0C2314DB18004683BC /* SelfClass与SuperClass的区别 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,24 +249,6 @@
 			path = RunTime;
 			sourceTree = "<group>";
 		};
-		321E8F821FCFB42B00E523B7 /* RunTimeTests */ = {
-			isa = PBXGroup;
-			children = (
-				321E8F831FCFB42B00E523B7 /* RunTimeTests.m */,
-				321E8F851FCFB42B00E523B7 /* Info.plist */,
-			);
-			path = RunTimeTests;
-			sourceTree = "<group>";
-		};
-		321E8F8D1FCFB42B00E523B7 /* RunTimeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				321E8F8E1FCFB42B00E523B7 /* RunTimeUITests.m */,
-				321E8F901FCFB42B00E523B7 /* Info.plist */,
-			);
-			path = RunTimeUITests;
-			sourceTree = "<group>";
-		};
 		3220B13E1FFCA4ED00A58AA0 /* MYJSONModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +266,18 @@
 				3220B14C1FFCDA1F00A58AA0 /* NSString+MYJSONModel.m */,
 			);
 			path = MYJSONModel;
+			sourceTree = "<group>";
+		};
+		680A5A0D2314DB18004683BC /* SelfClass与SuperClass的区别 */ = {
+			isa = PBXGroup;
+			children = (
+				680A5A0E2314DB18004683BC /* main.m */,
+				680A5A132314DB46004683BC /* Father.h */,
+				680A5A142314DB46004683BC /* Father.m */,
+				680A5A162314DB61004683BC /* Son.h */,
+				680A5A172314DB61004683BC /* Son.m */,
+			);
+			path = "SelfClass与SuperClass的区别";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +336,23 @@
 			productReference = 321E8F8A1FCFB42B00E523B7 /* RunTimeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		680A5A0B2314DB18004683BC /* SelfClass与SuperClass的区别 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 680A5A122314DB18004683BC /* Build configuration list for PBXNativeTarget "SelfClass与SuperClass的区别" */;
+			buildPhases = (
+				680A5A082314DB18004683BC /* Sources */,
+				680A5A092314DB18004683BC /* Frameworks */,
+				680A5A0A2314DB18004683BC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SelfClass与SuperClass的区别";
+			productName = "SelfClass与SuperClass的区别";
+			productReference = 680A5A0C2314DB18004683BC /* SelfClass与SuperClass的区别 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -343,6 +376,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 321E8F661FCFB42B00E523B7;
 					};
+					680A5A0B2314DB18004683BC = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 321E8F621FCFB42B00E523B7 /* Build configuration list for PBXProject "RunTime" */;
@@ -361,6 +398,7 @@
 				321E8F661FCFB42B00E523B7 /* RunTime */,
 				321E8F7E1FCFB42B00E523B7 /* RunTimeTests */,
 				321E8F891FCFB42B00E523B7 /* RunTimeUITests */,
+				680A5A0B2314DB18004683BC /* SelfClass与SuperClass的区别 */,
 			);
 		};
 /* End PBXProject section */
@@ -433,7 +471,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				321E8F841FCFB42B00E523B7 /* RunTimeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +478,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				321E8F8F1FCFB42B00E523B7 /* RunTimeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680A5A082314DB18004683BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680A5A182314DB61004683BC /* Son.m in Sources */,
+				680A5A0F2314DB18004683BC /* main.m in Sources */,
+				680A5A152314DB46004683BC /* Father.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +710,39 @@
 			};
 			name = Release;
 		};
+		680A5A102314DB18004683BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7D2H3Q3ZU;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		680A5A112314DB18004683BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7D2H3Q3ZU;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -699,6 +778,15 @@
 			buildConfigurations = (
 				321E8F9A1FCFB42B00E523B7 /* Debug */,
 				321E8F9B1FCFB42B00E523B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		680A5A122314DB18004683BC /* Build configuration list for PBXNativeTarget "SelfClass与SuperClass的区别" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680A5A102314DB18004683BC /* Debug */,
+				680A5A112314DB18004683BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
