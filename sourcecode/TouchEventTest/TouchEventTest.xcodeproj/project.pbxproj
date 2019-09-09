@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6809A6072320F9E40077B07F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6809A6062320F9E40077B07F /* AppDelegate.m */; };
+		6809A60A2320F9E40077B07F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6809A6092320F9E40077B07F /* ViewController.m */; };
+		6809A60D2320F9E40077B07F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6809A60B2320F9E40077B07F /* Main.storyboard */; };
+		6809A60F2320F9E60077B07F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6809A60E2320F9E60077B07F /* Assets.xcassets */; };
+		6809A6122320F9E60077B07F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6809A6102320F9E60077B07F /* LaunchScreen.storyboard */; };
+		6809A6152320F9E60077B07F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6809A6142320F9E60077B07F /* main.m */; };
+		6809A6392320FE7C0077B07F /* MYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6809A6382320FE7C0077B07F /* MYTableView.m */; };
+		6809A63C2320FEA70077B07F /* MYCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6809A63B2320FEA70077B07F /* MYCustomView.m */; };
+		6809A63F2320FEC10077B07F /* MYCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6809A63E2320FEC10077B07F /* MYCustomButton.m */; };
+		F892A43F20517F57AE8BBB0F /* libPods-TouchEventTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F6E734AEC5EE7CD5530BAD /* libPods-TouchEventTest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6809A61B2320F9E60077B07F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6809A5FA2320F9E40077B07F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6809A6012320F9E40077B07F;
+			remoteInfo = TouchEventTest;
+		};
+		6809A6262320F9E60077B07F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6809A5FA2320F9E40077B07F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6809A6012320F9E40077B07F;
+			remoteInfo = TouchEventTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A4481D20D4DF7F8D3BF92E9 /* Pods-TouchEventTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchEventTest.release.xcconfig"; path = "Target Support Files/Pods-TouchEventTest/Pods-TouchEventTest.release.xcconfig"; sourceTree = "<group>"; };
+		3072B8BD3E9E367AD4C303B9 /* Pods-TouchEventTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchEventTest.debug.xcconfig"; path = "Target Support Files/Pods-TouchEventTest/Pods-TouchEventTest.debug.xcconfig"; sourceTree = "<group>"; };
+		6809A6022320F9E40077B07F /* TouchEventTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchEventTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6809A6052320F9E40077B07F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6809A6062320F9E40077B07F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6809A6082320F9E40077B07F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6809A6092320F9E40077B07F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6809A60C2320F9E40077B07F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6809A60E2320F9E60077B07F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6809A6112320F9E60077B07F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6809A6132320F9E60077B07F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6809A6142320F9E60077B07F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6809A61A2320F9E60077B07F /* TouchEventTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchEventTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6809A6252320F9E60077B07F /* TouchEventTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchEventTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6809A6372320FE7C0077B07F /* MYTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTableView.h; sourceTree = "<group>"; };
+		6809A6382320FE7C0077B07F /* MYTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTableView.m; sourceTree = "<group>"; };
+		6809A63A2320FEA70077B07F /* MYCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCustomView.h; sourceTree = "<group>"; };
+		6809A63B2320FEA70077B07F /* MYCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCustomView.m; sourceTree = "<group>"; };
+		6809A63D2320FEC10077B07F /* MYCustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCustomButton.h; sourceTree = "<group>"; };
+		6809A63E2320FEC10077B07F /* MYCustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCustomButton.m; sourceTree = "<group>"; };
+		F6F6E734AEC5EE7CD5530BAD /* libPods-TouchEventTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TouchEventTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6809A5FF2320F9E40077B07F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F892A43F20517F57AE8BBB0F /* libPods-TouchEventTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6809A6172320F9E60077B07F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6809A6222320F9E60077B07F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		078226160AA973B14A291E9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6F6E734AEC5EE7CD5530BAD /* libPods-TouchEventTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6809A5F92320F9E40077B07F = {
+			isa = PBXGroup;
+			children = (
+				6809A6042320F9E40077B07F /* TouchEventTest */,
+				6809A6032320F9E40077B07F /* Products */,
+				EFA6AEEE4C80BA1F59EC6E57 /* Pods */,
+				078226160AA973B14A291E9F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6809A6032320F9E40077B07F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6809A6022320F9E40077B07F /* TouchEventTest.app */,
+				6809A61A2320F9E60077B07F /* TouchEventTestTests.xctest */,
+				6809A6252320F9E60077B07F /* TouchEventTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6809A6042320F9E40077B07F /* TouchEventTest */ = {
+			isa = PBXGroup;
+			children = (
+				6809A6052320F9E40077B07F /* AppDelegate.h */,
+				6809A6062320F9E40077B07F /* AppDelegate.m */,
+				6809A6082320F9E40077B07F /* ViewController.h */,
+				6809A6092320F9E40077B07F /* ViewController.m */,
+				6809A6372320FE7C0077B07F /* MYTableView.h */,
+				6809A6382320FE7C0077B07F /* MYTableView.m */,
+				6809A63A2320FEA70077B07F /* MYCustomView.h */,
+				6809A63B2320FEA70077B07F /* MYCustomView.m */,
+				6809A63D2320FEC10077B07F /* MYCustomButton.h */,
+				6809A63E2320FEC10077B07F /* MYCustomButton.m */,
+				6809A60B2320F9E40077B07F /* Main.storyboard */,
+				6809A60E2320F9E60077B07F /* Assets.xcassets */,
+				6809A6102320F9E60077B07F /* LaunchScreen.storyboard */,
+				6809A6132320F9E60077B07F /* Info.plist */,
+				6809A6142320F9E60077B07F /* main.m */,
+			);
+			path = TouchEventTest;
+			sourceTree = "<group>";
+		};
+		EFA6AEEE4C80BA1F59EC6E57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3072B8BD3E9E367AD4C303B9 /* Pods-TouchEventTest.debug.xcconfig */,
+				2A4481D20D4DF7F8D3BF92E9 /* Pods-TouchEventTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6809A6012320F9E40077B07F /* TouchEventTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6809A62E2320F9E60077B07F /* Build configuration list for PBXNativeTarget "TouchEventTest" */;
+			buildPhases = (
+				EBC3D4F2366A600D7A581081 /* [CP] Check Pods Manifest.lock */,
+				6809A5FE2320F9E40077B07F /* Sources */,
+				6809A5FF2320F9E40077B07F /* Frameworks */,
+				6809A6002320F9E40077B07F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchEventTest;
+			productName = TouchEventTest;
+			productReference = 6809A6022320F9E40077B07F /* TouchEventTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6809A6192320F9E60077B07F /* TouchEventTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6809A6312320F9E60077B07F /* Build configuration list for PBXNativeTarget "TouchEventTestTests" */;
+			buildPhases = (
+				6809A6162320F9E60077B07F /* Sources */,
+				6809A6172320F9E60077B07F /* Frameworks */,
+				6809A6182320F9E60077B07F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6809A61C2320F9E60077B07F /* PBXTargetDependency */,
+			);
+			name = TouchEventTestTests;
+			productName = TouchEventTestTests;
+			productReference = 6809A61A2320F9E60077B07F /* TouchEventTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6809A6242320F9E60077B07F /* TouchEventTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6809A6342320F9E60077B07F /* Build configuration list for PBXNativeTarget "TouchEventTestUITests" */;
+			buildPhases = (
+				6809A6212320F9E60077B07F /* Sources */,
+				6809A6222320F9E60077B07F /* Frameworks */,
+				6809A6232320F9E60077B07F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6809A6272320F9E60077B07F /* PBXTargetDependency */,
+			);
+			name = TouchEventTestUITests;
+			productName = TouchEventTestUITests;
+			productReference = 6809A6252320F9E60077B07F /* TouchEventTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6809A5FA2320F9E40077B07F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = aikucun;
+				TargetAttributes = {
+					6809A6012320F9E40077B07F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					6809A6192320F9E60077B07F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6809A6012320F9E40077B07F;
+					};
+					6809A6242320F9E60077B07F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6809A6012320F9E40077B07F;
+					};
+				};
+			};
+			buildConfigurationList = 6809A5FD2320F9E40077B07F /* Build configuration list for PBXProject "TouchEventTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6809A5F92320F9E40077B07F;
+			productRefGroup = 6809A6032320F9E40077B07F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6809A6012320F9E40077B07F /* TouchEventTest */,
+				6809A6192320F9E60077B07F /* TouchEventTestTests */,
+				6809A6242320F9E60077B07F /* TouchEventTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6809A6002320F9E40077B07F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6809A6122320F9E60077B07F /* LaunchScreen.storyboard in Resources */,
+				6809A60F2320F9E60077B07F /* Assets.xcassets in Resources */,
+				6809A60D2320F9E40077B07F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6809A6182320F9E60077B07F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6809A6232320F9E60077B07F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EBC3D4F2366A600D7A581081 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TouchEventTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6809A5FE2320F9E40077B07F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6809A60A2320F9E40077B07F /* ViewController.m in Sources */,
+				6809A6392320FE7C0077B07F /* MYTableView.m in Sources */,
+				6809A63C2320FEA70077B07F /* MYCustomView.m in Sources */,
+				6809A6152320F9E60077B07F /* main.m in Sources */,
+				6809A63F2320FEC10077B07F /* MYCustomButton.m in Sources */,
+				6809A6072320F9E40077B07F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6809A6162320F9E60077B07F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6809A6212320F9E60077B07F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6809A61C2320F9E60077B07F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6809A6012320F9E40077B07F /* TouchEventTest */;
+			targetProxy = 6809A61B2320F9E60077B07F /* PBXContainerItemProxy */;
+		};
+		6809A6272320F9E60077B07F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6809A6012320F9E40077B07F /* TouchEventTest */;
+			targetProxy = 6809A6262320F9E60077B07F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6809A60B2320F9E40077B07F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6809A60C2320F9E40077B07F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6809A6102320F9E60077B07F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6809A6112320F9E60077B07F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6809A62C2320F9E60077B07F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6809A62D2320F9E60077B07F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6809A62F2320F9E60077B07F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3072B8BD3E9E367AD4C303B9 /* Pods-TouchEventTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7D2H3Q3ZU;
+				INFOPLIST_FILE = TouchEventTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aikucun.TouchEventTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6809A6302320F9E60077B07F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A4481D20D4DF7F8D3BF92E9 /* Pods-TouchEventTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7D2H3Q3ZU;
+				INFOPLIST_FILE = TouchEventTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aikucun.TouchEventTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6809A6322320F9E60077B07F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7D2H3Q3ZU;
+				INFOPLIST_FILE = TouchEventTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aikucun.TouchEventTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchEventTest.app/TouchEventTest";
+			};
+			name = Debug;
+		};
+		6809A6332320F9E60077B07F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7D2H3Q3ZU;
+				INFOPLIST_FILE = TouchEventTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aikucun.TouchEventTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchEventTest.app/TouchEventTest";
+			};
+			name = Release;
+		};
+		6809A6352320F9E60077B07F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7D2H3Q3ZU;
+				INFOPLIST_FILE = TouchEventTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aikucun.TouchEventTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TouchEventTest;
+			};
+			name = Debug;
+		};
+		6809A6362320F9E60077B07F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7D2H3Q3ZU;
+				INFOPLIST_FILE = TouchEventTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aikucun.TouchEventTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TouchEventTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6809A5FD2320F9E40077B07F /* Build configuration list for PBXProject "TouchEventTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6809A62C2320F9E60077B07F /* Debug */,
+				6809A62D2320F9E60077B07F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6809A62E2320F9E60077B07F /* Build configuration list for PBXNativeTarget "TouchEventTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6809A62F2320F9E60077B07F /* Debug */,
+				6809A6302320F9E60077B07F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6809A6312320F9E60077B07F /* Build configuration list for PBXNativeTarget "TouchEventTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6809A6322320F9E60077B07F /* Debug */,
+				6809A6332320F9E60077B07F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6809A6342320F9E60077B07F /* Build configuration list for PBXNativeTarget "TouchEventTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6809A6352320F9E60077B07F /* Debug */,
+				6809A6362320F9E60077B07F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6809A5FA2320F9E40077B07F /* Project object */;
+}
