@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self addDependency];
+    [self setQueuePriority];
 }
 
 /**
@@ -181,6 +181,41 @@
     [op2 addDependency:op1];
     [queue addOperation:op1];
     [queue addOperation:op2];
+}
+
+/**
+ * 设置优先级
+ * 就绪状态下，优先级高的会优先执行，但是执行时间长短并不是一定的，所以优先级高的并不是一定会先执行完毕
+ */
+- (void)setQueuePriority {
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+
+    NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+        [self task1];
+    }];
+    [op1 setQueuePriority:(NSOperationQueuePriorityVeryLow)];
+
+    NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+        [self task2];
+    }];
+
+    NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
+        [self task3];
+    }];
+
+    NSBlockOperation *op4 = [NSBlockOperation blockOperationWithBlock:^{
+        [self task4];
+    }];
+
+    [op2 addDependency:op1];
+    [op3 addDependency:op2];
+    [op2 setQueuePriority:(NSOperationQueuePriorityVeryHigh)];
+
+    [queue addOperation:op1];
+    [queue addOperation:op2];
+    [queue addOperation:op3];
+    [queue addOperation:op4];
+
 }
 
 - (void)task1 {
