@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self mainQueue];
+
+    [self setMaxConcurrentOperationCount];
 }
 
 /**
@@ -48,7 +48,7 @@
     NSBlockOperation *op = [NSBlockOperation blockOperationWithBlock:^{
         [self task3];
     }];
-    
+
     [op addExecutionBlock:^{
         [self task4];
     }];
@@ -64,44 +64,103 @@
     [op addExecutionBlock:^{
         [self task8];
     }];
-    
+
     [op start];
 }
 
 - (void)mainQueue {
     NSOperationQueue *queue = [NSOperationQueue mainQueue];
-    
+
     NSInvocationOperation *op1 = [[NSInvocationOperation alloc] initWithTarget:self
                                                                       selector:@selector(task1)
                                                                         object:nil];
-    
+
     NSInvocationOperation *op2 = [[NSInvocationOperation alloc] initWithTarget:self
                                                                       selector:@selector(task2)
                                                                         object:nil];
-    
+
     NSInvocationOperation *op3 = [[NSInvocationOperation alloc] initWithTarget:self
                                                                       selector:@selector(task3)
                                                                         object:nil];
-    
+
     NSBlockOperation *op4 = [NSBlockOperation blockOperationWithBlock:^{
         [self task4];
     }];
-    
+
     [op4 addExecutionBlock:^{
         [self task5];
     }];
-    
+
     [queue addOperation:op1];
     [queue addOperation:op2];
     [queue addOperation:op3];
     [queue addOperation:op4];
-    
+
     [queue addOperationWithBlock:^{
         [self task6];
     }];
-    
+
     [queue addOperationWithBlock:^{
         [self task7];
+    }];
+}
+
+/**
+ * 使用 addOperationWithBlock: 将操作加入到操作队列中
+ */
+- (void)addOperationWithBlockToQueue {
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    NSInvocationOperation *op1 = [[NSInvocationOperation alloc] initWithTarget:self
+                                                                      selector:@selector(task1)
+                                                                        object:nil];
+
+    NSInvocationOperation *op2 = [[NSInvocationOperation alloc] initWithTarget:self
+                                                                      selector:@selector(task2)
+                                                                        object:nil];
+
+    NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
+        [self task3];
+    }];
+
+    [queue addOperation:op1];
+    [queue addOperation:op2];
+    [op3 addExecutionBlock:^{
+        [self task4];
+    }];
+    [queue addOperationWithBlock:^{
+        [self task5];
+    }];
+
+    [queue addOperationWithBlock:^{
+        [self task6];
+    }];
+
+    [queue addOperationWithBlock:^{
+        [self task7];
+    }];
+}
+
+/**
+ * 设置 MaxConcurrentOperationCount（最大并发操作数）
+ */
+- (void)setMaxConcurrentOperationCount {
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+
+    queue.maxConcurrentOperationCount = 1; // 串行队列
+    //    queue.maxConcurrentOperationCount = 2; // 并发队列
+    //    queue.maxConcurrentOperationCount = 8; // 并发队列
+
+    [queue addOperationWithBlock:^{
+        [self task1];
+    }];
+    [queue addOperationWithBlock:^{
+        [self task2];
+    }];
+    [queue addOperationWithBlock:^{
+        [self task3];
+    }];
+    [queue addOperationWithBlock:^{
+        [self task4];
     }];
 }
 
@@ -130,7 +189,7 @@
 }
 
 - (void)task7 {
-    NSLog(@"执行 task6 --- 当前所在线程：%@", [NSThread currentThread]);
+    NSLog(@"执行 task7 --- 当前所在线程：%@", [NSThread currentThread]);
 }
 
 - (void)task8 {
