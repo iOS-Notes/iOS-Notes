@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self blockOperation];
+    [self addExecutionBlock];
 }
 
 /**
@@ -37,6 +37,34 @@
     NSBlockOperation *op = [NSBlockOperation blockOperationWithBlock:^{
         NSLog(@"执行 task2 --- 当前所在线程：%@", [NSThread currentThread]);
     }];
+    [op start];
+}
+
+/**
+ * 使用子类 NSBlockOperation
+ * 调用方法 addExecutionBlock:
+ */
+- (void)addExecutionBlock {
+    NSBlockOperation *op = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"执行 task3 --- 当前所在线程：%@", [NSThread currentThread]);
+    }];
+
+    [op addExecutionBlock:^{
+        NSLog(@"执行 task4 --- 当前所在线程：%@", [NSThread currentThread]);
+    }];
+    [op addExecutionBlock:^{
+        NSLog(@"执行 task5 --- 当前所在线程：%@", [NSThread currentThread]);
+    }];
+    [op addExecutionBlock:^{
+        NSLog(@"执行 task6 --- 当前所在线程：%@", [NSThread currentThread]);
+    }];
+    [op addExecutionBlock:^{
+        NSLog(@"执行 task7 --- 当前所在线程：%@", [NSThread currentThread]);
+    }];
+    [op addExecutionBlock:^{
+        NSLog(@"执行 task8 --- 当前所在线程：%@", [NSThread currentThread]);
+    }];
+
     [op start];
 }
 
