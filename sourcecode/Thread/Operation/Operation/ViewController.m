@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self setQueuePriority];
+    [self communication];
 }
 
 /**
@@ -215,7 +215,22 @@
     [queue addOperation:op2];
     [queue addOperation:op3];
     [queue addOperation:op4];
+}
 
+/**
+ * 线程间通信
+ */
+- (void)communication {
+    NSOperationQueue *queue = [[NSOperationQueue alloc]init];
+
+    [queue addOperationWithBlock:^{
+        [self task1];
+
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            // 进行一些 UI 刷新等操作
+            NSLog(@"回到主线程刷新 UI");
+        }];
+    }];
 }
 
 - (void)task1 {
