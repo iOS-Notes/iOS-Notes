@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self setMaxConcurrentOperationCount];
+    [self addDependency];
 }
 
 /**
@@ -162,6 +162,25 @@
     [queue addOperationWithBlock:^{
         [self task4];
     }];
+}
+
+/**
+ * 操作依赖
+ * 使用方法：addDependency:
+ */
+- (void)addDependency {
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+
+    NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+        [self task1];
+    }];
+    NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+        [self task2];
+    }];
+
+    [op2 addDependency:op1];
+    [queue addOperation:op1];
+    [queue addOperation:op2];
 }
 
 - (void)task1 {
