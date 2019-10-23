@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self invocationOperation];
+    [self blockOperation];
 }
 
 /**
@@ -27,6 +27,16 @@
     NSInvocationOperation *op = [[NSInvocationOperation alloc] initWithTarget:self
                                                                      selector:@selector(task1)
                                                                        object:nil];
+    [op start];
+}
+
+/**
+ * 使用子类 NSBlockOperation
+ */
+- (void)blockOperation {
+    NSBlockOperation *op = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"执行 task2 --- 当前所在线程：%@", [NSThread currentThread]);
+    }];
     [op start];
 }
 
