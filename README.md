@@ -10,7 +10,7 @@
 </p>
 
 ## 📖 目录
-Latest：[浅谈面向对象的六大设计原则](https://www.jianshu.com/p/7b4633ada135)
+Latest：[浅谈面向对象的六大设计原则](/blogs/浅谈面向对象的六大设计原则.md)
 
 ## 📱 iOS
 | Topic | Version | Article |
