@@ -105,7 +105,7 @@ struct __CFRunLoopMode {
     uint64_t _timerHardDeadline; /* TSR */
 };
 ```
-![image.png](https://github.com/iOS-Advanced/iOS-Advanced/blob/master/resource/background-cover.jpg)
+![image.png](https://github.com/iOS-Advanced/iOS-Advanced/blob/master/resource/RunLoop_0.png)
 
 从 `CFRunLoopMode` 的源码不难看出，一个 `RunLoop` 包含若干个 `Mode`，每个 `Mode` 又包含若干个 `Source/Timer/Observer`。每次调用 `RunLoop` 的主函数时，只能指定其中一个 `Mode`，这个 `Mode` 被称作 `CurrentMode`。如果需要切换 `Mode`，只能退出 `RunLoop`，再重新指定一个 `Mode` 进入。这样做主要是为了分隔开不同组的 `Source/Timer/Observer`，让其互不影响。
 
@@ -191,7 +191,7 @@ struct __CFRunLoopTimer {
 `CFRunLoopTimerRef` 是基于时间的触发器，其包含一个时间长度和一个回调（函数指针）。当其加入到 `RunLoop` 时，`RunLoop` 会注册对应的时间点，当时间点到时，`RunLoop` 会被唤醒以执行那个回调。
 
 ### RunLoop 运行流程图
-![image.png](https://github.com/iOS-Advanced/iOS-Advanced/blob/master/resource/RunLoop_run.jpg)
+![image.png](https://github.com/iOS-Advanced/iOS-Advanced/blob/master/resource/RunLoop_run.png)
 
 ### 参考
 [深入理解RunLoop](https://blog.ibireme.com/2015/05/18/runloop/)
