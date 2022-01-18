@@ -4,7 +4,7 @@
 * 当有触摸或者其他事件产生，将事件交由 `IOKit.framework` 处理。
 * `IOKit.framework` 将事件封装成一个 `IOHIDEvent` 对象，并通过 `mach port` 传递给 `SpringBoad`。
 * `SpringBoard` 会接收这个对象并通过 `mach port` 转发给当前 `App` 的进程；
-* 唤醒 `runloop`，触发了 `source1` 回调，其回调函数为 `__IOHIDEventSystemClientQueueCallback()`。
+* 主线程的 `runloop` 被唤醒，触发了 `source1` 回调，其回调函数为 `__IOHIDEventSystemClientQueueCallback()`。
 * `source1` 回调触发 `source0` 回调，将接收到的 `IOHIDEvent` 对象封装成 `UIEvent` 对象进行处理或分发。
 
 注意：
