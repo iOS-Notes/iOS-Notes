@@ -1,5 +1,16 @@
 # sunjinshuai Blog
 
+<p align="center">
+  <img src="resource/background-cover.jpg" alt="sunjinshuai Blog 封面">
+</p>
+
+<p align="center">
+  <a href="https://weibo.com/u/5113807465"><img src="https://img.shields.io/badge/weibo-@sunjinshuai-f974ce.svg?style=flat&amp;colorA=f4292e" alt="微博 @sunjinshuai"></a>
+  <a href="https://juejin.im/user/59c4495ef265da065b66b2a8"><img src="https://img.shields.io/badge/掘金-@sunjinshuai-fd6f32.svg?style=flat&amp;colorA=1970fe" alt="掘金 @sunjinshuai"></a>
+  <a href="https://www.jianshu.com/u/16d7ec797c31"><img src="https://img.shields.io/badge/简书-@sunjinshuai-b561fe.svg?style=flat&amp;colorA=ed6f59" alt="简书 @sunjinshuai"></a>
+  <img src="https://img.shields.io/badge/PR-welcome%20!-brightgreen.svg?colorA=a0cd34" alt="PR welcome">
+</p>
+
 iOS 开发学习笔记，涵盖 Objective-C、Runtime、UIKit、多线程、网络与工程实践。
 
 [阅读仓库内正文](resource/blogs/) · [浏览示例源码](sourcecode/)
